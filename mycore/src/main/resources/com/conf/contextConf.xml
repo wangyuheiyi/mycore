@@ -4,13 +4,20 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	   http://www.springframework.org/schema/beans/spring-beans.xsd">
 	   <!--  factory-method="getInstance"-->
-	   <bean id="serverContext" class="com.common.context.impl.BaseContext" >
 	   	<!--<property name="contextFiles" value="com/conf/serverConf.xml" />-->
+	   	<!--  
+	   <bean id="serverContext" class="com.common.context.impl.BaseContext" >
+	   
 	   	<constructor-arg value="com/conf/serverConf.xml" />
 	   </bean>
 	
 	
 		<bean id="handlerContext" class="com.common.context.impl.BaseContext" >
 	   	<constructor-arg value="com/conf/handlerConf.xml" />
+	   </bean>-->
+	   
+	   <bean id="dbContext" class="com.common.context.impl.BaseContext" >
+	   	<constructor-arg value="com/conf/dbConf.xml" />
 	   </bean>
+	   
 </beans>
