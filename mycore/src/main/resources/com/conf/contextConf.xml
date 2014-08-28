@@ -17,7 +17,7 @@
 	   </bean>-->
 	   
 	   <bean id="dbContext" class="com.common.context.impl.BaseContext" >
-	   	<constructor-arg value="com/conf/dbConf.xml" />
+	   	<constructor-arg value="com/conf/spring-hibernate.xml" />
 	   </bean>
 	   
 </beans>
