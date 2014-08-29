@@ -74,10 +74,7 @@ public abstract class ServerConfig implements Config
 	private int pingPeriod;
 	/** ping的超时时间，操作该时间未收到ping消息，则断开客户端连接 */
 	private int pingTimeOut;
-	/** 数据库初始化类型： 0 Hibernate 1 Ibatis */
-	private int dbInitType = 0;
-	/** 数据库配置文件路径 */
-	private String dbConfigName;
+
 	
 	/** GameServer个数 */
 	private int gameServerCount;
@@ -351,27 +348,6 @@ public abstract class ServerConfig implements Config
 		this.pingPeriod = pingPeriod;
 	}
 
-	public int getDbInitType()
-	{
-		return dbInitType;
-	}
-
-	public void setDbInitType(int dbInitType)
-	{
-		this.dbInitType = dbInitType;
-	}
-
-	public String getDbConfigName() 
-	{
-		return dbConfigName;
-	}
-	
-
-	public void setDbConfigName(String dbConfigName) 
-	{
-		this.dbConfigName = dbConfigName;
-	}
-	
 	public void setExportDataDir(String exportDataDir)
 	{
 		this.exportDataDir = exportDataDir;
