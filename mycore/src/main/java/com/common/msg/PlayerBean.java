@@ -1128,6 +1128,1829 @@ public final class PlayerBean {
     // @@protoc_insertion_point(class_scope:bean.GCPlayerCheckLogin)
   }
 
+  public interface CGGetRoleListOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 playerId = 1;
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    boolean hasPlayerId();
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    int getPlayerId();
+  }
+  /**
+   * Protobuf type {@code bean.CGGetRoleList}
+   */
+  public static final class CGGetRoleList extends
+      com.google.protobuf.GeneratedMessage
+      implements CGGetRoleListOrBuilder {
+    // Use CGGetRoleList.newBuilder() to construct.
+    private CGGetRoleList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CGGetRoleList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CGGetRoleList defaultInstance;
+    public static CGGetRoleList getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CGGetRoleList getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CGGetRoleList(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              playerId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.common.msg.PlayerBean.internal_static_bean_CGGetRoleList_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.common.msg.PlayerBean.internal_static_bean_CGGetRoleList_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.common.msg.PlayerBean.CGGetRoleList.class, com.common.msg.PlayerBean.CGGetRoleList.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CGGetRoleList> PARSER =
+        new com.google.protobuf.AbstractParser<CGGetRoleList>() {
+      public CGGetRoleList parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CGGetRoleList(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CGGetRoleList> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 playerId = 1;
+    public static final int PLAYERID_FIELD_NUMBER = 1;
+    private int playerId_;
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    public boolean hasPlayerId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    public int getPlayerId() {
+      return playerId_;
+    }
+
+    private void initFields() {
+      playerId_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasPlayerId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, playerId_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, playerId_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.CGGetRoleList parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.common.msg.PlayerBean.CGGetRoleList prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bean.CGGetRoleList}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.common.msg.PlayerBean.CGGetRoleListOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.common.msg.PlayerBean.internal_static_bean_CGGetRoleList_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.common.msg.PlayerBean.internal_static_bean_CGGetRoleList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.common.msg.PlayerBean.CGGetRoleList.class, com.common.msg.PlayerBean.CGGetRoleList.Builder.class);
+      }
+
+      // Construct using com.common.msg.PlayerBean.CGGetRoleList.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        playerId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.common.msg.PlayerBean.internal_static_bean_CGGetRoleList_descriptor;
+      }
+
+      public com.common.msg.PlayerBean.CGGetRoleList getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.CGGetRoleList.getDefaultInstance();
+      }
+
+      public com.common.msg.PlayerBean.CGGetRoleList build() {
+        com.common.msg.PlayerBean.CGGetRoleList result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.common.msg.PlayerBean.CGGetRoleList buildPartial() {
+        com.common.msg.PlayerBean.CGGetRoleList result = new com.common.msg.PlayerBean.CGGetRoleList(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.playerId_ = playerId_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.common.msg.PlayerBean.CGGetRoleList) {
+          return mergeFrom((com.common.msg.PlayerBean.CGGetRoleList)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.common.msg.PlayerBean.CGGetRoleList other) {
+        if (other == com.common.msg.PlayerBean.CGGetRoleList.getDefaultInstance()) return this;
+        if (other.hasPlayerId()) {
+          setPlayerId(other.getPlayerId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasPlayerId()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.common.msg.PlayerBean.CGGetRoleList parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.common.msg.PlayerBean.CGGetRoleList) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 playerId = 1;
+      private int playerId_ ;
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public boolean hasPlayerId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public int getPlayerId() {
+        return playerId_;
+      }
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public Builder setPlayerId(int value) {
+        bitField0_ |= 0x00000001;
+        playerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public Builder clearPlayerId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        playerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bean.CGGetRoleList)
+    }
+
+    static {
+      defaultInstance = new CGGetRoleList(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bean.CGGetRoleList)
+  }
+
+  public interface GCGetRoleListOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 playerId = 1;
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    boolean hasPlayerId();
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    int getPlayerId();
+
+    // repeated .bean.HumanInfo humanInfo = 2;
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    java.util.List<com.common.msg.PlayerBean.HumanInfo> 
+        getHumanInfoList();
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    com.common.msg.PlayerBean.HumanInfo getHumanInfo(int index);
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    int getHumanInfoCount();
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    java.util.List<? extends com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+        getHumanInfoOrBuilderList();
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code bean.GCGetRoleList}
+   */
+  public static final class GCGetRoleList extends
+      com.google.protobuf.GeneratedMessage
+      implements GCGetRoleListOrBuilder {
+    // Use GCGetRoleList.newBuilder() to construct.
+    private GCGetRoleList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private GCGetRoleList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final GCGetRoleList defaultInstance;
+    public static GCGetRoleList getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public GCGetRoleList getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GCGetRoleList(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              playerId_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                humanInfo_ = new java.util.ArrayList<com.common.msg.PlayerBean.HumanInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              humanInfo_.add(input.readMessage(com.common.msg.PlayerBean.HumanInfo.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          humanInfo_ = java.util.Collections.unmodifiableList(humanInfo_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.common.msg.PlayerBean.internal_static_bean_GCGetRoleList_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.common.msg.PlayerBean.internal_static_bean_GCGetRoleList_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.common.msg.PlayerBean.GCGetRoleList.class, com.common.msg.PlayerBean.GCGetRoleList.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<GCGetRoleList> PARSER =
+        new com.google.protobuf.AbstractParser<GCGetRoleList>() {
+      public GCGetRoleList parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GCGetRoleList(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GCGetRoleList> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 playerId = 1;
+    public static final int PLAYERID_FIELD_NUMBER = 1;
+    private int playerId_;
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    public boolean hasPlayerId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 playerId = 1;</code>
+     */
+    public int getPlayerId() {
+      return playerId_;
+    }
+
+    // repeated .bean.HumanInfo humanInfo = 2;
+    public static final int HUMANINFO_FIELD_NUMBER = 2;
+    private java.util.List<com.common.msg.PlayerBean.HumanInfo> humanInfo_;
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    public java.util.List<com.common.msg.PlayerBean.HumanInfo> getHumanInfoList() {
+      return humanInfo_;
+    }
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    public java.util.List<? extends com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+        getHumanInfoOrBuilderList() {
+      return humanInfo_;
+    }
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    public int getHumanInfoCount() {
+      return humanInfo_.size();
+    }
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    public com.common.msg.PlayerBean.HumanInfo getHumanInfo(int index) {
+      return humanInfo_.get(index);
+    }
+    /**
+     * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+     */
+    public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
+        int index) {
+      return humanInfo_.get(index);
+    }
+
+    private void initFields() {
+      playerId_ = 0;
+      humanInfo_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasPlayerId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getHumanInfoCount(); i++) {
+        if (!getHumanInfo(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, playerId_);
+      }
+      for (int i = 0; i < humanInfo_.size(); i++) {
+        output.writeMessage(2, humanInfo_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, playerId_);
+      }
+      for (int i = 0; i < humanInfo_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, humanInfo_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCGetRoleList parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.common.msg.PlayerBean.GCGetRoleList prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bean.GCGetRoleList}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.common.msg.PlayerBean.GCGetRoleListOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCGetRoleList_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCGetRoleList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.common.msg.PlayerBean.GCGetRoleList.class, com.common.msg.PlayerBean.GCGetRoleList.Builder.class);
+      }
+
+      // Construct using com.common.msg.PlayerBean.GCGetRoleList.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getHumanInfoFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        playerId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (humanInfoBuilder_ == null) {
+          humanInfo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          humanInfoBuilder_.clear();
+        }
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCGetRoleList_descriptor;
+      }
+
+      public com.common.msg.PlayerBean.GCGetRoleList getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.GCGetRoleList.getDefaultInstance();
+      }
+
+      public com.common.msg.PlayerBean.GCGetRoleList build() {
+        com.common.msg.PlayerBean.GCGetRoleList result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.common.msg.PlayerBean.GCGetRoleList buildPartial() {
+        com.common.msg.PlayerBean.GCGetRoleList result = new com.common.msg.PlayerBean.GCGetRoleList(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.playerId_ = playerId_;
+        if (humanInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            humanInfo_ = java.util.Collections.unmodifiableList(humanInfo_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.humanInfo_ = humanInfo_;
+        } else {
+          result.humanInfo_ = humanInfoBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.common.msg.PlayerBean.GCGetRoleList) {
+          return mergeFrom((com.common.msg.PlayerBean.GCGetRoleList)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.common.msg.PlayerBean.GCGetRoleList other) {
+        if (other == com.common.msg.PlayerBean.GCGetRoleList.getDefaultInstance()) return this;
+        if (other.hasPlayerId()) {
+          setPlayerId(other.getPlayerId());
+        }
+        if (humanInfoBuilder_ == null) {
+          if (!other.humanInfo_.isEmpty()) {
+            if (humanInfo_.isEmpty()) {
+              humanInfo_ = other.humanInfo_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureHumanInfoIsMutable();
+              humanInfo_.addAll(other.humanInfo_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.humanInfo_.isEmpty()) {
+            if (humanInfoBuilder_.isEmpty()) {
+              humanInfoBuilder_.dispose();
+              humanInfoBuilder_ = null;
+              humanInfo_ = other.humanInfo_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              humanInfoBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getHumanInfoFieldBuilder() : null;
+            } else {
+              humanInfoBuilder_.addAllMessages(other.humanInfo_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasPlayerId()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getHumanInfoCount(); i++) {
+          if (!getHumanInfo(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.common.msg.PlayerBean.GCGetRoleList parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.common.msg.PlayerBean.GCGetRoleList) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 playerId = 1;
+      private int playerId_ ;
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public boolean hasPlayerId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public int getPlayerId() {
+        return playerId_;
+      }
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public Builder setPlayerId(int value) {
+        bitField0_ |= 0x00000001;
+        playerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 playerId = 1;</code>
+       */
+      public Builder clearPlayerId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        playerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // repeated .bean.HumanInfo humanInfo = 2;
+      private java.util.List<com.common.msg.PlayerBean.HumanInfo> humanInfo_ =
+        java.util.Collections.emptyList();
+      private void ensureHumanInfoIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          humanInfo_ = new java.util.ArrayList<com.common.msg.PlayerBean.HumanInfo>(humanInfo_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> humanInfoBuilder_;
+
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public java.util.List<com.common.msg.PlayerBean.HumanInfo> getHumanInfoList() {
+        if (humanInfoBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(humanInfo_);
+        } else {
+          return humanInfoBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public int getHumanInfoCount() {
+        if (humanInfoBuilder_ == null) {
+          return humanInfo_.size();
+        } else {
+          return humanInfoBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public com.common.msg.PlayerBean.HumanInfo getHumanInfo(int index) {
+        if (humanInfoBuilder_ == null) {
+          return humanInfo_.get(index);
+        } else {
+          return humanInfoBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder setHumanInfo(
+          int index, com.common.msg.PlayerBean.HumanInfo value) {
+        if (humanInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHumanInfoIsMutable();
+          humanInfo_.set(index, value);
+          onChanged();
+        } else {
+          humanInfoBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder setHumanInfo(
+          int index, com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
+        if (humanInfoBuilder_ == null) {
+          ensureHumanInfoIsMutable();
+          humanInfo_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          humanInfoBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder addHumanInfo(com.common.msg.PlayerBean.HumanInfo value) {
+        if (humanInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHumanInfoIsMutable();
+          humanInfo_.add(value);
+          onChanged();
+        } else {
+          humanInfoBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder addHumanInfo(
+          int index, com.common.msg.PlayerBean.HumanInfo value) {
+        if (humanInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureHumanInfoIsMutable();
+          humanInfo_.add(index, value);
+          onChanged();
+        } else {
+          humanInfoBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder addHumanInfo(
+          com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
+        if (humanInfoBuilder_ == null) {
+          ensureHumanInfoIsMutable();
+          humanInfo_.add(builderForValue.build());
+          onChanged();
+        } else {
+          humanInfoBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder addHumanInfo(
+          int index, com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
+        if (humanInfoBuilder_ == null) {
+          ensureHumanInfoIsMutable();
+          humanInfo_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          humanInfoBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder addAllHumanInfo(
+          java.lang.Iterable<? extends com.common.msg.PlayerBean.HumanInfo> values) {
+        if (humanInfoBuilder_ == null) {
+          ensureHumanInfoIsMutable();
+          super.addAll(values, humanInfo_);
+          onChanged();
+        } else {
+          humanInfoBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder clearHumanInfo() {
+        if (humanInfoBuilder_ == null) {
+          humanInfo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          humanInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public Builder removeHumanInfo(int index) {
+        if (humanInfoBuilder_ == null) {
+          ensureHumanInfoIsMutable();
+          humanInfo_.remove(index);
+          onChanged();
+        } else {
+          humanInfoBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public com.common.msg.PlayerBean.HumanInfo.Builder getHumanInfoBuilder(
+          int index) {
+        return getHumanInfoFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
+          int index) {
+        if (humanInfoBuilder_ == null) {
+          return humanInfo_.get(index);  } else {
+          return humanInfoBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public java.util.List<? extends com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+           getHumanInfoOrBuilderList() {
+        if (humanInfoBuilder_ != null) {
+          return humanInfoBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(humanInfo_);
+        }
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public com.common.msg.PlayerBean.HumanInfo.Builder addHumanInfoBuilder() {
+        return getHumanInfoFieldBuilder().addBuilder(
+            com.common.msg.PlayerBean.HumanInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public com.common.msg.PlayerBean.HumanInfo.Builder addHumanInfoBuilder(
+          int index) {
+        return getHumanInfoFieldBuilder().addBuilder(
+            index, com.common.msg.PlayerBean.HumanInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
+       */
+      public java.util.List<com.common.msg.PlayerBean.HumanInfo.Builder> 
+           getHumanInfoBuilderList() {
+        return getHumanInfoFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+          getHumanInfoFieldBuilder() {
+        if (humanInfoBuilder_ == null) {
+          humanInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder>(
+                  humanInfo_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          humanInfo_ = null;
+        }
+        return humanInfoBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bean.GCGetRoleList)
+    }
+
+    static {
+      defaultInstance = new GCGetRoleList(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bean.GCGetRoleList)
+  }
+
+  public interface HumanInfoOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int64 roleId = 1;
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    boolean hasRoleId();
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    long getRoleId();
+
+    // optional string roleName = 2 [default = ""];
+    /**
+     * <code>optional string roleName = 2 [default = ""];</code>
+     */
+    boolean hasRoleName();
+    /**
+     * <code>optional string roleName = 2 [default = ""];</code>
+     */
+    java.lang.String getRoleName();
+    /**
+     * <code>optional string roleName = 2 [default = ""];</code>
+     */
+    com.google.protobuf.ByteString
+        getRoleNameBytes();
+
+    // optional int32 level = 3 [default = 0];
+    /**
+     * <code>optional int32 level = 3 [default = 0];</code>
+     */
+    boolean hasLevel();
+    /**
+     * <code>optional int32 level = 3 [default = 0];</code>
+     */
+    int getLevel();
+  }
+  /**
+   * Protobuf type {@code bean.HumanInfo}
+   */
+  public static final class HumanInfo extends
+      com.google.protobuf.GeneratedMessage
+      implements HumanInfoOrBuilder {
+    // Use HumanInfo.newBuilder() to construct.
+    private HumanInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private HumanInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final HumanInfo defaultInstance;
+    public static HumanInfo getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public HumanInfo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private HumanInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              roleId_ = input.readInt64();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              roleName_ = input.readBytes();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              level_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.common.msg.PlayerBean.HumanInfo.class, com.common.msg.PlayerBean.HumanInfo.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<HumanInfo> PARSER =
+        new com.google.protobuf.AbstractParser<HumanInfo>() {
+      public HumanInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new HumanInfo(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<HumanInfo> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int64 roleId = 1;
+    public static final int ROLEID_FIELD_NUMBER = 1;
+    private long roleId_;
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    public boolean hasRoleId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    public long getRoleId() {
+      return roleId_;
+    }
+
+    // optional string roleName = 2 [default = ""];
+    public static final int ROLENAME_FIELD_NUMBER = 2;
+    private java.lang.Object roleName_;
+    /**
+     * <code>optional string roleName = 2 [default = ""];</code>
+     */
+    public boolean hasRoleName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string roleName = 2 [default = ""];</code>
+     */
+    public java.lang.String getRoleName() {
+      java.lang.Object ref = roleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          roleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string roleName = 2 [default = ""];</code>
+     */
+    public com.google.protobuf.ByteString
+        getRoleNameBytes() {
+      java.lang.Object ref = roleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        roleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int32 level = 3 [default = 0];
+    public static final int LEVEL_FIELD_NUMBER = 3;
+    private int level_;
+    /**
+     * <code>optional int32 level = 3 [default = 0];</code>
+     */
+    public boolean hasLevel() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 level = 3 [default = 0];</code>
+     */
+    public int getLevel() {
+      return level_;
+    }
+
+    private void initFields() {
+      roleId_ = 0L;
+      roleName_ = "";
+      level_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasRoleId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt64(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getRoleNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, level_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getRoleNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, level_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.common.msg.PlayerBean.HumanInfo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bean.HumanInfo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.common.msg.PlayerBean.HumanInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.common.msg.PlayerBean.HumanInfo.class, com.common.msg.PlayerBean.HumanInfo.Builder.class);
+      }
+
+      // Construct using com.common.msg.PlayerBean.HumanInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        roleId_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        roleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        level_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_descriptor;
+      }
+
+      public com.common.msg.PlayerBean.HumanInfo getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
+      }
+
+      public com.common.msg.PlayerBean.HumanInfo build() {
+        com.common.msg.PlayerBean.HumanInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.common.msg.PlayerBean.HumanInfo buildPartial() {
+        com.common.msg.PlayerBean.HumanInfo result = new com.common.msg.PlayerBean.HumanInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.roleId_ = roleId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.roleName_ = roleName_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.level_ = level_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.common.msg.PlayerBean.HumanInfo) {
+          return mergeFrom((com.common.msg.PlayerBean.HumanInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.common.msg.PlayerBean.HumanInfo other) {
+        if (other == com.common.msg.PlayerBean.HumanInfo.getDefaultInstance()) return this;
+        if (other.hasRoleId()) {
+          setRoleId(other.getRoleId());
+        }
+        if (other.hasRoleName()) {
+          bitField0_ |= 0x00000002;
+          roleName_ = other.roleName_;
+          onChanged();
+        }
+        if (other.hasLevel()) {
+          setLevel(other.getLevel());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasRoleId()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.common.msg.PlayerBean.HumanInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.common.msg.PlayerBean.HumanInfo) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int64 roleId = 1;
+      private long roleId_ ;
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public boolean hasRoleId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public long getRoleId() {
+        return roleId_;
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public Builder setRoleId(long value) {
+        bitField0_ |= 0x00000001;
+        roleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public Builder clearRoleId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        roleId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // optional string roleName = 2 [default = ""];
+      private java.lang.Object roleName_ = "";
+      /**
+       * <code>optional string roleName = 2 [default = ""];</code>
+       */
+      public boolean hasRoleName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string roleName = 2 [default = ""];</code>
+       */
+      public java.lang.String getRoleName() {
+        java.lang.Object ref = roleName_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          roleName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string roleName = 2 [default = ""];</code>
+       */
+      public com.google.protobuf.ByteString
+          getRoleNameBytes() {
+        java.lang.Object ref = roleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          roleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string roleName = 2 [default = ""];</code>
+       */
+      public Builder setRoleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        roleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string roleName = 2 [default = ""];</code>
+       */
+      public Builder clearRoleName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        roleName_ = getDefaultInstance().getRoleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string roleName = 2 [default = ""];</code>
+       */
+      public Builder setRoleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        roleName_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 level = 3 [default = 0];
+      private int level_ ;
+      /**
+       * <code>optional int32 level = 3 [default = 0];</code>
+       */
+      public boolean hasLevel() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 level = 3 [default = 0];</code>
+       */
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>optional int32 level = 3 [default = 0];</code>
+       */
+      public Builder setLevel(int value) {
+        bitField0_ |= 0x00000004;
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 level = 3 [default = 0];</code>
+       */
+      public Builder clearLevel() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bean.HumanInfo)
+    }
+
+    static {
+      defaultInstance = new HumanInfo(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bean.HumanInfo)
+  }
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_bean_CGPlayerCheckLogin_descriptor;
   private static
@@ -1138,6 +2961,21 @@ public final class PlayerBean {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_bean_GCPlayerCheckLogin_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_bean_CGGetRoleList_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_bean_CGGetRoleList_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_bean_GCGetRoleList_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_bean_GCGetRoleList_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_bean_HumanInfo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_bean_HumanInfo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1150,8 +2988,12 @@ public final class PlayerBean {
       "\n\014player.proto\022\004bean\"N\n\022CGPlayerCheckLog" +
       "in\022\020\n\010playerId\030\001 \002(\005\022\022\n\010userCode\030\002 \001(\t:\000" +
       "\022\022\n\010deviceID\030\003 \001(\t:\000\"&\n\022GCPlayerCheckLog" +
-      "in\022\020\n\010playerId\030\001 \002(\005B\034\n\016com.common.msgB\n" +
-      "PlayerBean"
+      "in\022\020\n\010playerId\030\001 \002(\005\"!\n\rCGGetRoleList\022\020\n" +
+      "\010playerId\030\001 \002(\005\"E\n\rGCGetRoleList\022\020\n\010play" +
+      "erId\030\001 \002(\005\022\"\n\thumanInfo\030\002 \003(\0132\017.bean.Hum" +
+      "anInfo\"A\n\tHumanInfo\022\016\n\006roleId\030\001 \002(\003\022\022\n\010r" +
+      "oleName\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:\0010B\034\n\016com" +
+      ".common.msgB\nPlayerBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1170,6 +3012,24 @@ public final class PlayerBean {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCPlayerCheckLogin_descriptor,
               new java.lang.String[] { "PlayerId", });
+          internal_static_bean_CGGetRoleList_descriptor =
+            getDescriptor().getMessageTypes().get(2);
+          internal_static_bean_CGGetRoleList_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_bean_CGGetRoleList_descriptor,
+              new java.lang.String[] { "PlayerId", });
+          internal_static_bean_GCGetRoleList_descriptor =
+            getDescriptor().getMessageTypes().get(3);
+          internal_static_bean_GCGetRoleList_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_bean_GCGetRoleList_descriptor,
+              new java.lang.String[] { "PlayerId", "HumanInfo", });
+          internal_static_bean_HumanInfo_descriptor =
+            getDescriptor().getMessageTypes().get(4);
+          internal_static_bean_HumanInfo_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_bean_HumanInfo_descriptor,
+              new java.lang.String[] { "RoleId", "RoleName", "Level", });
           return null;
         }
       };
