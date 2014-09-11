@@ -15,7 +15,7 @@ import com.core.util.EnumUtil;
 public enum UUIDType implements IndexedEnum 
 {
 	/** 玩家角色的UUID */
-	HUMAN(0,"HumanEntity"),
+	HUMAN(0,"t_human_info"),
     /** 武将的UUID */
     PET(1,""),
 	/** 场景的UUID */
@@ -24,7 +24,7 @@ public enum UUIDType implements IndexedEnum
 
 	private final int index;
 	
-	private String dbBeanName;
+	private String name;
 	/** 按索引顺序存放的枚举数组 */
 	private static final List<UUIDType> values = IndexedEnumUtil.toIndexes(UUIDType.values());
 
@@ -33,10 +33,10 @@ public enum UUIDType implements IndexedEnum
 	 * @param index
 	 *            枚举的索引,从0开始
 	 */
-	private UUIDType(int index,String dbBeanName)
+	private UUIDType(int index,String name)
 	{
 		this.index = index;
-		this.dbBeanName=dbBeanName;
+		this.name=name;
 	}
 
 	@Override
@@ -45,10 +45,11 @@ public enum UUIDType implements IndexedEnum
 		return this.index;
 	}
 	
-	public String getDbBeanName() {
-		return dbBeanName;
-	}
 
+
+	public String getName() {
+		return name;
+	}
 
 	/**
 	 * 根据指定的索引获取枚举的定义
