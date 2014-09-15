@@ -16,10 +16,6 @@ public enum UUIDType implements IndexedEnum
 {
 	/** 玩家角色的UUID */
 	HUMAN(0,"t_human_info"),
-    /** 武将的UUID */
-    PET(1,""),
-	/** 场景的UUID */
-	SCENE(2,""),
 ;
 
 	private final int index;
