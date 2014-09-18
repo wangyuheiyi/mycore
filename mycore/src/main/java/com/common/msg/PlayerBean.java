@@ -4563,16 +4563,6 @@ public final class PlayerBean {
      * <code>optional int32 avatar = 6 [default = 0];</code>
      */
     int getAvatar();
-
-    // optional int32 control = 7 [default = 0];
-    /**
-     * <code>optional int32 control = 7 [default = 0];</code>
-     */
-    boolean hasControl();
-    /**
-     * <code>optional int32 control = 7 [default = 0];</code>
-     */
-    int getControl();
   }
   /**
    * Protobuf type {@code bean.HumanInfo}
@@ -4653,11 +4643,6 @@ public final class PlayerBean {
             case 48: {
               bitField0_ |= 0x00000020;
               avatar_ = input.readInt32();
-              break;
-            }
-            case 56: {
-              bitField0_ |= 0x00000040;
-              control_ = input.readInt32();
               break;
             }
           }
@@ -4823,22 +4808,6 @@ public final class PlayerBean {
       return avatar_;
     }
 
-    // optional int32 control = 7 [default = 0];
-    public static final int CONTROL_FIELD_NUMBER = 7;
-    private int control_;
-    /**
-     * <code>optional int32 control = 7 [default = 0];</code>
-     */
-    public boolean hasControl() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    /**
-     * <code>optional int32 control = 7 [default = 0];</code>
-     */
-    public int getControl() {
-      return control_;
-    }
-
     private void initFields() {
       roleId_ = 0L;
       roleName_ = "";
@@ -4846,7 +4815,6 @@ public final class PlayerBean {
       vocationType_ = 0;
       allianceTypeId_ = 0;
       avatar_ = 0;
-      control_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -4882,9 +4850,6 @@ public final class PlayerBean {
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         output.writeInt32(6, avatar_);
       }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(7, control_);
-      }
       getUnknownFields().writeTo(output);
     }
 
@@ -4917,10 +4882,6 @@ public final class PlayerBean {
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(6, avatar_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, control_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -5050,8 +5011,6 @@ public final class PlayerBean {
         bitField0_ = (bitField0_ & ~0x00000010);
         avatar_ = 0;
         bitField0_ = (bitField0_ & ~0x00000020);
-        control_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
 
@@ -5104,10 +5063,6 @@ public final class PlayerBean {
           to_bitField0_ |= 0x00000020;
         }
         result.avatar_ = avatar_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.control_ = control_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -5143,9 +5098,6 @@ public final class PlayerBean {
         }
         if (other.hasAvatar()) {
           setAvatar(other.getAvatar());
-        }
-        if (other.hasControl()) {
-          setControl(other.getControl());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -5417,39 +5369,6 @@ public final class PlayerBean {
         return this;
       }
 
-      // optional int32 control = 7 [default = 0];
-      private int control_ ;
-      /**
-       * <code>optional int32 control = 7 [default = 0];</code>
-       */
-      public boolean hasControl() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      /**
-       * <code>optional int32 control = 7 [default = 0];</code>
-       */
-      public int getControl() {
-        return control_;
-      }
-      /**
-       * <code>optional int32 control = 7 [default = 0];</code>
-       */
-      public Builder setControl(int value) {
-        bitField0_ |= 0x00000040;
-        control_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 control = 7 [default = 0];</code>
-       */
-      public Builder clearControl() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        control_ = 0;
-        onChanged();
-        return this;
-      }
-
       // @@protoc_insertion_point(builder_scope:bean.HumanInfo)
     }
 
@@ -5527,12 +5446,11 @@ public final class PlayerBean {
       "Info\"4\n\020CGSelectRoleList\022\020\n\010playerId\030\001 \002",
       "(\005\022\016\n\006roleId\030\002 \001(\003\"H\n\020GCSelectRoleList\022\020" +
       "\n\010playerId\030\001 \002(\005\022\"\n\thumanInfo\030\002 \001(\0132\017.be" +
-      "an.HumanInfo\"\234\001\n\tHumanInfo\022\016\n\006roleId\030\001 \002" +
+      "an.HumanInfo\"\210\001\n\tHumanInfo\022\016\n\006roleId\030\001 \002" +
       "(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:\0010" +
       "\022\027\n\014vocationType\030\004 \001(\005:\0010\022\031\n\016allianceTyp" +
-      "eId\030\005 \001(\005:\0010\022\021\n\006avatar\030\006 \001(\005:\0010\022\022\n\007contr" +
-      "ol\030\007 \001(\005:\0010B\034\n\016com.common.msgB\nPlayerBea" +
-      "n"
+      "eId\030\005 \001(\005:\0010\022\021\n\006avatar\030\006 \001(\005:\0010B\034\n\016com.c" +
+      "ommon.msgB\nPlayerBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5592,7 +5510,7 @@ public final class PlayerBean {
           internal_static_bean_HumanInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_HumanInfo_descriptor,
-              new java.lang.String[] { "RoleId", "RoleName", "Level", "VocationType", "AllianceTypeId", "Avatar", "Control", });
+              new java.lang.String[] { "RoleId", "RoleName", "Level", "VocationType", "AllianceTypeId", "Avatar", });
           return null;
         }
       };
