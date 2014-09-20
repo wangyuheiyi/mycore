@@ -23,4 +23,8 @@
 	   	<constructor-arg value="com/conf/spring-hibernate.xml" />
 	   </bean>
 	   
+	   
+	   <bean id="tempLatesContext" class="com.common.context.impl.BaseContext" >
+	   	<constructor-arg value="com/conf/tempLatesConf.xml" />
+	   </bean>
 </beans>
