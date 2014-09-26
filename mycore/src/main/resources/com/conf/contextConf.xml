@@ -5,7 +5,7 @@
 	   http://www.springframework.org/schema/beans/spring-beans.xsd">
 	   <!--  factory-method="getInstance"-->
 	   	<!--<property name="contextFiles" value="com/conf/serverConf.xml" />-->
-	   	
+	   	<!-- 
 	   <bean id="serverContext" class="com.common.context.impl.BaseContext" >
 	   	<constructor-arg value="com/conf/serverConf.xml" />
 	   </bean>
@@ -15,18 +15,16 @@
 	   	<constructor-arg value="com/conf/handlerConf.xml" />
 	   </bean>
 	   
-	   <!--  
+	     
 	   <bean id="operationContext" class="com.common.context.impl.BaseContext" >
 	   	<constructor-arg value="com/conf/operationConf.xml" />
 	   </bean>
-	   -->
-	   
-	   <bean id="dbContext" class="com.common.context.impl.BaseContext" >
-	   	<constructor-arg value="com/conf/spring-hibernate.xml" />
-	   </bean>
-	   
 	   
 	   <bean id="tempLatesContext" class="com.common.context.impl.BaseContext" >
 	   	<constructor-arg value="com/conf/tempLatesConf.xml" />
+	   </bean>-->
+	   
+	    <bean id="dbContext" class="com.common.context.impl.BaseContext" >
+	   	<constructor-arg value="com/conf/spring-hibernate.xml" />
 	   </bean>
 </beans>
