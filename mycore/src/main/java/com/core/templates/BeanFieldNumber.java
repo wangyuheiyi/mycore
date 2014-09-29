@@ -1,4 +1,4 @@
-package com.core.template;
+package com.core.templates;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

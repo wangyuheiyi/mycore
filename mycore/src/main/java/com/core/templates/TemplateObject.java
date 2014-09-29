@@ -1,4 +1,4 @@
-package com.core.template;
+package com.core.templates;
 
 import com.common.exception.ConfigException;
 import com.common.exception.TemplateConfigException;

@@ -11,15 +11,15 @@ public final class PlayerBean {
   public interface CGPlayerCheckLoginOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
 
     // optional string userCode = 2 [default = ""];
     /**
@@ -104,7 +104,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
             case 18: {
@@ -157,19 +157,19 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
@@ -260,7 +260,7 @@ public final class PlayerBean {
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
       userCode_ = "";
       deviceID_ = "";
     }
@@ -281,7 +281,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(2, getUserCodeBytes());
@@ -300,7 +300,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -426,7 +426,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         userCode_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -532,35 +532,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -727,15 +727,15 @@ public final class PlayerBean {
   public interface GCPlayerCheckLoginOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
   }
   /**
    * Protobuf type {@code bean.GCPlayerCheckLogin}
@@ -790,7 +790,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
           }
@@ -833,24 +833,24 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -869,7 +869,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -882,7 +882,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1000,7 +1000,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -1084,35 +1084,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -1131,15 +1131,15 @@ public final class PlayerBean {
   public interface CGGetRoleListOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
   }
   /**
    * Protobuf type {@code bean.CGGetRoleList}
@@ -1194,7 +1194,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
           }
@@ -1237,24 +1237,24 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1273,7 +1273,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1286,7 +1286,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1404,7 +1404,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -1488,35 +1488,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -1535,15 +1535,15 @@ public final class PlayerBean {
   public interface GCGetRoleListOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
 
     // repeated .bean.HumanInfo humanInfo = 2;
     /**
@@ -1623,7 +1623,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
             case 18: {
@@ -1677,19 +1677,19 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
@@ -1730,7 +1730,7 @@ public final class PlayerBean {
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
       humanInfo_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
@@ -1756,7 +1756,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       for (int i = 0; i < humanInfo_.size(); i++) {
         output.writeMessage(2, humanInfo_.get(i));
@@ -1772,7 +1772,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       for (int i = 0; i < humanInfo_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -1895,7 +1895,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         if (humanInfoBuilder_ == null) {
           humanInfo_ = java.util.Collections.emptyList();
@@ -2026,35 +2026,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -2313,15 +2313,15 @@ public final class PlayerBean {
   public interface CGCreateRoleOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
 
     // required int32 avatar = 2;
     /**
@@ -2386,7 +2386,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
             case 16: {
@@ -2434,19 +2434,19 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
@@ -2467,7 +2467,7 @@ public final class PlayerBean {
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
       avatar_ = 0;
     }
     private byte memoizedIsInitialized = -1;
@@ -2491,7 +2491,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeInt32(2, avatar_);
@@ -2507,7 +2507,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2629,7 +2629,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         avatar_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2726,35 +2726,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -2806,15 +2806,15 @@ public final class PlayerBean {
   public interface GCCreateRoleOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
 
     // optional .bean.HumanInfo humanInfo = 2;
     /**
@@ -2883,7 +2883,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
             case 18: {
@@ -2939,19 +2939,19 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
@@ -2978,7 +2978,7 @@ public final class PlayerBean {
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
       humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
@@ -3004,7 +3004,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeMessage(2, humanInfo_);
@@ -3020,7 +3020,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3143,7 +3143,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         if (humanInfoBuilder_ == null) {
           humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
@@ -3250,35 +3250,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -3414,15 +3414,15 @@ public final class PlayerBean {
   public interface CGSelectRoleListOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
 
     // optional int64 roleId = 2;
     /**
@@ -3487,7 +3487,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
             case 16: {
@@ -3535,19 +3535,19 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
@@ -3568,7 +3568,7 @@ public final class PlayerBean {
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
       roleId_ = 0L;
     }
     private byte memoizedIsInitialized = -1;
@@ -3588,7 +3588,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeInt64(2, roleId_);
@@ -3604,7 +3604,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3726,7 +3726,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         roleId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -3819,35 +3819,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -3899,15 +3899,15 @@ public final class PlayerBean {
   public interface GCSelectRoleListOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     boolean hasPlayerId();
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    int getPlayerId();
+    long getPlayerId();
 
     // optional .bean.HumanInfo humanInfo = 2;
     /**
@@ -3976,7 +3976,7 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt32();
+              playerId_ = input.readInt64();
               break;
             }
             case 18: {
@@ -4032,19 +4032,19 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
-    // required int32 playerId = 1;
+    // required int64 playerId = 1;
     public static final int PLAYERID_FIELD_NUMBER = 1;
-    private int playerId_;
+    private long playerId_;
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
     public boolean hasPlayerId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 playerId = 1;</code>
+     * <code>required int64 playerId = 1;</code>
      */
-    public int getPlayerId() {
+    public long getPlayerId() {
       return playerId_;
     }
 
@@ -4071,7 +4071,7 @@ public final class PlayerBean {
     }
 
     private void initFields() {
-      playerId_ = 0;
+      playerId_ = 0L;
       humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
@@ -4097,7 +4097,7 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, playerId_);
+        output.writeInt64(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeMessage(2, humanInfo_);
@@ -4113,7 +4113,7 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, playerId_);
+          .computeInt64Size(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -4236,7 +4236,7 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0;
+        playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         if (humanInfoBuilder_ == null) {
           humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
@@ -4343,35 +4343,35 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int32 playerId = 1;
-      private int playerId_ ;
+      // required int64 playerId = 1;
+      private long playerId_ ;
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public boolean hasPlayerId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public int getPlayerId() {
+      public long getPlayerId() {
         return playerId_;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
-      public Builder setPlayerId(int value) {
+      public Builder setPlayerId(long value) {
         bitField0_ |= 0x00000001;
         playerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 playerId = 1;</code>
+       * <code>required int64 playerId = 1;</code>
        */
       public Builder clearPlayerId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0;
+        playerId_ = 0L;
         onChanged();
         return this;
       }
@@ -5443,17 +5443,17 @@ public final class PlayerBean {
   static {
     java.lang.String[] descriptorData = {
       "\n\014player.proto\022\004bean\"N\n\022CGPlayerCheckLog" +
-      "in\022\020\n\010playerId\030\001 \002(\005\022\022\n\010userCode\030\002 \001(\t:\000" +
+      "in\022\020\n\010playerId\030\001 \002(\003\022\022\n\010userCode\030\002 \001(\t:\000" +
       "\022\022\n\010deviceID\030\003 \001(\t:\000\"&\n\022GCPlayerCheckLog" +
-      "in\022\020\n\010playerId\030\001 \002(\005\"!\n\rCGGetRoleList\022\020\n" +
-      "\010playerId\030\001 \002(\005\"E\n\rGCGetRoleList\022\020\n\010play" +
-      "erId\030\001 \002(\005\022\"\n\thumanInfo\030\002 \003(\0132\017.bean.Hum" +
-      "anInfo\"0\n\014CGCreateRole\022\020\n\010playerId\030\001 \002(\005" +
+      "in\022\020\n\010playerId\030\001 \002(\003\"!\n\rCGGetRoleList\022\020\n" +
+      "\010playerId\030\001 \002(\003\"E\n\rGCGetRoleList\022\020\n\010play" +
+      "erId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \003(\0132\017.bean.Hum" +
+      "anInfo\"0\n\014CGCreateRole\022\020\n\010playerId\030\001 \002(\003" +
       "\022\016\n\006avatar\030\002 \002(\005\"D\n\014GCCreateRole\022\020\n\010play" +
-      "erId\030\001 \002(\005\022\"\n\thumanInfo\030\002 \001(\0132\017.bean.Hum" +
+      "erId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean.Hum" +
       "anInfo\"4\n\020CGSelectRoleList\022\020\n\010playerId\030\001",
-      " \002(\005\022\016\n\006roleId\030\002 \001(\003\"H\n\020GCSelectRoleList" +
-      "\022\020\n\010playerId\030\001 \002(\005\022\"\n\thumanInfo\030\002 \001(\0132\017." +
+      " \002(\003\022\016\n\006roleId\030\002 \001(\003\"H\n\020GCSelectRoleList" +
+      "\022\020\n\010playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017." +
       "bean.HumanInfo\"\210\001\n\tHumanInfo\022\016\n\006roleId\030\001" +
       " \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:" +
       "\0010\022\027\n\014vocationType\030\004 \001(\005:\0010\022\031\n\016allianceT" +

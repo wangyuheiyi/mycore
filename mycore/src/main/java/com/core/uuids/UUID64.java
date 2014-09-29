@@ -1,4 +1,4 @@
-package com.core.uuid;
+package com.core.uuids;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -247,7 +247,7 @@ public class UUID64
 	 */
 	private void checkBitsMaxNum(int bits, long value) {
 		long _bitMax = (1L << bits);
-		if (value >= _bitMax) {
+		if (value > _bitMax) {
 			throw new IllegalArgumentException("Can't represent value [" + value + "] with " + bits + " bits");
 		}
 	}

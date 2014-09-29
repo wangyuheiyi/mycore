@@ -1,4 +1,4 @@
-package com.core.template;
+package com.core.templates;
 
 import java.net.URL;
 import java.util.Map;

@@ -1,4 +1,4 @@
-﻿package com.core.uuid;
+﻿package com.core.uuids;
 
 import java.util.List;
 
