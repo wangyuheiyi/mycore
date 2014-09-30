@@ -5191,6 +5191,42 @@ public final class PlayerBean {
      * </pre>
      */
     int getMoveSpeed();
+
+    // optional int32 roleSkillA = 29 [default = 0];
+    /**
+     * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+     *
+     * <pre>
+     *角色技能A
+     * </pre>
+     */
+    boolean hasRoleSkillA();
+    /**
+     * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+     *
+     * <pre>
+     *角色技能A
+     * </pre>
+     */
+    int getRoleSkillA();
+
+    // optional int32 specialBuilding = 30 [default = 0];
+    /**
+     * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+     *
+     * <pre>
+     *特殊建筑
+     * </pre>
+     */
+    boolean hasSpecialBuilding();
+    /**
+     * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+     *
+     * <pre>
+     *特殊建筑
+     * </pre>
+     */
+    int getSpecialBuilding();
   }
   /**
    * Protobuf type {@code bean.HumanInfo}
@@ -5381,6 +5417,16 @@ public final class PlayerBean {
             case 224: {
               bitField0_ |= 0x08000000;
               moveSpeed_ = input.readInt32();
+              break;
+            }
+            case 232: {
+              bitField0_ |= 0x10000000;
+              roleSkillA_ = input.readInt32();
+              break;
+            }
+            case 240: {
+              bitField0_ |= 0x20000000;
+              specialBuilding_ = input.readInt32();
               break;
             }
           }
@@ -6126,6 +6172,54 @@ public final class PlayerBean {
       return moveSpeed_;
     }
 
+    // optional int32 roleSkillA = 29 [default = 0];
+    public static final int ROLESKILLA_FIELD_NUMBER = 29;
+    private int roleSkillA_;
+    /**
+     * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+     *
+     * <pre>
+     *角色技能A
+     * </pre>
+     */
+    public boolean hasRoleSkillA() {
+      return ((bitField0_ & 0x10000000) == 0x10000000);
+    }
+    /**
+     * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+     *
+     * <pre>
+     *角色技能A
+     * </pre>
+     */
+    public int getRoleSkillA() {
+      return roleSkillA_;
+    }
+
+    // optional int32 specialBuilding = 30 [default = 0];
+    public static final int SPECIALBUILDING_FIELD_NUMBER = 30;
+    private int specialBuilding_;
+    /**
+     * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+     *
+     * <pre>
+     *特殊建筑
+     * </pre>
+     */
+    public boolean hasSpecialBuilding() {
+      return ((bitField0_ & 0x20000000) == 0x20000000);
+    }
+    /**
+     * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+     *
+     * <pre>
+     *特殊建筑
+     * </pre>
+     */
+    public int getSpecialBuilding() {
+      return specialBuilding_;
+    }
+
     private void initFields() {
       roleId_ = 0L;
       roleName_ = "";
@@ -6155,6 +6249,8 @@ public final class PlayerBean {
       avoidDamage_ = 0;
       crit_ = 0;
       moveSpeed_ = 0;
+      roleSkillA_ = 0;
+      specialBuilding_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -6255,6 +6351,12 @@ public final class PlayerBean {
       }
       if (((bitField0_ & 0x08000000) == 0x08000000)) {
         output.writeInt32(28, moveSpeed_);
+      }
+      if (((bitField0_ & 0x10000000) == 0x10000000)) {
+        output.writeInt32(29, roleSkillA_);
+      }
+      if (((bitField0_ & 0x20000000) == 0x20000000)) {
+        output.writeInt32(30, specialBuilding_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -6376,6 +6478,14 @@ public final class PlayerBean {
       if (((bitField0_ & 0x08000000) == 0x08000000)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(28, moveSpeed_);
+      }
+      if (((bitField0_ & 0x10000000) == 0x10000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(29, roleSkillA_);
+      }
+      if (((bitField0_ & 0x20000000) == 0x20000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(30, specialBuilding_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -6549,6 +6659,10 @@ public final class PlayerBean {
         bitField0_ = (bitField0_ & ~0x04000000);
         moveSpeed_ = 0;
         bitField0_ = (bitField0_ & ~0x08000000);
+        roleSkillA_ = 0;
+        bitField0_ = (bitField0_ & ~0x10000000);
+        specialBuilding_ = 0;
+        bitField0_ = (bitField0_ & ~0x20000000);
         return this;
       }
 
@@ -6689,6 +6803,14 @@ public final class PlayerBean {
           to_bitField0_ |= 0x08000000;
         }
         result.moveSpeed_ = moveSpeed_;
+        if (((from_bitField0_ & 0x10000000) == 0x10000000)) {
+          to_bitField0_ |= 0x10000000;
+        }
+        result.roleSkillA_ = roleSkillA_;
+        if (((from_bitField0_ & 0x20000000) == 0x20000000)) {
+          to_bitField0_ |= 0x20000000;
+        }
+        result.specialBuilding_ = specialBuilding_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -6790,6 +6912,12 @@ public final class PlayerBean {
         }
         if (other.hasMoveSpeed()) {
           setMoveSpeed(other.getMoveSpeed());
+        }
+        if (other.hasRoleSkillA()) {
+          setRoleSkillA(other.getRoleSkillA());
+        }
+        if (other.hasSpecialBuilding()) {
+          setSpecialBuilding(other.getSpecialBuilding());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -8243,6 +8371,104 @@ public final class PlayerBean {
         return this;
       }
 
+      // optional int32 roleSkillA = 29 [default = 0];
+      private int roleSkillA_ ;
+      /**
+       * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+       *
+       * <pre>
+       *角色技能A
+       * </pre>
+       */
+      public boolean hasRoleSkillA() {
+        return ((bitField0_ & 0x10000000) == 0x10000000);
+      }
+      /**
+       * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+       *
+       * <pre>
+       *角色技能A
+       * </pre>
+       */
+      public int getRoleSkillA() {
+        return roleSkillA_;
+      }
+      /**
+       * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+       *
+       * <pre>
+       *角色技能A
+       * </pre>
+       */
+      public Builder setRoleSkillA(int value) {
+        bitField0_ |= 0x10000000;
+        roleSkillA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 roleSkillA = 29 [default = 0];</code>
+       *
+       * <pre>
+       *角色技能A
+       * </pre>
+       */
+      public Builder clearRoleSkillA() {
+        bitField0_ = (bitField0_ & ~0x10000000);
+        roleSkillA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 specialBuilding = 30 [default = 0];
+      private int specialBuilding_ ;
+      /**
+       * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+       *
+       * <pre>
+       *特殊建筑
+       * </pre>
+       */
+      public boolean hasSpecialBuilding() {
+        return ((bitField0_ & 0x20000000) == 0x20000000);
+      }
+      /**
+       * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+       *
+       * <pre>
+       *特殊建筑
+       * </pre>
+       */
+      public int getSpecialBuilding() {
+        return specialBuilding_;
+      }
+      /**
+       * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+       *
+       * <pre>
+       *特殊建筑
+       * </pre>
+       */
+      public Builder setSpecialBuilding(int value) {
+        bitField0_ |= 0x20000000;
+        specialBuilding_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 specialBuilding = 30 [default = 0];</code>
+       *
+       * <pre>
+       *特殊建筑
+       * </pre>
+       */
+      public Builder clearSpecialBuilding() {
+        bitField0_ = (bitField0_ & ~0x20000000);
+        specialBuilding_ = 0;
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:bean.HumanInfo)
     }
 
@@ -8320,7 +8546,7 @@ public final class PlayerBean {
       "anInfo\"4\n\020CGSelectRoleList\022\020\n\010playerId\030\001",
       " \002(\003\022\016\n\006roleId\030\002 \001(\003\"H\n\020GCSelectRoleList" +
       "\022\020\n\010playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017." +
-      "bean.HumanInfo\"\274\004\n\tHumanInfo\022\016\n\006roleId\030\001" +
+      "bean.HumanInfo\"\357\004\n\tHumanInfo\022\016\n\006roleId\030\001" +
       " \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:" +
       "\0011\022\027\n\014vocationType\030\004 \001(\005:\0011\022\031\n\016allianceT" +
       "ypeId\030\005 \001(\005:\0011\022\022\n\007diamond\030\006 \001(\005:\0010\022\017\n\004go" +
@@ -8334,8 +8560,9 @@ public final class PlayerBean {
       "defence\030\025 \001(\005:\0010\022\020\n\005magic\030\026 \001(\005:\0010\022\020\n\005lu" +
       "cky\030\027 \001(\005:\0010\022\016\n\003hit\030\030 \001(\005:\0010\022\020\n\005dodge\030\031 " +
       "\001(\005:\0010\022\026\n\013avoidDamage\030\032 \001(\005:\0010\022\017\n\004crit\030\033" +
-      " \001(\005:\0010\022\024\n\tmoveSpeed\030\034 \001(\005:\0010B\034\n\016com.com" +
-      "mon.msgB\nPlayerBean"
+      " \001(\005:\0010\022\024\n\tmoveSpeed\030\034 \001(\005:\0010\022\025\n\nroleSki" +
+      "llA\030\035 \001(\005:\0010\022\032\n\017specialBuilding\030\036 \001(\005:\0010" +
+      "B\034\n\016com.common.msgB\nPlayerBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -8395,7 +8622,7 @@ public final class PlayerBean {
           internal_static_bean_HumanInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_HumanInfo_descriptor,
-              new java.lang.String[] { "RoleId", "RoleName", "Level", "VocationType", "AllianceTypeId", "Diamond", "Gold", "Coupon", "CurExp", "MaxExp", "SceneId", "PrimBagCount", "StoryId", "Avatar", "GuideId", "GuideState", "RoleKind", "VipLevel", "Control", "Attack", "Defence", "Magic", "Lucky", "Hit", "Dodge", "AvoidDamage", "Crit", "MoveSpeed", });
+              new java.lang.String[] { "RoleId", "RoleName", "Level", "VocationType", "AllianceTypeId", "Diamond", "Gold", "Coupon", "CurExp", "MaxExp", "SceneId", "PrimBagCount", "StoryId", "Avatar", "GuideId", "GuideState", "RoleKind", "VipLevel", "Control", "Attack", "Defence", "Magic", "Lucky", "Hit", "Dodge", "AvoidDamage", "Crit", "MoveSpeed", "RoleSkillA", "SpecialBuilding", });
           return null;
         }
       };
