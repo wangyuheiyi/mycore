@@ -3615,7 +3615,7 @@ public final class PlayerBean {
     // @@protoc_insertion_point(class_scope:bean.GCCreateRole)
   }
 
-  public interface CGSelectRoleListOrBuilder
+  public interface CGSelectRoleOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int64 playerId = 1;
@@ -3639,24 +3639,24 @@ public final class PlayerBean {
     long getRoleId();
   }
   /**
-   * Protobuf type {@code bean.CGSelectRoleList}
+   * Protobuf type {@code bean.CGSelectRole}
    */
-  public static final class CGSelectRoleList extends
+  public static final class CGSelectRole extends
       com.google.protobuf.GeneratedMessage
-      implements CGSelectRoleListOrBuilder {
-    // Use CGSelectRoleList.newBuilder() to construct.
-    private CGSelectRoleList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements CGSelectRoleOrBuilder {
+    // Use CGSelectRole.newBuilder() to construct.
+    private CGSelectRole(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private CGSelectRoleList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private CGSelectRole(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final CGSelectRoleList defaultInstance;
-    public static CGSelectRoleList getDefaultInstance() {
+    private static final CGSelectRole defaultInstance;
+    public static CGSelectRole getDefaultInstance() {
       return defaultInstance;
     }
 
-    public CGSelectRoleList getDefaultInstanceForType() {
+    public CGSelectRole getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -3666,7 +3666,7 @@ public final class PlayerBean {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private CGSelectRoleList(
+    private CGSelectRole(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3713,28 +3713,28 @@ public final class PlayerBean {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.common.msg.PlayerBean.internal_static_bean_CGSelectRoleList_descriptor;
+      return com.common.msg.PlayerBean.internal_static_bean_CGSelectRole_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.common.msg.PlayerBean.internal_static_bean_CGSelectRoleList_fieldAccessorTable
+      return com.common.msg.PlayerBean.internal_static_bean_CGSelectRole_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.common.msg.PlayerBean.CGSelectRoleList.class, com.common.msg.PlayerBean.CGSelectRoleList.Builder.class);
+              com.common.msg.PlayerBean.CGSelectRole.class, com.common.msg.PlayerBean.CGSelectRole.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<CGSelectRoleList> PARSER =
-        new com.google.protobuf.AbstractParser<CGSelectRoleList>() {
-      public CGSelectRoleList parsePartialFrom(
+    public static com.google.protobuf.Parser<CGSelectRole> PARSER =
+        new com.google.protobuf.AbstractParser<CGSelectRole>() {
+      public CGSelectRole parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CGSelectRoleList(input, extensionRegistry);
+        return new CGSelectRole(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<CGSelectRoleList> getParserForType() {
+    public com.google.protobuf.Parser<CGSelectRole> getParserForType() {
       return PARSER;
     }
 
@@ -3830,53 +3830,53 @@ public final class PlayerBean {
       return super.writeReplace();
     }
 
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(byte[] data)
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(java.io.InputStream input)
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseDelimitedFrom(java.io.InputStream input)
+    public static com.common.msg.PlayerBean.CGSelectRole parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseDelimitedFrom(
+    public static com.common.msg.PlayerBean.CGSelectRole parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.PlayerBean.CGSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.CGSelectRole parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3885,7 +3885,7 @@ public final class PlayerBean {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.common.msg.PlayerBean.CGSelectRoleList prototype) {
+    public static Builder newBuilder(com.common.msg.PlayerBean.CGSelectRole prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -3897,24 +3897,24 @@ public final class PlayerBean {
       return builder;
     }
     /**
-     * Protobuf type {@code bean.CGSelectRoleList}
+     * Protobuf type {@code bean.CGSelectRole}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.common.msg.PlayerBean.CGSelectRoleListOrBuilder {
+       implements com.common.msg.PlayerBean.CGSelectRoleOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.common.msg.PlayerBean.internal_static_bean_CGSelectRoleList_descriptor;
+        return com.common.msg.PlayerBean.internal_static_bean_CGSelectRole_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.common.msg.PlayerBean.internal_static_bean_CGSelectRoleList_fieldAccessorTable
+        return com.common.msg.PlayerBean.internal_static_bean_CGSelectRole_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.common.msg.PlayerBean.CGSelectRoleList.class, com.common.msg.PlayerBean.CGSelectRoleList.Builder.class);
+                com.common.msg.PlayerBean.CGSelectRole.class, com.common.msg.PlayerBean.CGSelectRole.Builder.class);
       }
 
-      // Construct using com.common.msg.PlayerBean.CGSelectRoleList.newBuilder()
+      // Construct using com.common.msg.PlayerBean.CGSelectRole.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3947,23 +3947,23 @@ public final class PlayerBean {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.common.msg.PlayerBean.internal_static_bean_CGSelectRoleList_descriptor;
+        return com.common.msg.PlayerBean.internal_static_bean_CGSelectRole_descriptor;
       }
 
-      public com.common.msg.PlayerBean.CGSelectRoleList getDefaultInstanceForType() {
-        return com.common.msg.PlayerBean.CGSelectRoleList.getDefaultInstance();
+      public com.common.msg.PlayerBean.CGSelectRole getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.CGSelectRole.getDefaultInstance();
       }
 
-      public com.common.msg.PlayerBean.CGSelectRoleList build() {
-        com.common.msg.PlayerBean.CGSelectRoleList result = buildPartial();
+      public com.common.msg.PlayerBean.CGSelectRole build() {
+        com.common.msg.PlayerBean.CGSelectRole result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.common.msg.PlayerBean.CGSelectRoleList buildPartial() {
-        com.common.msg.PlayerBean.CGSelectRoleList result = new com.common.msg.PlayerBean.CGSelectRoleList(this);
+      public com.common.msg.PlayerBean.CGSelectRole buildPartial() {
+        com.common.msg.PlayerBean.CGSelectRole result = new com.common.msg.PlayerBean.CGSelectRole(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3980,16 +3980,16 @@ public final class PlayerBean {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.common.msg.PlayerBean.CGSelectRoleList) {
-          return mergeFrom((com.common.msg.PlayerBean.CGSelectRoleList)other);
+        if (other instanceof com.common.msg.PlayerBean.CGSelectRole) {
+          return mergeFrom((com.common.msg.PlayerBean.CGSelectRole)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.common.msg.PlayerBean.CGSelectRoleList other) {
-        if (other == com.common.msg.PlayerBean.CGSelectRoleList.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.common.msg.PlayerBean.CGSelectRole other) {
+        if (other == com.common.msg.PlayerBean.CGSelectRole.getDefaultInstance()) return this;
         if (other.hasPlayerId()) {
           setPlayerId(other.getPlayerId());
         }
@@ -4016,11 +4016,11 @@ public final class PlayerBean {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.common.msg.PlayerBean.CGSelectRoleList parsedMessage = null;
+        com.common.msg.PlayerBean.CGSelectRole parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.common.msg.PlayerBean.CGSelectRoleList) e.getUnfinishedMessage();
+          parsedMessage = (com.common.msg.PlayerBean.CGSelectRole) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4097,18 +4097,18 @@ public final class PlayerBean {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:bean.CGSelectRoleList)
+      // @@protoc_insertion_point(builder_scope:bean.CGSelectRole)
     }
 
     static {
-      defaultInstance = new CGSelectRoleList(true);
+      defaultInstance = new CGSelectRole(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:bean.CGSelectRoleList)
+    // @@protoc_insertion_point(class_scope:bean.CGSelectRole)
   }
 
-  public interface GCSelectRoleListOrBuilder
+  public interface GCSelectRoleOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int64 playerId = 1;
@@ -4136,24 +4136,24 @@ public final class PlayerBean {
     com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder();
   }
   /**
-   * Protobuf type {@code bean.GCSelectRoleList}
+   * Protobuf type {@code bean.GCSelectRole}
    */
-  public static final class GCSelectRoleList extends
+  public static final class GCSelectRole extends
       com.google.protobuf.GeneratedMessage
-      implements GCSelectRoleListOrBuilder {
-    // Use GCSelectRoleList.newBuilder() to construct.
-    private GCSelectRoleList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements GCSelectRoleOrBuilder {
+    // Use GCSelectRole.newBuilder() to construct.
+    private GCSelectRole(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private GCSelectRoleList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private GCSelectRole(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final GCSelectRoleList defaultInstance;
-    public static GCSelectRoleList getDefaultInstance() {
+    private static final GCSelectRole defaultInstance;
+    public static GCSelectRole getDefaultInstance() {
       return defaultInstance;
     }
 
-    public GCSelectRoleList getDefaultInstanceForType() {
+    public GCSelectRole getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -4163,7 +4163,7 @@ public final class PlayerBean {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private GCSelectRoleList(
+    private GCSelectRole(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4218,28 +4218,28 @@ public final class PlayerBean {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.common.msg.PlayerBean.internal_static_bean_GCSelectRoleList_descriptor;
+      return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.common.msg.PlayerBean.internal_static_bean_GCSelectRoleList_fieldAccessorTable
+      return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.common.msg.PlayerBean.GCSelectRoleList.class, com.common.msg.PlayerBean.GCSelectRoleList.Builder.class);
+              com.common.msg.PlayerBean.GCSelectRole.class, com.common.msg.PlayerBean.GCSelectRole.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<GCSelectRoleList> PARSER =
-        new com.google.protobuf.AbstractParser<GCSelectRoleList>() {
-      public GCSelectRoleList parsePartialFrom(
+    public static com.google.protobuf.Parser<GCSelectRole> PARSER =
+        new com.google.protobuf.AbstractParser<GCSelectRole>() {
+      public GCSelectRole parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GCSelectRoleList(input, extensionRegistry);
+        return new GCSelectRole(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<GCSelectRoleList> getParserForType() {
+    public com.google.protobuf.Parser<GCSelectRole> getParserForType() {
       return PARSER;
     }
 
@@ -4343,53 +4343,53 @@ public final class PlayerBean {
       return super.writeReplace();
     }
 
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(byte[] data)
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(java.io.InputStream input)
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseDelimitedFrom(java.io.InputStream input)
+    public static com.common.msg.PlayerBean.GCSelectRole parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseDelimitedFrom(
+    public static com.common.msg.PlayerBean.GCSelectRole parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.PlayerBean.GCSelectRoleList parseFrom(
+    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4398,7 +4398,7 @@ public final class PlayerBean {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.common.msg.PlayerBean.GCSelectRoleList prototype) {
+    public static Builder newBuilder(com.common.msg.PlayerBean.GCSelectRole prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -4410,24 +4410,24 @@ public final class PlayerBean {
       return builder;
     }
     /**
-     * Protobuf type {@code bean.GCSelectRoleList}
+     * Protobuf type {@code bean.GCSelectRole}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.common.msg.PlayerBean.GCSelectRoleListOrBuilder {
+       implements com.common.msg.PlayerBean.GCSelectRoleOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRoleList_descriptor;
+        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRoleList_fieldAccessorTable
+        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.common.msg.PlayerBean.GCSelectRoleList.class, com.common.msg.PlayerBean.GCSelectRoleList.Builder.class);
+                com.common.msg.PlayerBean.GCSelectRole.class, com.common.msg.PlayerBean.GCSelectRole.Builder.class);
       }
 
-      // Construct using com.common.msg.PlayerBean.GCSelectRoleList.newBuilder()
+      // Construct using com.common.msg.PlayerBean.GCSelectRole.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4465,23 +4465,23 @@ public final class PlayerBean {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRoleList_descriptor;
+        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_descriptor;
       }
 
-      public com.common.msg.PlayerBean.GCSelectRoleList getDefaultInstanceForType() {
-        return com.common.msg.PlayerBean.GCSelectRoleList.getDefaultInstance();
+      public com.common.msg.PlayerBean.GCSelectRole getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.GCSelectRole.getDefaultInstance();
       }
 
-      public com.common.msg.PlayerBean.GCSelectRoleList build() {
-        com.common.msg.PlayerBean.GCSelectRoleList result = buildPartial();
+      public com.common.msg.PlayerBean.GCSelectRole build() {
+        com.common.msg.PlayerBean.GCSelectRole result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.common.msg.PlayerBean.GCSelectRoleList buildPartial() {
-        com.common.msg.PlayerBean.GCSelectRoleList result = new com.common.msg.PlayerBean.GCSelectRoleList(this);
+      public com.common.msg.PlayerBean.GCSelectRole buildPartial() {
+        com.common.msg.PlayerBean.GCSelectRole result = new com.common.msg.PlayerBean.GCSelectRole(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4502,16 +4502,16 @@ public final class PlayerBean {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.common.msg.PlayerBean.GCSelectRoleList) {
-          return mergeFrom((com.common.msg.PlayerBean.GCSelectRoleList)other);
+        if (other instanceof com.common.msg.PlayerBean.GCSelectRole) {
+          return mergeFrom((com.common.msg.PlayerBean.GCSelectRole)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.common.msg.PlayerBean.GCSelectRoleList other) {
-        if (other == com.common.msg.PlayerBean.GCSelectRoleList.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.common.msg.PlayerBean.GCSelectRole other) {
+        if (other == com.common.msg.PlayerBean.GCSelectRole.getDefaultInstance()) return this;
         if (other.hasPlayerId()) {
           setPlayerId(other.getPlayerId());
         }
@@ -4540,11 +4540,11 @@ public final class PlayerBean {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.common.msg.PlayerBean.GCSelectRoleList parsedMessage = null;
+        com.common.msg.PlayerBean.GCSelectRole parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.common.msg.PlayerBean.GCSelectRoleList) e.getUnfinishedMessage();
+          parsedMessage = (com.common.msg.PlayerBean.GCSelectRole) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4705,15 +4705,15 @@ public final class PlayerBean {
         return humanInfoBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:bean.GCSelectRoleList)
+      // @@protoc_insertion_point(builder_scope:bean.GCSelectRole)
     }
 
     static {
-      defaultInstance = new GCSelectRoleList(true);
+      defaultInstance = new GCSelectRole(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:bean.GCSelectRoleList)
+    // @@protoc_insertion_point(class_scope:bean.GCSelectRole)
   }
 
   public interface HumanInfoOrBuilder
@@ -8551,15 +8551,15 @@ public final class PlayerBean {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_bean_GCCreateRole_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_bean_CGSelectRoleList_descriptor;
+    internal_static_bean_CGSelectRole_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_bean_CGSelectRoleList_fieldAccessorTable;
+      internal_static_bean_CGSelectRole_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_bean_GCSelectRoleList_descriptor;
+    internal_static_bean_GCSelectRole_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_bean_GCSelectRoleList_fieldAccessorTable;
+      internal_static_bean_GCSelectRole_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_bean_HumanInfo_descriptor;
   private static
@@ -8583,26 +8583,26 @@ public final class PlayerBean {
       "anInfo\"4\n\014CGCreateRole\022\020\n\010playerId\030\001 \002(\003" +
       "\022\022\n\ntemplateId\030\002 \002(\005\"D\n\014GCCreateRole\022\020\n\010" +
       "playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean" +
-      ".HumanInfo\"4\n\020CGSelectRoleList\022\020\n\010player",
-      "Id\030\001 \002(\003\022\016\n\006roleId\030\002 \002(\003\"H\n\020GCSelectRole" +
-      "List\022\020\n\010playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(" +
-      "\0132\017.bean.HumanInfo\"\357\004\n\tHumanInfo\022\016\n\006role" +
-      "Id\030\001 \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 " +
-      "\001(\005:\0011\022\027\n\014vocationType\030\004 \001(\005:\0011\022\031\n\016allia" +
-      "nceTypeId\030\005 \001(\005:\0011\022\022\n\007diamond\030\006 \001(\005:\0010\022\017" +
-      "\n\004gold\030\007 \001(\005:\0010\022\021\n\006coupon\030\010 \001(\005:\0010\022\021\n\006cu" +
-      "rExp\030\t \001(\005:\0010\022\021\n\006maxExp\030\n \001(\005:\0010\022\022\n\007scen" +
-      "eId\030\013 \001(\005:\0010\022\027\n\014primBagCount\030\014 \001(\005:\0010\022\022\n" +
-      "\007storyId\030\r \001(\005:\0010\022\021\n\006avatar\030\016 \001(\005:\0011\022\022\n\007",
-      "guideId\030\017 \001(\005:\0010\022\025\n\nguideState\030\020 \001(\005:\0010\022" +
-      "\023\n\010roleKind\030\021 \001(\005:\0010\022\023\n\010vipLevel\030\022 \001(\005:\001" +
-      "0\022\022\n\007control\030\023 \001(\005:\0010\022\021\n\006attack\030\024 \001(\005:\0010" +
-      "\022\022\n\007defence\030\025 \001(\005:\0010\022\020\n\005magic\030\026 \001(\005:\0010\022\020" +
-      "\n\005lucky\030\027 \001(\005:\0010\022\016\n\003hit\030\030 \001(\005:\0010\022\020\n\005dodg" +
-      "e\030\031 \001(\005:\0010\022\026\n\013avoidDamage\030\032 \001(\005:\0010\022\017\n\004cr" +
-      "it\030\033 \001(\005:\0010\022\024\n\tmoveSpeed\030\034 \001(\005:\0010\022\025\n\nrol" +
-      "eSkillA\030\035 \001(\005:\0010\022\032\n\017specialBuilding\030\036 \001(" +
-      "\005:\0010B\034\n\016com.common.msgB\nPlayerBean"
+      ".HumanInfo\"0\n\014CGSelectRole\022\020\n\010playerId\030\001",
+      " \002(\003\022\016\n\006roleId\030\002 \002(\003\"D\n\014GCSelectRole\022\020\n\010" +
+      "playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean" +
+      ".HumanInfo\"\357\004\n\tHumanInfo\022\016\n\006roleId\030\001 \002(\003" +
+      "\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:\0011\022\027" +
+      "\n\014vocationType\030\004 \001(\005:\0011\022\031\n\016allianceTypeI" +
+      "d\030\005 \001(\005:\0011\022\022\n\007diamond\030\006 \001(\005:\0010\022\017\n\004gold\030\007" +
+      " \001(\005:\0010\022\021\n\006coupon\030\010 \001(\005:\0010\022\021\n\006curExp\030\t \001" +
+      "(\005:\0010\022\021\n\006maxExp\030\n \001(\005:\0010\022\022\n\007sceneId\030\013 \001(" +
+      "\005:\0010\022\027\n\014primBagCount\030\014 \001(\005:\0010\022\022\n\007storyId" +
+      "\030\r \001(\005:\0010\022\021\n\006avatar\030\016 \001(\005:\0011\022\022\n\007guideId\030",
+      "\017 \001(\005:\0010\022\025\n\nguideState\030\020 \001(\005:\0010\022\023\n\010roleK" +
+      "ind\030\021 \001(\005:\0010\022\023\n\010vipLevel\030\022 \001(\005:\0010\022\022\n\007con" +
+      "trol\030\023 \001(\005:\0010\022\021\n\006attack\030\024 \001(\005:\0010\022\022\n\007defe" +
+      "nce\030\025 \001(\005:\0010\022\020\n\005magic\030\026 \001(\005:\0010\022\020\n\005lucky\030" +
+      "\027 \001(\005:\0010\022\016\n\003hit\030\030 \001(\005:\0010\022\020\n\005dodge\030\031 \001(\005:" +
+      "\0010\022\026\n\013avoidDamage\030\032 \001(\005:\0010\022\017\n\004crit\030\033 \001(\005" +
+      ":\0010\022\024\n\tmoveSpeed\030\034 \001(\005:\0010\022\025\n\nroleSkillA\030" +
+      "\035 \001(\005:\0010\022\032\n\017specialBuilding\030\036 \001(\005:\0010B\034\n\016" +
+      "com.common.msgB\nPlayerBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -8645,17 +8645,17 @@ public final class PlayerBean {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCCreateRole_descriptor,
               new java.lang.String[] { "PlayerId", "HumanInfo", });
-          internal_static_bean_CGSelectRoleList_descriptor =
+          internal_static_bean_CGSelectRole_descriptor =
             getDescriptor().getMessageTypes().get(6);
-          internal_static_bean_CGSelectRoleList_fieldAccessorTable = new
+          internal_static_bean_CGSelectRole_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_bean_CGSelectRoleList_descriptor,
+              internal_static_bean_CGSelectRole_descriptor,
               new java.lang.String[] { "PlayerId", "RoleId", });
-          internal_static_bean_GCSelectRoleList_descriptor =
+          internal_static_bean_GCSelectRole_descriptor =
             getDescriptor().getMessageTypes().get(7);
-          internal_static_bean_GCSelectRoleList_fieldAccessorTable = new
+          internal_static_bean_GCSelectRole_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_bean_GCSelectRoleList_descriptor,
+              internal_static_bean_GCSelectRole_descriptor,
               new java.lang.String[] { "PlayerId", "HumanInfo", });
           internal_static_bean_HumanInfo_descriptor =
             getDescriptor().getMessageTypes().get(8);

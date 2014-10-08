@@ -13,8 +13,8 @@ public final class BaseBean {
     registry.add(com.common.msg.BaseBean.gcGetRoleList);
     registry.add(com.common.msg.BaseBean.cgCreateRole);
     registry.add(com.common.msg.BaseBean.gcCreateRole);
-    registry.add(com.common.msg.BaseBean.cgSelectRoleList);
-    registry.add(com.common.msg.BaseBean.gcSelectRoleList);
+    registry.add(com.common.msg.BaseBean.cgSelectRole);
+    registry.add(com.common.msg.BaseBean.gcSelectRole);
     registry.add(com.common.msg.BaseBean.missionInfo);
     registry.add(com.common.msg.BaseBean.missionReward);
   }
@@ -266,13 +266,13 @@ public final class BaseBean {
        */
       GCCREATEROLE(5, 6),
       /**
-       * <code>CGSELECTROLELIST = 7;</code>
+       * <code>CGSELECTROLE = 7;</code>
        */
-      CGSELECTROLELIST(6, 7),
+      CGSELECTROLE(6, 7),
       /**
-       * <code>GCSELECTROLELIST = 8;</code>
+       * <code>GCSELECTROLE = 8;</code>
        */
-      GCSELECTROLELIST(7, 8),
+      GCSELECTROLE(7, 8),
       /**
        * <code>MISSIONINFO = 9;</code>
        */
@@ -308,13 +308,13 @@ public final class BaseBean {
        */
       public static final int GCCREATEROLE_VALUE = 6;
       /**
-       * <code>CGSELECTROLELIST = 7;</code>
+       * <code>CGSELECTROLE = 7;</code>
        */
-      public static final int CGSELECTROLELIST_VALUE = 7;
+      public static final int CGSELECTROLE_VALUE = 7;
       /**
-       * <code>GCSELECTROLELIST = 8;</code>
+       * <code>GCSELECTROLE = 8;</code>
        */
-      public static final int GCSELECTROLELIST_VALUE = 8;
+      public static final int GCSELECTROLE_VALUE = 8;
       /**
        * <code>MISSIONINFO = 9;</code>
        */
@@ -335,8 +335,8 @@ public final class BaseBean {
           case 4: return GCGETROLELIST;
           case 5: return CGCREATEROLE;
           case 6: return GCCREATEROLE;
-          case 7: return CGSELECTROLELIST;
-          case 8: return GCSELECTROLELIST;
+          case 7: return CGSELECTROLE;
+          case 8: return GCSELECTROLE;
           case 9: return MISSIONINFO;
           case 10: return MISSIONREWARD;
           default: return null;
@@ -846,28 +846,28 @@ public final class BaseBean {
           .newFileScopedGeneratedExtension(
         com.common.msg.PlayerBean.GCCreateRole.class,
         com.common.msg.PlayerBean.GCCreateRole.getDefaultInstance());
-  public static final int CGSELECTROLELIST_FIELD_NUMBER = 106;
+  public static final int CGSELECTROLE_FIELD_NUMBER = 106;
   /**
    * <code>extend .bean.BaseMessage { ... }</code>
    */
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.common.msg.BaseBean.BaseMessage,
-      com.common.msg.PlayerBean.CGSelectRoleList> cgSelectRoleList = com.google.protobuf.GeneratedMessage
+      com.common.msg.PlayerBean.CGSelectRole> cgSelectRole = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        com.common.msg.PlayerBean.CGSelectRoleList.class,
-        com.common.msg.PlayerBean.CGSelectRoleList.getDefaultInstance());
-  public static final int GCSELECTROLELIST_FIELD_NUMBER = 107;
+        com.common.msg.PlayerBean.CGSelectRole.class,
+        com.common.msg.PlayerBean.CGSelectRole.getDefaultInstance());
+  public static final int GCSELECTROLE_FIELD_NUMBER = 107;
   /**
    * <code>extend .bean.BaseMessage { ... }</code>
    */
   public static final
     com.google.protobuf.GeneratedMessage.GeneratedExtension<
       com.common.msg.BaseBean.BaseMessage,
-      com.common.msg.PlayerBean.GCSelectRoleList> gcSelectRoleList = com.google.protobuf.GeneratedMessage
+      com.common.msg.PlayerBean.GCSelectRole> gcSelectRole = com.google.protobuf.GeneratedMessage
           .newFileScopedGeneratedExtension(
-        com.common.msg.PlayerBean.GCSelectRoleList.class,
-        com.common.msg.PlayerBean.GCSelectRoleList.getDefaultInstance());
+        com.common.msg.PlayerBean.GCSelectRole.class,
+        com.common.msg.PlayerBean.GCSelectRole.getDefaultInstance());
   public static final int MISSIONINFO_FIELD_NUMBER = 200;
   /**
    * <code>extend .bean.BaseMessage { ... }</code>
@@ -905,33 +905,33 @@ public final class BaseBean {
   static {
     java.lang.String[] descriptorData = {
       "\n\rmessage.proto\022\004bean\032\rmission.proto\032\014pl" +
-      "ayer.proto\"\371\002\n\013BaseMessage\022$\n\004type\030\001 \002(\016" +
+      "ayer.proto\"\361\002\n\013BaseMessage\022$\n\004type\030\001 \002(\016" +
       "2\026.bean.BaseMessage.Type\0222\n\013messageCode\030" +
       "\002 \002(\0162\035.bean.BaseMessage.MessageCode\",\n\004" +
       "Type\022\021\n\rGLOBALMESSAGE\020\001\022\021\n\rPLAYERMESSAGE" +
-      "\020\002\"\327\001\n\013MessageCode\022\026\n\022CGPLAYERCHECKLOGIN" +
+      "\020\002\"\317\001\n\013MessageCode\022\026\n\022CGPLAYERCHECKLOGIN" +
       "\020\001\022\026\n\022GCPLAYERCHECKLOGIN\020\002\022\021\n\rCGGETROLEL" +
       "IST\020\003\022\021\n\rGCGETROLELIST\020\004\022\020\n\014CGCREATEROLE" +
-      "\020\005\022\020\n\014GCCREATEROLE\020\006\022\024\n\020CGSELECTROLELIST" +
-      "\020\007\022\024\n\020GCSELECTROLELIST\020\010\022\017\n\013MISSIONINFO\020",
-      "\t\022\021\n\rMISSIONREWARD\020\n*\010\010d\020\200\200\200\200\002:G\n\022cgPlay" +
-      "erCheckLogin\022\021.bean.BaseMessage\030d \001(\0132\030." +
-      "bean.CGPlayerCheckLogin:G\n\022gcPlayerCheck" +
-      "Login\022\021.bean.BaseMessage\030e \001(\0132\030.bean.GC" +
-      "PlayerCheckLogin:=\n\rcgGetRoleList\022\021.bean" +
-      ".BaseMessage\030f \001(\0132\023.bean.CGGetRoleList:" +
-      "=\n\rgcGetRoleList\022\021.bean.BaseMessage\030g \001(" +
-      "\0132\023.bean.GCGetRoleList:;\n\014cgCreateRole\022\021" +
-      ".bean.BaseMessage\030h \001(\0132\022.bean.CGCreateR" +
-      "ole:;\n\014gcCreateRole\022\021.bean.BaseMessage\030i",
-      " \001(\0132\022.bean.GCCreateRole:C\n\020cgSelectRole" +
-      "List\022\021.bean.BaseMessage\030j \001(\0132\026.bean.CGS" +
-      "electRoleList:C\n\020gcSelectRoleList\022\021.bean" +
-      ".BaseMessage\030k \001(\0132\026.bean.GCSelectRoleLi" +
-      "st::\n\013missionInfo\022\021.bean.BaseMessage\030\310\001 " +
-      "\001(\0132\021.bean.MissionInfo:>\n\rmissionReward\022" +
-      "\021.bean.BaseMessage\030\311\001 \001(\0132\023.bean.Mission" +
-      "RewardB\032\n\016com.common.msgB\010BaseBean"
+      "\020\005\022\020\n\014GCCREATEROLE\020\006\022\020\n\014CGSELECTROLE\020\007\022\020" +
+      "\n\014GCSELECTROLE\020\010\022\017\n\013MISSIONINFO\020\t\022\021\n\rMIS",
+      "SIONREWARD\020\n*\010\010d\020\200\200\200\200\002:G\n\022cgPlayerCheckL" +
+      "ogin\022\021.bean.BaseMessage\030d \001(\0132\030.bean.CGP" +
+      "layerCheckLogin:G\n\022gcPlayerCheckLogin\022\021." +
+      "bean.BaseMessage\030e \001(\0132\030.bean.GCPlayerCh" +
+      "eckLogin:=\n\rcgGetRoleList\022\021.bean.BaseMes" +
+      "sage\030f \001(\0132\023.bean.CGGetRoleList:=\n\rgcGet" +
+      "RoleList\022\021.bean.BaseMessage\030g \001(\0132\023.bean" +
+      ".GCGetRoleList:;\n\014cgCreateRole\022\021.bean.Ba" +
+      "seMessage\030h \001(\0132\022.bean.CGCreateRole:;\n\014g" +
+      "cCreateRole\022\021.bean.BaseMessage\030i \001(\0132\022.b",
+      "ean.GCCreateRole:;\n\014cgSelectRole\022\021.bean." +
+      "BaseMessage\030j \001(\0132\022.bean.CGSelectRole:;\n" +
+      "\014gcSelectRole\022\021.bean.BaseMessage\030k \001(\0132\022" +
+      ".bean.GCSelectRole::\n\013missionInfo\022\021.bean" +
+      ".BaseMessage\030\310\001 \001(\0132\021.bean.MissionInfo:>" +
+      "\n\rmissionReward\022\021.bean.BaseMessage\030\311\001 \001(" +
+      "\0132\023.bean.MissionRewardB\032\n\016com.common.msg" +
+      "B\010BaseBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -950,8 +950,8 @@ public final class BaseBean {
           gcGetRoleList.internalInit(descriptor.getExtensions().get(3));
           cgCreateRole.internalInit(descriptor.getExtensions().get(4));
           gcCreateRole.internalInit(descriptor.getExtensions().get(5));
-          cgSelectRoleList.internalInit(descriptor.getExtensions().get(6));
-          gcSelectRoleList.internalInit(descriptor.getExtensions().get(7));
+          cgSelectRole.internalInit(descriptor.getExtensions().get(6));
+          gcSelectRole.internalInit(descriptor.getExtensions().get(7));
           missionInfo.internalInit(descriptor.getExtensions().get(8));
           missionReward.internalInit(descriptor.getExtensions().get(9));
           return null;
