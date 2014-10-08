@@ -2435,15 +2435,23 @@ public final class PlayerBean {
      */
     long getPlayerId();
 
-    // required int32 avatar = 2;
+    // required int32 templateId = 2;
     /**
-     * <code>required int32 avatar = 2;</code>
+     * <code>required int32 templateId = 2;</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
      */
-    boolean hasAvatar();
+    boolean hasTemplateId();
     /**
-     * <code>required int32 avatar = 2;</code>
+     * <code>required int32 templateId = 2;</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
      */
-    int getAvatar();
+    int getTemplateId();
   }
   /**
    * Protobuf type {@code bean.CGCreateRole}
@@ -2503,7 +2511,7 @@ public final class PlayerBean {
             }
             case 16: {
               bitField0_ |= 0x00000002;
-              avatar_ = input.readInt32();
+              templateId_ = input.readInt32();
               break;
             }
           }
@@ -2562,25 +2570,33 @@ public final class PlayerBean {
       return playerId_;
     }
 
-    // required int32 avatar = 2;
-    public static final int AVATAR_FIELD_NUMBER = 2;
-    private int avatar_;
+    // required int32 templateId = 2;
+    public static final int TEMPLATEID_FIELD_NUMBER = 2;
+    private int templateId_;
     /**
-     * <code>required int32 avatar = 2;</code>
+     * <code>required int32 templateId = 2;</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
      */
-    public boolean hasAvatar() {
+    public boolean hasTemplateId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required int32 avatar = 2;</code>
+     * <code>required int32 templateId = 2;</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
      */
-    public int getAvatar() {
-      return avatar_;
+    public int getTemplateId() {
+      return templateId_;
     }
 
     private void initFields() {
       playerId_ = 0L;
-      avatar_ = 0;
+      templateId_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2591,7 +2607,7 @@ public final class PlayerBean {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasAvatar()) {
+      if (!hasTemplateId()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2606,7 +2622,7 @@ public final class PlayerBean {
         output.writeInt64(1, playerId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, avatar_);
+        output.writeInt32(2, templateId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2623,7 +2639,7 @@ public final class PlayerBean {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, avatar_);
+          .computeInt32Size(2, templateId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2743,7 +2759,7 @@ public final class PlayerBean {
         super.clear();
         playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
-        avatar_ = 0;
+        templateId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -2780,7 +2796,7 @@ public final class PlayerBean {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.avatar_ = avatar_;
+        result.templateId_ = templateId_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2800,8 +2816,8 @@ public final class PlayerBean {
         if (other.hasPlayerId()) {
           setPlayerId(other.getPlayerId());
         }
-        if (other.hasAvatar()) {
-          setAvatar(other.getAvatar());
+        if (other.hasTemplateId()) {
+          setTemplateId(other.getTemplateId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -2812,7 +2828,7 @@ public final class PlayerBean {
           
           return false;
         }
-        if (!hasAvatar()) {
+        if (!hasTemplateId()) {
           
           return false;
         }
@@ -2871,35 +2887,51 @@ public final class PlayerBean {
         return this;
       }
 
-      // required int32 avatar = 2;
-      private int avatar_ ;
+      // required int32 templateId = 2;
+      private int templateId_ ;
       /**
-       * <code>required int32 avatar = 2;</code>
+       * <code>required int32 templateId = 2;</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
        */
-      public boolean hasAvatar() {
+      public boolean hasTemplateId() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required int32 avatar = 2;</code>
+       * <code>required int32 templateId = 2;</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
        */
-      public int getAvatar() {
-        return avatar_;
+      public int getTemplateId() {
+        return templateId_;
       }
       /**
-       * <code>required int32 avatar = 2;</code>
+       * <code>required int32 templateId = 2;</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
        */
-      public Builder setAvatar(int value) {
+      public Builder setTemplateId(int value) {
         bitField0_ |= 0x00000002;
-        avatar_ = value;
+        templateId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 avatar = 2;</code>
+       * <code>required int32 templateId = 2;</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
        */
-      public Builder clearAvatar() {
+      public Builder clearTemplateId() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        avatar_ = 0;
+        templateId_ = 0;
         onChanged();
         return this;
       }
@@ -3596,13 +3628,13 @@ public final class PlayerBean {
      */
     long getPlayerId();
 
-    // optional int64 roleId = 2;
+    // required int64 roleId = 2;
     /**
-     * <code>optional int64 roleId = 2;</code>
+     * <code>required int64 roleId = 2;</code>
      */
     boolean hasRoleId();
     /**
-     * <code>optional int64 roleId = 2;</code>
+     * <code>required int64 roleId = 2;</code>
      */
     long getRoleId();
   }
@@ -3723,17 +3755,17 @@ public final class PlayerBean {
       return playerId_;
     }
 
-    // optional int64 roleId = 2;
+    // required int64 roleId = 2;
     public static final int ROLEID_FIELD_NUMBER = 2;
     private long roleId_;
     /**
-     * <code>optional int64 roleId = 2;</code>
+     * <code>required int64 roleId = 2;</code>
      */
     public boolean hasRoleId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional int64 roleId = 2;</code>
+     * <code>required int64 roleId = 2;</code>
      */
     public long getRoleId() {
       return roleId_;
@@ -3749,6 +3781,10 @@ public final class PlayerBean {
       if (isInitialized != -1) return isInitialized == 1;
 
       if (!hasPlayerId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasRoleId()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -3969,6 +4005,10 @@ public final class PlayerBean {
           
           return false;
         }
+        if (!hasRoleId()) {
+          
+          return false;
+        }
         return true;
       }
 
@@ -4024,22 +4064,22 @@ public final class PlayerBean {
         return this;
       }
 
-      // optional int64 roleId = 2;
+      // required int64 roleId = 2;
       private long roleId_ ;
       /**
-       * <code>optional int64 roleId = 2;</code>
+       * <code>required int64 roleId = 2;</code>
        */
       public boolean hasRoleId() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional int64 roleId = 2;</code>
+       * <code>required int64 roleId = 2;</code>
        */
       public long getRoleId() {
         return roleId_;
       }
       /**
-       * <code>optional int64 roleId = 2;</code>
+       * <code>required int64 roleId = 2;</code>
        */
       public Builder setRoleId(long value) {
         bitField0_ |= 0x00000002;
@@ -4048,7 +4088,7 @@ public final class PlayerBean {
         return this;
       }
       /**
-       * <code>optional int64 roleId = 2;</code>
+       * <code>required int64 roleId = 2;</code>
        */
       public Builder clearRoleId() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -8540,29 +8580,29 @@ public final class PlayerBean {
       "in\022\020\n\010playerId\030\001 \002(\003\"!\n\rCGGetRoleList\022\020\n" +
       "\010playerId\030\001 \002(\003\"E\n\rGCGetRoleList\022\020\n\010play" +
       "erId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \003(\0132\017.bean.Hum" +
-      "anInfo\"0\n\014CGCreateRole\022\020\n\010playerId\030\001 \002(\003" +
-      "\022\016\n\006avatar\030\002 \002(\005\"D\n\014GCCreateRole\022\020\n\010play" +
-      "erId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean.Hum" +
-      "anInfo\"4\n\020CGSelectRoleList\022\020\n\010playerId\030\001",
-      " \002(\003\022\016\n\006roleId\030\002 \001(\003\"H\n\020GCSelectRoleList" +
-      "\022\020\n\010playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017." +
-      "bean.HumanInfo\"\357\004\n\tHumanInfo\022\016\n\006roleId\030\001" +
-      " \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:" +
-      "\0011\022\027\n\014vocationType\030\004 \001(\005:\0011\022\031\n\016allianceT" +
-      "ypeId\030\005 \001(\005:\0011\022\022\n\007diamond\030\006 \001(\005:\0010\022\017\n\004go" +
-      "ld\030\007 \001(\005:\0010\022\021\n\006coupon\030\010 \001(\005:\0010\022\021\n\006curExp" +
-      "\030\t \001(\005:\0010\022\021\n\006maxExp\030\n \001(\005:\0010\022\022\n\007sceneId\030" +
-      "\013 \001(\005:\0010\022\027\n\014primBagCount\030\014 \001(\005:\0010\022\022\n\007sto" +
-      "ryId\030\r \001(\005:\0010\022\021\n\006avatar\030\016 \001(\005:\0011\022\022\n\007guid",
-      "eId\030\017 \001(\005:\0010\022\025\n\nguideState\030\020 \001(\005:\0010\022\023\n\010r" +
-      "oleKind\030\021 \001(\005:\0010\022\023\n\010vipLevel\030\022 \001(\005:\0010\022\022\n" +
-      "\007control\030\023 \001(\005:\0010\022\021\n\006attack\030\024 \001(\005:\0010\022\022\n\007" +
-      "defence\030\025 \001(\005:\0010\022\020\n\005magic\030\026 \001(\005:\0010\022\020\n\005lu" +
-      "cky\030\027 \001(\005:\0010\022\016\n\003hit\030\030 \001(\005:\0010\022\020\n\005dodge\030\031 " +
-      "\001(\005:\0010\022\026\n\013avoidDamage\030\032 \001(\005:\0010\022\017\n\004crit\030\033" +
-      " \001(\005:\0010\022\024\n\tmoveSpeed\030\034 \001(\005:\0010\022\025\n\nroleSki" +
-      "llA\030\035 \001(\005:\0010\022\032\n\017specialBuilding\030\036 \001(\005:\0010" +
-      "B\034\n\016com.common.msgB\nPlayerBean"
+      "anInfo\"4\n\014CGCreateRole\022\020\n\010playerId\030\001 \002(\003" +
+      "\022\022\n\ntemplateId\030\002 \002(\005\"D\n\014GCCreateRole\022\020\n\010" +
+      "playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean" +
+      ".HumanInfo\"4\n\020CGSelectRoleList\022\020\n\010player",
+      "Id\030\001 \002(\003\022\016\n\006roleId\030\002 \002(\003\"H\n\020GCSelectRole" +
+      "List\022\020\n\010playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(" +
+      "\0132\017.bean.HumanInfo\"\357\004\n\tHumanInfo\022\016\n\006role" +
+      "Id\030\001 \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 " +
+      "\001(\005:\0011\022\027\n\014vocationType\030\004 \001(\005:\0011\022\031\n\016allia" +
+      "nceTypeId\030\005 \001(\005:\0011\022\022\n\007diamond\030\006 \001(\005:\0010\022\017" +
+      "\n\004gold\030\007 \001(\005:\0010\022\021\n\006coupon\030\010 \001(\005:\0010\022\021\n\006cu" +
+      "rExp\030\t \001(\005:\0010\022\021\n\006maxExp\030\n \001(\005:\0010\022\022\n\007scen" +
+      "eId\030\013 \001(\005:\0010\022\027\n\014primBagCount\030\014 \001(\005:\0010\022\022\n" +
+      "\007storyId\030\r \001(\005:\0010\022\021\n\006avatar\030\016 \001(\005:\0011\022\022\n\007",
+      "guideId\030\017 \001(\005:\0010\022\025\n\nguideState\030\020 \001(\005:\0010\022" +
+      "\023\n\010roleKind\030\021 \001(\005:\0010\022\023\n\010vipLevel\030\022 \001(\005:\001" +
+      "0\022\022\n\007control\030\023 \001(\005:\0010\022\021\n\006attack\030\024 \001(\005:\0010" +
+      "\022\022\n\007defence\030\025 \001(\005:\0010\022\020\n\005magic\030\026 \001(\005:\0010\022\020" +
+      "\n\005lucky\030\027 \001(\005:\0010\022\016\n\003hit\030\030 \001(\005:\0010\022\020\n\005dodg" +
+      "e\030\031 \001(\005:\0010\022\026\n\013avoidDamage\030\032 \001(\005:\0010\022\017\n\004cr" +
+      "it\030\033 \001(\005:\0010\022\024\n\tmoveSpeed\030\034 \001(\005:\0010\022\025\n\nrol" +
+      "eSkillA\030\035 \001(\005:\0010\022\032\n\017specialBuilding\030\036 \001(" +
+      "\005:\0010B\034\n\016com.common.msgB\nPlayerBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -8598,7 +8638,7 @@ public final class PlayerBean {
           internal_static_bean_CGCreateRole_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_CGCreateRole_descriptor,
-              new java.lang.String[] { "PlayerId", "Avatar", });
+              new java.lang.String[] { "PlayerId", "TemplateId", });
           internal_static_bean_GCCreateRole_descriptor =
             getDescriptor().getMessageTypes().get(5);
           internal_static_bean_GCCreateRole_fieldAccessorTable = new

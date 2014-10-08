@@ -15,7 +15,7 @@ public interface AsyncService
 	 * @param operation
 	 * @return
 	 */
-	public abstract AsyncOperation createOperationAndExecuteAtOnce(IIoOperation operation);
+	public abstract SyncOperation createOperationAndExecuteAtOnce(IIoOperation operation);
 	
 	/**
 	 * 创建一个同步操作,并且马上执行

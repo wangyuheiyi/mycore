@@ -9,6 +9,9 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
 
 
 /**
@@ -439,5 +442,44 @@ public class StringUtils
 		}
 		
 		return true;
+	}
+	
+	/**
+	 * 将obj转变为String表示
+	 * 
+	 * @param obj
+	 * @param excludes
+	 * @return
+	 */
+	public static String obj2String(Object obj, Map<String, Boolean> excludes) {
+		BaseReflectionToStringBuilder _builder = new BaseReflectionToStringBuilder(
+				obj, ToStringStyle.SHORT_PREFIX_STYLE, excludes);
+		return _builder.toString();
+	}
+	
+	/**
+	 * 重载ReflectionToStringBuilder,用于将BaseMessage用字符串表示,但是不处理buf字段
+	 * 
+	  *
+	 * 
+	 */
+	private static class BaseReflectionToStringBuilder extends
+			ReflectionToStringBuilder {
+		private final Map<String, Boolean> excludes;
+
+		public BaseReflectionToStringBuilder(Object object,
+				ToStringStyle style, Map<String, Boolean> excludes) {
+			super(object, style);
+			this.excludes = excludes;
+		}
+
+		@Override
+		protected boolean accept(Field field) {
+			boolean _accepted = true;
+			if (this.excludes != null) {
+				_accepted = this.excludes.get(field.getName()) == null;
+			}
+			return super.accept(field) && _accepted;
+		}
 	}
 }
