@@ -8,16 +8,16 @@ import java.util.BitSet;
  * @author Thinker
  * 
  */
-public class GenericPropertyArray<T> 
+public class GenericPropertyArray
 {
 	
-	private final T[] values;
+	private final int[] values;
 	private final BitSet bitSet;
 
 	@SuppressWarnings("unchecked")
-	public GenericPropertyArray(Class<T> clazz,int size)
+	public GenericPropertyArray(int size)
 	{
-		values =(T[]) Array.newInstance(clazz,size);
+		values = new int[size];
 		bitSet = new BitSet(size);
 	}
 
@@ -27,7 +27,7 @@ public class GenericPropertyArray<T>
 	 * @param src
 	 *            数据的来源
 	 */
-	public void copyFrom(GenericPropertyArray<T> src)
+	public void copyFrom(GenericPropertyArray src)
 	{
 		System.arraycopy(src.values, 0, values, 0, values.length);
 		this.bitSet.set(0, values.length, true);
@@ -55,22 +55,19 @@ public class GenericPropertyArray<T>
 	}
 	
 	
-	public T get(int index)
+	public int get(int index)
 	{
 		return values[index];
 	}
 	
-	public void set(int index, T val)
+	public void set(int index, int val)
 	{
-		T _old = this.values[index];
+		int _old = this.values[index];
 		boolean _changed = false;
-		if (_old != null)
+		if (_old != 0)
 		{
-			if (!_old.equals(val)) 
-			{
-				_changed = true;
-			}
-		} else if (val != null) 
+			_changed = true;
+		} else if (val != 0) 
 		{
 			_changed = true;
 		}
@@ -109,12 +106,12 @@ public class GenericPropertyArray<T>
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	public KeyValuePair<Integer,T>[] getChanged()
+	public KeyValuePair<Integer,Integer>[] getChanged()
 	{
-		KeyValuePair<Integer,T>[] _changed=new KeyValuePair[bitSet.cardinality()];
+		KeyValuePair<Integer,Integer>[] _changed=new KeyValuePair[bitSet.cardinality()];
 		for (int i = bitSet.nextSetBit(0), j = 0; i >= 0; i = bitSet.nextSetBit(i + 1), j++)
 		{
-			_changed[j]=new KeyValuePair<Integer,T>(i,values[i]);
+			_changed[j]=new KeyValuePair<Integer,Integer>(i,values[i]);
 		}
 		return _changed;
 	}
@@ -124,4 +121,51 @@ public class GenericPropertyArray<T>
 		return StringUtils.obj2String(this, null);
 	}
 
+	
+	/**
+	 * 清空状态,将values重置为0;将所有属性都设置为changed
+	 */
+	public void clear()
+	{
+		for (int i = 0; i < values.length; i++)
+		{
+			if (values[i]!=0)
+			{
+				this.bitSet.set(i);
+			}
+			
+			values[i] = 0;
+		}
+	}
+	
+	/**
+	 * 增加index对应的值
+	 * 
+	 * @param index
+	 *            属性的索引
+	 * @param value
+	 *            将要增加的值
+	 * @return 增加后的值
+	 */
+	public int add(int index, int value)
+	{
+		int _o = values[index];
+		if (value!=0) 
+		{
+			int _n = _o + value;
+			values[index] = _n;
+			bitSet.set(index);
+		}
+		return values[index];
+	}
+	
+	public KeyValuePair<Integer, Float>[] getIndexValuePairs()
+	{
+		KeyValuePair<Integer, Float>[] indexValuePairs = KeyValuePair.newKeyValuePairArray(values.length);
+		for (int i = 0; i < indexValuePairs.length; i++) 
+		{
+			indexValuePairs[i] = new KeyValuePair<Integer, Float>(Integer.valueOf(i), Float.valueOf(values[i]));
+		}
+		return indexValuePairs;
+	}
 }
