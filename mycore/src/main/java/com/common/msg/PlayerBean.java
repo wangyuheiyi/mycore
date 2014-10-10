@@ -5683,6 +5683,16 @@ public final class PlayerBean {
   public interface GCEnterSceneOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
+    // required int64 roleId = 1;
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    boolean hasRoleId();
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    long getRoleId();
+
     // required int32 sceneId = 2;
     /**
      * <code>required int32 sceneId = 2;</code>
@@ -5752,8 +5762,13 @@ public final class PlayerBean {
               }
               break;
             }
-            case 16: {
+            case 8: {
               bitField0_ |= 0x00000001;
+              roleId_ = input.readInt64();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
               sceneId_ = input.readInt32();
               break;
             }
@@ -5797,6 +5812,22 @@ public final class PlayerBean {
     }
 
     private int bitField0_;
+    // required int64 roleId = 1;
+    public static final int ROLEID_FIELD_NUMBER = 1;
+    private long roleId_;
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    public boolean hasRoleId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    public long getRoleId() {
+      return roleId_;
+    }
+
     // required int32 sceneId = 2;
     public static final int SCENEID_FIELD_NUMBER = 2;
     private int sceneId_;
@@ -5808,7 +5839,7 @@ public final class PlayerBean {
      * </pre>
      */
     public boolean hasSceneId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
+      return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
      * <code>required int32 sceneId = 2;</code>
@@ -5822,6 +5853,7 @@ public final class PlayerBean {
     }
 
     private void initFields() {
+      roleId_ = 0L;
       sceneId_ = 0;
     }
     private byte memoizedIsInitialized = -1;
@@ -5829,6 +5861,10 @@ public final class PlayerBean {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
+      if (!hasRoleId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       if (!hasSceneId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -5841,6 +5877,9 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt64(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeInt32(2, sceneId_);
       }
       getUnknownFields().writeTo(output);
@@ -5853,6 +5892,10 @@ public final class PlayerBean {
 
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, sceneId_);
       }
@@ -5972,8 +6015,10 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        sceneId_ = 0;
+        roleId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
+        sceneId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -6005,6 +6050,10 @@ public final class PlayerBean {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
+        result.roleId_ = roleId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
         result.sceneId_ = sceneId_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -6022,6 +6071,9 @@ public final class PlayerBean {
 
       public Builder mergeFrom(com.common.msg.PlayerBean.GCEnterScene other) {
         if (other == com.common.msg.PlayerBean.GCEnterScene.getDefaultInstance()) return this;
+        if (other.hasRoleId()) {
+          setRoleId(other.getRoleId());
+        }
         if (other.hasSceneId()) {
           setSceneId(other.getSceneId());
         }
@@ -6030,6 +6082,10 @@ public final class PlayerBean {
       }
 
       public final boolean isInitialized() {
+        if (!hasRoleId()) {
+          
+          return false;
+        }
         if (!hasSceneId()) {
           
           return false;
@@ -6056,6 +6112,39 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
+      // required int64 roleId = 1;
+      private long roleId_ ;
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public boolean hasRoleId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public long getRoleId() {
+        return roleId_;
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public Builder setRoleId(long value) {
+        bitField0_ |= 0x00000001;
+        roleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public Builder clearRoleId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        roleId_ = 0L;
+        onChanged();
+        return this;
+      }
+
       // required int32 sceneId = 2;
       private int sceneId_ ;
       /**
@@ -6066,7 +6155,7 @@ public final class PlayerBean {
        * </pre>
        */
       public boolean hasSceneId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
        * <code>required int32 sceneId = 2;</code>
@@ -6086,7 +6175,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder setSceneId(int value) {
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         sceneId_ = value;
         onChanged();
         return this;
@@ -6099,7 +6188,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder clearSceneId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         sceneId_ = 0;
         onChanged();
         return this;
@@ -8420,17 +8509,18 @@ public final class PlayerBean {
       " \002(\003\022\016\n\006roleId\030\002 \002(\003\"0\n\014CGRoleReName\022\016\n\006" +
       "roleId\030\001 \002(\003\022\020\n\010roleName\030\002 \002(\t\" \n\014GCRole" +
       "ReName\022\020\n\010roleName\030\001 \002(\t\"/\n\014CGEnterScene" +
-      "\022\016\n\006roleId\030\001 \002(\003\022\017\n\007sceneId\030\002 \002(\005\"\037\n\014GCE" +
-      "nterScene\022\017\n\007sceneId\030\002 \002(\005\"\320\002\n\tHumanInfo" +
-      "\022\016\n\006roleId\030\001 \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005" +
-      "level\030\003 \001(\005:\0011\022\031\n\016allianceTypeId\030\004 \001(\005:\001" +
-      "1\022\022\n\007diamond\030\005 \001(\005:\0010\022\017\n\004gold\030\006 \001(\005:\0010\022\021" +
-      "\n\006coupon\030\007 \001(\005:\0010\022\021\n\006curExp\030\010 \001(\005:\0010\022\021\n\006" +
-      "maxExp\030\t \001(\005:\0010\022\022\n\007sceneId\030\n \001(\005:\0010\022\027\n\014p",
-      "rimBagCount\030\013 \001(\005:\0010\022\022\n\007storyId\030\014 \001(\005:\0010" +
-      "\022\022\n\007guideId\030\r \001(\005:\0010\022\025\n\nguideState\030\016 \001(\005" +
-      ":\0010\022\023\n\010roleKind\030\017 \001(\005:\0010\022\023\n\010vipLevel\030\020 \001" +
-      "(\005:\0010B\034\n\016com.common.msgB\nPlayerBean"
+      "\022\016\n\006roleId\030\001 \002(\003\022\017\n\007sceneId\030\002 \002(\005\"/\n\014GCE" +
+      "nterScene\022\016\n\006roleId\030\001 \002(\003\022\017\n\007sceneId\030\002 \002" +
+      "(\005\"\320\002\n\tHumanInfo\022\016\n\006roleId\030\001 \002(\003\022\022\n\010role" +
+      "Name\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:\0011\022\031\n\016allian" +
+      "ceTypeId\030\004 \001(\005:\0011\022\022\n\007diamond\030\005 \001(\005:\0010\022\017\n" +
+      "\004gold\030\006 \001(\005:\0010\022\021\n\006coupon\030\007 \001(\005:\0010\022\021\n\006cur" +
+      "Exp\030\010 \001(\005:\0010\022\021\n\006maxExp\030\t \001(\005:\0010\022\022\n\007scene",
+      "Id\030\n \001(\005:\0010\022\027\n\014primBagCount\030\013 \001(\005:\0010\022\022\n\007" +
+      "storyId\030\014 \001(\005:\0010\022\022\n\007guideId\030\r \001(\005:\0010\022\025\n\n" +
+      "guideState\030\016 \001(\005:\0010\022\023\n\010roleKind\030\017 \001(\005:\0010" +
+      "\022\023\n\010vipLevel\030\020 \001(\005:\0010B\034\n\016com.common.msgB" +
+      "\nPlayerBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -8502,7 +8592,7 @@ public final class PlayerBean {
           internal_static_bean_GCEnterScene_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCEnterScene_descriptor,
-              new java.lang.String[] { "SceneId", });
+              new java.lang.String[] { "RoleId", "SceneId", });
           internal_static_bean_HumanInfo_descriptor =
             getDescriptor().getMessageTypes().get(11);
           internal_static_bean_HumanInfo_fieldAccessorTable = new
