@@ -4108,52 +4108,53 @@ public final class PlayerBean {
     // @@protoc_insertion_point(class_scope:bean.CGSelectRole)
   }
 
-  public interface GCSelectRoleOrBuilder
+  public interface CGRoleReNameOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int64 playerId = 1;
+    // required int64 roleId = 1;
     /**
-     * <code>required int64 playerId = 1;</code>
+     * <code>required int64 roleId = 1;</code>
      */
-    boolean hasPlayerId();
+    boolean hasRoleId();
     /**
-     * <code>required int64 playerId = 1;</code>
+     * <code>required int64 roleId = 1;</code>
      */
-    long getPlayerId();
+    long getRoleId();
 
-    // optional .bean.HumanInfo humanInfo = 2;
+    // required string roleName = 2;
     /**
-     * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+     * <code>required string roleName = 2;</code>
      */
-    boolean hasHumanInfo();
+    boolean hasRoleName();
     /**
-     * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+     * <code>required string roleName = 2;</code>
      */
-    com.common.msg.PlayerBean.HumanInfo getHumanInfo();
+    java.lang.String getRoleName();
     /**
-     * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+     * <code>required string roleName = 2;</code>
      */
-    com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder();
+    com.google.protobuf.ByteString
+        getRoleNameBytes();
   }
   /**
-   * Protobuf type {@code bean.GCSelectRole}
+   * Protobuf type {@code bean.CGRoleReName}
    */
-  public static final class GCSelectRole extends
+  public static final class CGRoleReName extends
       com.google.protobuf.GeneratedMessage
-      implements GCSelectRoleOrBuilder {
-    // Use GCSelectRole.newBuilder() to construct.
-    private GCSelectRole(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements CGRoleReNameOrBuilder {
+    // Use CGRoleReName.newBuilder() to construct.
+    private CGRoleReName(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private GCSelectRole(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private CGRoleReName(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final GCSelectRole defaultInstance;
-    public static GCSelectRole getDefaultInstance() {
+    private static final CGRoleReName defaultInstance;
+    public static CGRoleReName getDefaultInstance() {
       return defaultInstance;
     }
 
-    public GCSelectRole getDefaultInstanceForType() {
+    public CGRoleReName getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -4163,7 +4164,7 @@ public final class PlayerBean {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private GCSelectRole(
+    private CGRoleReName(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4188,20 +4189,12 @@ public final class PlayerBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt64();
+              roleId_ = input.readInt64();
               break;
             }
             case 18: {
-              com.common.msg.PlayerBean.HumanInfo.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000002) == 0x00000002)) {
-                subBuilder = humanInfo_.toBuilder();
-              }
-              humanInfo_ = input.readMessage(com.common.msg.PlayerBean.HumanInfo.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(humanInfo_);
-                humanInfo_ = subBuilder.buildPartial();
-              }
               bitField0_ |= 0x00000002;
+              roleName_ = input.readBytes();
               break;
             }
           }
@@ -4218,88 +4211,107 @@ public final class PlayerBean {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_descriptor;
+      return com.common.msg.PlayerBean.internal_static_bean_CGRoleReName_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_fieldAccessorTable
+      return com.common.msg.PlayerBean.internal_static_bean_CGRoleReName_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.common.msg.PlayerBean.GCSelectRole.class, com.common.msg.PlayerBean.GCSelectRole.Builder.class);
+              com.common.msg.PlayerBean.CGRoleReName.class, com.common.msg.PlayerBean.CGRoleReName.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<GCSelectRole> PARSER =
-        new com.google.protobuf.AbstractParser<GCSelectRole>() {
-      public GCSelectRole parsePartialFrom(
+    public static com.google.protobuf.Parser<CGRoleReName> PARSER =
+        new com.google.protobuf.AbstractParser<CGRoleReName>() {
+      public CGRoleReName parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GCSelectRole(input, extensionRegistry);
+        return new CGRoleReName(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<GCSelectRole> getParserForType() {
+    public com.google.protobuf.Parser<CGRoleReName> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
-    // required int64 playerId = 1;
-    public static final int PLAYERID_FIELD_NUMBER = 1;
-    private long playerId_;
+    // required int64 roleId = 1;
+    public static final int ROLEID_FIELD_NUMBER = 1;
+    private long roleId_;
     /**
-     * <code>required int64 playerId = 1;</code>
+     * <code>required int64 roleId = 1;</code>
      */
-    public boolean hasPlayerId() {
+    public boolean hasRoleId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int64 playerId = 1;</code>
+     * <code>required int64 roleId = 1;</code>
      */
-    public long getPlayerId() {
-      return playerId_;
+    public long getRoleId() {
+      return roleId_;
     }
 
-    // optional .bean.HumanInfo humanInfo = 2;
-    public static final int HUMANINFO_FIELD_NUMBER = 2;
-    private com.common.msg.PlayerBean.HumanInfo humanInfo_;
+    // required string roleName = 2;
+    public static final int ROLENAME_FIELD_NUMBER = 2;
+    private java.lang.Object roleName_;
     /**
-     * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+     * <code>required string roleName = 2;</code>
      */
-    public boolean hasHumanInfo() {
+    public boolean hasRoleName() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+     * <code>required string roleName = 2;</code>
      */
-    public com.common.msg.PlayerBean.HumanInfo getHumanInfo() {
-      return humanInfo_;
+    public java.lang.String getRoleName() {
+      java.lang.Object ref = roleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          roleName_ = s;
+        }
+        return s;
+      }
     }
     /**
-     * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+     * <code>required string roleName = 2;</code>
      */
-    public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder() {
-      return humanInfo_;
+    public com.google.protobuf.ByteString
+        getRoleNameBytes() {
+      java.lang.Object ref = roleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        roleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private void initFields() {
-      playerId_ = 0L;
-      humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
+      roleId_ = 0L;
+      roleName_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasPlayerId()) {
+      if (!hasRoleId()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (hasHumanInfo()) {
-        if (!getHumanInfo().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
+      if (!hasRoleName()) {
+        memoizedIsInitialized = 0;
+        return false;
       }
       memoizedIsInitialized = 1;
       return true;
@@ -4309,10 +4321,10 @@ public final class PlayerBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(1, playerId_);
+        output.writeInt64(1, roleId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeMessage(2, humanInfo_);
+        output.writeBytes(2, getRoleNameBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -4325,11 +4337,11 @@ public final class PlayerBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, playerId_);
+          .computeInt64Size(1, roleId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, humanInfo_);
+          .computeBytesSize(2, getRoleNameBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -4343,53 +4355,53 @@ public final class PlayerBean {
       return super.writeReplace();
     }
 
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(byte[] data)
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(java.io.InputStream input)
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseDelimitedFrom(java.io.InputStream input)
+    public static com.common.msg.PlayerBean.CGRoleReName parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseDelimitedFrom(
+    public static com.common.msg.PlayerBean.CGRoleReName parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.PlayerBean.GCSelectRole parseFrom(
+    public static com.common.msg.PlayerBean.CGRoleReName parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4398,7 +4410,7 @@ public final class PlayerBean {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.common.msg.PlayerBean.GCSelectRole prototype) {
+    public static Builder newBuilder(com.common.msg.PlayerBean.CGRoleReName prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -4410,24 +4422,24 @@ public final class PlayerBean {
       return builder;
     }
     /**
-     * Protobuf type {@code bean.GCSelectRole}
+     * Protobuf type {@code bean.CGRoleReName}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.common.msg.PlayerBean.GCSelectRoleOrBuilder {
+       implements com.common.msg.PlayerBean.CGRoleReNameOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_descriptor;
+        return com.common.msg.PlayerBean.internal_static_bean_CGRoleReName_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_fieldAccessorTable
+        return com.common.msg.PlayerBean.internal_static_bean_CGRoleReName_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.common.msg.PlayerBean.GCSelectRole.class, com.common.msg.PlayerBean.GCSelectRole.Builder.class);
+                com.common.msg.PlayerBean.CGRoleReName.class, com.common.msg.PlayerBean.CGRoleReName.Builder.class);
       }
 
-      // Construct using com.common.msg.PlayerBean.GCSelectRole.newBuilder()
+      // Construct using com.common.msg.PlayerBean.CGRoleReName.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4439,7 +4451,6 @@ public final class PlayerBean {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getHumanInfoFieldBuilder();
         }
       }
       private static Builder create() {
@@ -4448,13 +4459,9 @@ public final class PlayerBean {
 
       public Builder clear() {
         super.clear();
-        playerId_ = 0L;
+        roleId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
-        if (humanInfoBuilder_ == null) {
-          humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
-        } else {
-          humanInfoBuilder_.clear();
-        }
+        roleName_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -4465,73 +4472,69 @@ public final class PlayerBean {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.common.msg.PlayerBean.internal_static_bean_GCSelectRole_descriptor;
+        return com.common.msg.PlayerBean.internal_static_bean_CGRoleReName_descriptor;
       }
 
-      public com.common.msg.PlayerBean.GCSelectRole getDefaultInstanceForType() {
-        return com.common.msg.PlayerBean.GCSelectRole.getDefaultInstance();
+      public com.common.msg.PlayerBean.CGRoleReName getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.CGRoleReName.getDefaultInstance();
       }
 
-      public com.common.msg.PlayerBean.GCSelectRole build() {
-        com.common.msg.PlayerBean.GCSelectRole result = buildPartial();
+      public com.common.msg.PlayerBean.CGRoleReName build() {
+        com.common.msg.PlayerBean.CGRoleReName result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.common.msg.PlayerBean.GCSelectRole buildPartial() {
-        com.common.msg.PlayerBean.GCSelectRole result = new com.common.msg.PlayerBean.GCSelectRole(this);
+      public com.common.msg.PlayerBean.CGRoleReName buildPartial() {
+        com.common.msg.PlayerBean.CGRoleReName result = new com.common.msg.PlayerBean.CGRoleReName(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.playerId_ = playerId_;
+        result.roleId_ = roleId_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        if (humanInfoBuilder_ == null) {
-          result.humanInfo_ = humanInfo_;
-        } else {
-          result.humanInfo_ = humanInfoBuilder_.build();
-        }
+        result.roleName_ = roleName_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.common.msg.PlayerBean.GCSelectRole) {
-          return mergeFrom((com.common.msg.PlayerBean.GCSelectRole)other);
+        if (other instanceof com.common.msg.PlayerBean.CGRoleReName) {
+          return mergeFrom((com.common.msg.PlayerBean.CGRoleReName)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.common.msg.PlayerBean.GCSelectRole other) {
-        if (other == com.common.msg.PlayerBean.GCSelectRole.getDefaultInstance()) return this;
-        if (other.hasPlayerId()) {
-          setPlayerId(other.getPlayerId());
+      public Builder mergeFrom(com.common.msg.PlayerBean.CGRoleReName other) {
+        if (other == com.common.msg.PlayerBean.CGRoleReName.getDefaultInstance()) return this;
+        if (other.hasRoleId()) {
+          setRoleId(other.getRoleId());
         }
-        if (other.hasHumanInfo()) {
-          mergeHumanInfo(other.getHumanInfo());
+        if (other.hasRoleName()) {
+          bitField0_ |= 0x00000002;
+          roleName_ = other.roleName_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasPlayerId()) {
+        if (!hasRoleId()) {
           
           return false;
         }
-        if (hasHumanInfo()) {
-          if (!getHumanInfo().isInitialized()) {
-            
-            return false;
-          }
+        if (!hasRoleName()) {
+          
+          return false;
         }
         return true;
       }
@@ -4540,11 +4543,11 @@ public final class PlayerBean {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.common.msg.PlayerBean.GCSelectRole parsedMessage = null;
+        com.common.msg.PlayerBean.CGRoleReName parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.common.msg.PlayerBean.GCSelectRole) e.getUnfinishedMessage();
+          parsedMessage = (com.common.msg.PlayerBean.CGRoleReName) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4555,165 +4558,1562 @@ public final class PlayerBean {
       }
       private int bitField0_;
 
-      // required int64 playerId = 1;
-      private long playerId_ ;
+      // required int64 roleId = 1;
+      private long roleId_ ;
       /**
-       * <code>required int64 playerId = 1;</code>
+       * <code>required int64 roleId = 1;</code>
        */
-      public boolean hasPlayerId() {
+      public boolean hasRoleId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int64 playerId = 1;</code>
+       * <code>required int64 roleId = 1;</code>
        */
-      public long getPlayerId() {
-        return playerId_;
+      public long getRoleId() {
+        return roleId_;
       }
       /**
-       * <code>required int64 playerId = 1;</code>
+       * <code>required int64 roleId = 1;</code>
        */
-      public Builder setPlayerId(long value) {
+      public Builder setRoleId(long value) {
         bitField0_ |= 0x00000001;
-        playerId_ = value;
+        roleId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int64 playerId = 1;</code>
+       * <code>required int64 roleId = 1;</code>
        */
-      public Builder clearPlayerId() {
+      public Builder clearRoleId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0L;
+        roleId_ = 0L;
         onChanged();
         return this;
       }
 
-      // optional .bean.HumanInfo humanInfo = 2;
-      private com.common.msg.PlayerBean.HumanInfo humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> humanInfoBuilder_;
+      // required string roleName = 2;
+      private java.lang.Object roleName_ = "";
       /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+       * <code>required string roleName = 2;</code>
        */
-      public boolean hasHumanInfo() {
+      public boolean hasRoleName() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+       * <code>required string roleName = 2;</code>
        */
-      public com.common.msg.PlayerBean.HumanInfo getHumanInfo() {
-        if (humanInfoBuilder_ == null) {
-          return humanInfo_;
+      public java.lang.String getRoleName() {
+        java.lang.Object ref = roleName_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          roleName_ = s;
+          return s;
         } else {
-          return humanInfoBuilder_.getMessage();
+          return (java.lang.String) ref;
         }
       }
       /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+       * <code>required string roleName = 2;</code>
        */
-      public Builder setHumanInfo(com.common.msg.PlayerBean.HumanInfo value) {
-        if (humanInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          humanInfo_ = value;
-          onChanged();
+      public com.google.protobuf.ByteString
+          getRoleNameBytes() {
+        java.lang.Object ref = roleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          roleName_ = b;
+          return b;
         } else {
-          humanInfoBuilder_.setMessage(value);
+          return (com.google.protobuf.ByteString) ref;
         }
-        bitField0_ |= 0x00000002;
-        return this;
       }
       /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+       * <code>required string roleName = 2;</code>
        */
-      public Builder setHumanInfo(
-          com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
-        if (humanInfoBuilder_ == null) {
-          humanInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          humanInfoBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
-       */
-      public Builder mergeHumanInfo(com.common.msg.PlayerBean.HumanInfo value) {
-        if (humanInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              humanInfo_ != com.common.msg.PlayerBean.HumanInfo.getDefaultInstance()) {
-            humanInfo_ =
-              com.common.msg.PlayerBean.HumanInfo.newBuilder(humanInfo_).mergeFrom(value).buildPartial();
-          } else {
-            humanInfo_ = value;
-          }
-          onChanged();
-        } else {
-          humanInfoBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
-       */
-      public Builder clearHumanInfo() {
-        if (humanInfoBuilder_ == null) {
-          humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
-          onChanged();
-        } else {
-          humanInfoBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-      /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
-       */
-      public com.common.msg.PlayerBean.HumanInfo.Builder getHumanInfoBuilder() {
-        bitField0_ |= 0x00000002;
+      public Builder setRoleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        roleName_ = value;
         onChanged();
-        return getHumanInfoFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+       * <code>required string roleName = 2;</code>
        */
-      public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder() {
-        if (humanInfoBuilder_ != null) {
-          return humanInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return humanInfo_;
-        }
+      public Builder clearRoleName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        roleName_ = getDefaultInstance().getRoleName();
+        onChanged();
+        return this;
       }
       /**
-       * <code>optional .bean.HumanInfo humanInfo = 2;</code>
+       * <code>required string roleName = 2;</code>
        */
-      private com.google.protobuf.SingleFieldBuilder<
-          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> 
-          getHumanInfoFieldBuilder() {
-        if (humanInfoBuilder_ == null) {
-          humanInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder>(
-                  humanInfo_,
-                  getParentForChildren(),
-                  isClean());
-          humanInfo_ = null;
-        }
-        return humanInfoBuilder_;
+      public Builder setRoleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        roleName_ = value;
+        onChanged();
+        return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:bean.GCSelectRole)
+      // @@protoc_insertion_point(builder_scope:bean.CGRoleReName)
     }
 
     static {
-      defaultInstance = new GCSelectRole(true);
+      defaultInstance = new CGRoleReName(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:bean.GCSelectRole)
+    // @@protoc_insertion_point(class_scope:bean.CGRoleReName)
+  }
+
+  public interface GCRoleReNameOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string roleName = 1;
+    /**
+     * <code>required string roleName = 1;</code>
+     */
+    boolean hasRoleName();
+    /**
+     * <code>required string roleName = 1;</code>
+     */
+    java.lang.String getRoleName();
+    /**
+     * <code>required string roleName = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getRoleNameBytes();
+  }
+  /**
+   * Protobuf type {@code bean.GCRoleReName}
+   */
+  public static final class GCRoleReName extends
+      com.google.protobuf.GeneratedMessage
+      implements GCRoleReNameOrBuilder {
+    // Use GCRoleReName.newBuilder() to construct.
+    private GCRoleReName(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private GCRoleReName(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final GCRoleReName defaultInstance;
+    public static GCRoleReName getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public GCRoleReName getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GCRoleReName(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              roleName_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.common.msg.PlayerBean.internal_static_bean_GCRoleReName_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.common.msg.PlayerBean.internal_static_bean_GCRoleReName_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.common.msg.PlayerBean.GCRoleReName.class, com.common.msg.PlayerBean.GCRoleReName.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<GCRoleReName> PARSER =
+        new com.google.protobuf.AbstractParser<GCRoleReName>() {
+      public GCRoleReName parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GCRoleReName(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GCRoleReName> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string roleName = 1;
+    public static final int ROLENAME_FIELD_NUMBER = 1;
+    private java.lang.Object roleName_;
+    /**
+     * <code>required string roleName = 1;</code>
+     */
+    public boolean hasRoleName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string roleName = 1;</code>
+     */
+    public java.lang.String getRoleName() {
+      java.lang.Object ref = roleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          roleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string roleName = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRoleNameBytes() {
+      java.lang.Object ref = roleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        roleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      roleName_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasRoleName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getRoleNameBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getRoleNameBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCRoleReName parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.common.msg.PlayerBean.GCRoleReName prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bean.GCRoleReName}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.common.msg.PlayerBean.GCRoleReNameOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCRoleReName_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCRoleReName_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.common.msg.PlayerBean.GCRoleReName.class, com.common.msg.PlayerBean.GCRoleReName.Builder.class);
+      }
+
+      // Construct using com.common.msg.PlayerBean.GCRoleReName.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        roleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCRoleReName_descriptor;
+      }
+
+      public com.common.msg.PlayerBean.GCRoleReName getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.GCRoleReName.getDefaultInstance();
+      }
+
+      public com.common.msg.PlayerBean.GCRoleReName build() {
+        com.common.msg.PlayerBean.GCRoleReName result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.common.msg.PlayerBean.GCRoleReName buildPartial() {
+        com.common.msg.PlayerBean.GCRoleReName result = new com.common.msg.PlayerBean.GCRoleReName(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.roleName_ = roleName_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.common.msg.PlayerBean.GCRoleReName) {
+          return mergeFrom((com.common.msg.PlayerBean.GCRoleReName)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.common.msg.PlayerBean.GCRoleReName other) {
+        if (other == com.common.msg.PlayerBean.GCRoleReName.getDefaultInstance()) return this;
+        if (other.hasRoleName()) {
+          bitField0_ |= 0x00000001;
+          roleName_ = other.roleName_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasRoleName()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.common.msg.PlayerBean.GCRoleReName parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.common.msg.PlayerBean.GCRoleReName) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string roleName = 1;
+      private java.lang.Object roleName_ = "";
+      /**
+       * <code>required string roleName = 1;</code>
+       */
+      public boolean hasRoleName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string roleName = 1;</code>
+       */
+      public java.lang.String getRoleName() {
+        java.lang.Object ref = roleName_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          roleName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string roleName = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getRoleNameBytes() {
+        java.lang.Object ref = roleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          roleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string roleName = 1;</code>
+       */
+      public Builder setRoleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        roleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string roleName = 1;</code>
+       */
+      public Builder clearRoleName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        roleName_ = getDefaultInstance().getRoleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string roleName = 1;</code>
+       */
+      public Builder setRoleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        roleName_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bean.GCRoleReName)
+    }
+
+    static {
+      defaultInstance = new GCRoleReName(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bean.GCRoleReName)
+  }
+
+  public interface CGEnterSceneOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int64 roleId = 1;
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    boolean hasRoleId();
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    long getRoleId();
+
+    // required int32 sceneId = 2;
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    boolean hasSceneId();
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    int getSceneId();
+  }
+  /**
+   * Protobuf type {@code bean.CGEnterScene}
+   */
+  public static final class CGEnterScene extends
+      com.google.protobuf.GeneratedMessage
+      implements CGEnterSceneOrBuilder {
+    // Use CGEnterScene.newBuilder() to construct.
+    private CGEnterScene(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CGEnterScene(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CGEnterScene defaultInstance;
+    public static CGEnterScene getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CGEnterScene getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CGEnterScene(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              roleId_ = input.readInt64();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              sceneId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.common.msg.PlayerBean.internal_static_bean_CGEnterScene_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.common.msg.PlayerBean.internal_static_bean_CGEnterScene_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.common.msg.PlayerBean.CGEnterScene.class, com.common.msg.PlayerBean.CGEnterScene.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CGEnterScene> PARSER =
+        new com.google.protobuf.AbstractParser<CGEnterScene>() {
+      public CGEnterScene parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CGEnterScene(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CGEnterScene> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int64 roleId = 1;
+    public static final int ROLEID_FIELD_NUMBER = 1;
+    private long roleId_;
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    public boolean hasRoleId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int64 roleId = 1;</code>
+     */
+    public long getRoleId() {
+      return roleId_;
+    }
+
+    // required int32 sceneId = 2;
+    public static final int SCENEID_FIELD_NUMBER = 2;
+    private int sceneId_;
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    public boolean hasSceneId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    private void initFields() {
+      roleId_ = 0L;
+      sceneId_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasRoleId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasSceneId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt64(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, sceneId_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, sceneId_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.CGEnterScene parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.common.msg.PlayerBean.CGEnterScene prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bean.CGEnterScene}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.common.msg.PlayerBean.CGEnterSceneOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.common.msg.PlayerBean.internal_static_bean_CGEnterScene_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.common.msg.PlayerBean.internal_static_bean_CGEnterScene_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.common.msg.PlayerBean.CGEnterScene.class, com.common.msg.PlayerBean.CGEnterScene.Builder.class);
+      }
+
+      // Construct using com.common.msg.PlayerBean.CGEnterScene.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        roleId_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        sceneId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.common.msg.PlayerBean.internal_static_bean_CGEnterScene_descriptor;
+      }
+
+      public com.common.msg.PlayerBean.CGEnterScene getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.CGEnterScene.getDefaultInstance();
+      }
+
+      public com.common.msg.PlayerBean.CGEnterScene build() {
+        com.common.msg.PlayerBean.CGEnterScene result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.common.msg.PlayerBean.CGEnterScene buildPartial() {
+        com.common.msg.PlayerBean.CGEnterScene result = new com.common.msg.PlayerBean.CGEnterScene(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.roleId_ = roleId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.sceneId_ = sceneId_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.common.msg.PlayerBean.CGEnterScene) {
+          return mergeFrom((com.common.msg.PlayerBean.CGEnterScene)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.common.msg.PlayerBean.CGEnterScene other) {
+        if (other == com.common.msg.PlayerBean.CGEnterScene.getDefaultInstance()) return this;
+        if (other.hasRoleId()) {
+          setRoleId(other.getRoleId());
+        }
+        if (other.hasSceneId()) {
+          setSceneId(other.getSceneId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasRoleId()) {
+          
+          return false;
+        }
+        if (!hasSceneId()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.common.msg.PlayerBean.CGEnterScene parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.common.msg.PlayerBean.CGEnterScene) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int64 roleId = 1;
+      private long roleId_ ;
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public boolean hasRoleId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public long getRoleId() {
+        return roleId_;
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public Builder setRoleId(long value) {
+        bitField0_ |= 0x00000001;
+        roleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int64 roleId = 1;</code>
+       */
+      public Builder clearRoleId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        roleId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // required int32 sceneId = 2;
+      private int sceneId_ ;
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public boolean hasSceneId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public Builder setSceneId(int value) {
+        bitField0_ |= 0x00000002;
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public Builder clearSceneId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bean.CGEnterScene)
+    }
+
+    static {
+      defaultInstance = new CGEnterScene(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bean.CGEnterScene)
+  }
+
+  public interface GCEnterSceneOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 sceneId = 2;
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    boolean hasSceneId();
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    int getSceneId();
+  }
+  /**
+   * Protobuf type {@code bean.GCEnterScene}
+   */
+  public static final class GCEnterScene extends
+      com.google.protobuf.GeneratedMessage
+      implements GCEnterSceneOrBuilder {
+    // Use GCEnterScene.newBuilder() to construct.
+    private GCEnterScene(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private GCEnterScene(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final GCEnterScene defaultInstance;
+    public static GCEnterScene getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public GCEnterScene getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GCEnterScene(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000001;
+              sceneId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.common.msg.PlayerBean.internal_static_bean_GCEnterScene_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.common.msg.PlayerBean.internal_static_bean_GCEnterScene_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.common.msg.PlayerBean.GCEnterScene.class, com.common.msg.PlayerBean.GCEnterScene.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<GCEnterScene> PARSER =
+        new com.google.protobuf.AbstractParser<GCEnterScene>() {
+      public GCEnterScene parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GCEnterScene(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GCEnterScene> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 sceneId = 2;
+    public static final int SCENEID_FIELD_NUMBER = 2;
+    private int sceneId_;
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    public boolean hasSceneId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 sceneId = 2;</code>
+     *
+     * <pre>
+     *场景id
+     * </pre>
+     */
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    private void initFields() {
+      sceneId_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasSceneId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(2, sceneId_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, sceneId_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.PlayerBean.GCEnterScene parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.common.msg.PlayerBean.GCEnterScene prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bean.GCEnterScene}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.common.msg.PlayerBean.GCEnterSceneOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCEnterScene_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCEnterScene_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.common.msg.PlayerBean.GCEnterScene.class, com.common.msg.PlayerBean.GCEnterScene.Builder.class);
+      }
+
+      // Construct using com.common.msg.PlayerBean.GCEnterScene.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        sceneId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.common.msg.PlayerBean.internal_static_bean_GCEnterScene_descriptor;
+      }
+
+      public com.common.msg.PlayerBean.GCEnterScene getDefaultInstanceForType() {
+        return com.common.msg.PlayerBean.GCEnterScene.getDefaultInstance();
+      }
+
+      public com.common.msg.PlayerBean.GCEnterScene build() {
+        com.common.msg.PlayerBean.GCEnterScene result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.common.msg.PlayerBean.GCEnterScene buildPartial() {
+        com.common.msg.PlayerBean.GCEnterScene result = new com.common.msg.PlayerBean.GCEnterScene(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.sceneId_ = sceneId_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.common.msg.PlayerBean.GCEnterScene) {
+          return mergeFrom((com.common.msg.PlayerBean.GCEnterScene)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.common.msg.PlayerBean.GCEnterScene other) {
+        if (other == com.common.msg.PlayerBean.GCEnterScene.getDefaultInstance()) return this;
+        if (other.hasSceneId()) {
+          setSceneId(other.getSceneId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasSceneId()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.common.msg.PlayerBean.GCEnterScene parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.common.msg.PlayerBean.GCEnterScene) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 sceneId = 2;
+      private int sceneId_ ;
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public boolean hasSceneId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public Builder setSceneId(int value) {
+        bitField0_ |= 0x00000001;
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 sceneId = 2;</code>
+       *
+       * <pre>
+       *场景id
+       * </pre>
+       */
+      public Builder clearSceneId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bean.GCEnterScene)
+    }
+
+    static {
+      defaultInstance = new GCEnterScene(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bean.GCEnterScene)
   }
 
   public interface HumanInfoOrBuilder
@@ -6974,10 +8374,25 @@ public final class PlayerBean {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_bean_CGSelectRole_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_bean_GCSelectRole_descriptor;
+    internal_static_bean_CGRoleReName_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_bean_GCSelectRole_fieldAccessorTable;
+      internal_static_bean_CGRoleReName_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_bean_GCRoleReName_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_bean_GCRoleReName_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_bean_CGEnterScene_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_bean_CGEnterScene_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_bean_GCEnterScene_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_bean_GCEnterScene_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_bean_HumanInfo_descriptor;
   private static
@@ -7002,18 +8417,20 @@ public final class PlayerBean {
       "\022\022\n\ntemplateId\030\002 \002(\005\"D\n\014GCCreateRole\022\020\n\010" +
       "playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean" +
       ".HumanInfo\"0\n\014CGSelectRole\022\020\n\010playerId\030\001",
-      " \002(\003\022\016\n\006roleId\030\002 \002(\003\"D\n\014GCSelectRole\022\020\n\010" +
-      "playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean" +
-      ".HumanInfo\"\320\002\n\tHumanInfo\022\016\n\006roleId\030\001 \002(\003" +
-      "\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:\0011\022\031" +
-      "\n\016allianceTypeId\030\004 \001(\005:\0011\022\022\n\007diamond\030\005 \001" +
-      "(\005:\0010\022\017\n\004gold\030\006 \001(\005:\0010\022\021\n\006coupon\030\007 \001(\005:\001" +
-      "0\022\021\n\006curExp\030\010 \001(\005:\0010\022\021\n\006maxExp\030\t \001(\005:\0010\022" +
-      "\022\n\007sceneId\030\n \001(\005:\0010\022\027\n\014primBagCount\030\013 \001(" +
-      "\005:\0010\022\022\n\007storyId\030\014 \001(\005:\0010\022\022\n\007guideId\030\r \001(" +
-      "\005:\0010\022\025\n\nguideState\030\016 \001(\005:\0010\022\023\n\010roleKind\030",
-      "\017 \001(\005:\0010\022\023\n\010vipLevel\030\020 \001(\005:\0010B\034\n\016com.com" +
-      "mon.msgB\nPlayerBean"
+      " \002(\003\022\016\n\006roleId\030\002 \002(\003\"0\n\014CGRoleReName\022\016\n\006" +
+      "roleId\030\001 \002(\003\022\020\n\010roleName\030\002 \002(\t\" \n\014GCRole" +
+      "ReName\022\020\n\010roleName\030\001 \002(\t\"/\n\014CGEnterScene" +
+      "\022\016\n\006roleId\030\001 \002(\003\022\017\n\007sceneId\030\002 \002(\005\"\037\n\014GCE" +
+      "nterScene\022\017\n\007sceneId\030\002 \002(\005\"\320\002\n\tHumanInfo" +
+      "\022\016\n\006roleId\030\001 \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005" +
+      "level\030\003 \001(\005:\0011\022\031\n\016allianceTypeId\030\004 \001(\005:\001" +
+      "1\022\022\n\007diamond\030\005 \001(\005:\0010\022\017\n\004gold\030\006 \001(\005:\0010\022\021" +
+      "\n\006coupon\030\007 \001(\005:\0010\022\021\n\006curExp\030\010 \001(\005:\0010\022\021\n\006" +
+      "maxExp\030\t \001(\005:\0010\022\022\n\007sceneId\030\n \001(\005:\0010\022\027\n\014p",
+      "rimBagCount\030\013 \001(\005:\0010\022\022\n\007storyId\030\014 \001(\005:\0010" +
+      "\022\022\n\007guideId\030\r \001(\005:\0010\022\025\n\nguideState\030\016 \001(\005" +
+      ":\0010\022\023\n\010roleKind\030\017 \001(\005:\0010\022\023\n\010vipLevel\030\020 \001" +
+      "(\005:\0010B\034\n\016com.common.msgB\nPlayerBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -7062,14 +8479,32 @@ public final class PlayerBean {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_CGSelectRole_descriptor,
               new java.lang.String[] { "PlayerId", "RoleId", });
-          internal_static_bean_GCSelectRole_descriptor =
+          internal_static_bean_CGRoleReName_descriptor =
             getDescriptor().getMessageTypes().get(7);
-          internal_static_bean_GCSelectRole_fieldAccessorTable = new
+          internal_static_bean_CGRoleReName_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_bean_GCSelectRole_descriptor,
-              new java.lang.String[] { "PlayerId", "HumanInfo", });
-          internal_static_bean_HumanInfo_descriptor =
+              internal_static_bean_CGRoleReName_descriptor,
+              new java.lang.String[] { "RoleId", "RoleName", });
+          internal_static_bean_GCRoleReName_descriptor =
             getDescriptor().getMessageTypes().get(8);
+          internal_static_bean_GCRoleReName_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_bean_GCRoleReName_descriptor,
+              new java.lang.String[] { "RoleName", });
+          internal_static_bean_CGEnterScene_descriptor =
+            getDescriptor().getMessageTypes().get(9);
+          internal_static_bean_CGEnterScene_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_bean_CGEnterScene_descriptor,
+              new java.lang.String[] { "RoleId", "SceneId", });
+          internal_static_bean_GCEnterScene_descriptor =
+            getDescriptor().getMessageTypes().get(10);
+          internal_static_bean_GCEnterScene_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_bean_GCEnterScene_descriptor,
+              new java.lang.String[] { "SceneId", });
+          internal_static_bean_HumanInfo_descriptor =
+            getDescriptor().getMessageTypes().get(11);
           internal_static_bean_HumanInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_HumanInfo_descriptor,
