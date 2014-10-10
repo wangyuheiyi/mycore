@@ -159,12 +159,14 @@ public class GenericPropertyArray
 		return values[index];
 	}
 	
-	public KeyValuePair<Integer, Float>[] getIndexValuePairs()
+	
+	
+	public KeyValuePair<Integer, Integer>[] getIndexValuePairs()
 	{
-		KeyValuePair<Integer, Float>[] indexValuePairs = KeyValuePair.newKeyValuePairArray(values.length);
+		KeyValuePair<Integer, Integer>[] indexValuePairs = KeyValuePair.newKeyValuePairArray(values.length);
 		for (int i = 0; i < indexValuePairs.length; i++) 
 		{
-			indexValuePairs[i] = new KeyValuePair<Integer, Float>(Integer.valueOf(i), Float.valueOf(values[i]));
+			indexValuePairs[i] = new KeyValuePair<Integer, Integer>(Integer.valueOf(i), Integer.valueOf(values[i]));
 		}
 		return indexValuePairs;
 	}
