@@ -1553,7 +1553,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    java.util.List<com.common.msg.PlayerBean.HumanInfo> 
+    java.util.List<com.common.msg.DataBean.HumanInfo> 
         getHumanInfoList();
     /**
      * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
@@ -1562,7 +1562,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    com.common.msg.PlayerBean.HumanInfo getHumanInfo(int index);
+    com.common.msg.DataBean.HumanInfo getHumanInfo(int index);
     /**
      * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
      *
@@ -1578,7 +1578,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    java.util.List<? extends com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+    java.util.List<? extends com.common.msg.DataBean.HumanInfoOrBuilder> 
         getHumanInfoOrBuilderList();
     /**
      * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
@@ -1587,7 +1587,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
+    com.common.msg.DataBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
         int index);
   }
   /**
@@ -1648,10 +1648,10 @@ public final class PlayerBean {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                humanInfo_ = new java.util.ArrayList<com.common.msg.PlayerBean.HumanInfo>();
+                humanInfo_ = new java.util.ArrayList<com.common.msg.DataBean.HumanInfo>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              humanInfo_.add(input.readMessage(com.common.msg.PlayerBean.HumanInfo.PARSER, extensionRegistry));
+              humanInfo_.add(input.readMessage(com.common.msg.DataBean.HumanInfo.PARSER, extensionRegistry));
               break;
             }
           }
@@ -1715,7 +1715,7 @@ public final class PlayerBean {
 
     // repeated .bean.HumanInfo humanInfo = 2;
     public static final int HUMANINFO_FIELD_NUMBER = 2;
-    private java.util.List<com.common.msg.PlayerBean.HumanInfo> humanInfo_;
+    private java.util.List<com.common.msg.DataBean.HumanInfo> humanInfo_;
     /**
      * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
      *
@@ -1723,7 +1723,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    public java.util.List<com.common.msg.PlayerBean.HumanInfo> getHumanInfoList() {
+    public java.util.List<com.common.msg.DataBean.HumanInfo> getHumanInfoList() {
       return humanInfo_;
     }
     /**
@@ -1733,7 +1733,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    public java.util.List<? extends com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+    public java.util.List<? extends com.common.msg.DataBean.HumanInfoOrBuilder> 
         getHumanInfoOrBuilderList() {
       return humanInfo_;
     }
@@ -1754,7 +1754,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    public com.common.msg.PlayerBean.HumanInfo getHumanInfo(int index) {
+    public com.common.msg.DataBean.HumanInfo getHumanInfo(int index) {
       return humanInfo_.get(index);
     }
     /**
@@ -1764,7 +1764,7 @@ public final class PlayerBean {
      *这里返回了humaninfo的list
      * </pre>
      */
-    public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
+    public com.common.msg.DataBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
         int index) {
       return humanInfo_.get(index);
     }
@@ -2100,17 +2100,17 @@ public final class PlayerBean {
       }
 
       // repeated .bean.HumanInfo humanInfo = 2;
-      private java.util.List<com.common.msg.PlayerBean.HumanInfo> humanInfo_ =
+      private java.util.List<com.common.msg.DataBean.HumanInfo> humanInfo_ =
         java.util.Collections.emptyList();
       private void ensureHumanInfoIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          humanInfo_ = new java.util.ArrayList<com.common.msg.PlayerBean.HumanInfo>(humanInfo_);
+          humanInfo_ = new java.util.ArrayList<com.common.msg.DataBean.HumanInfo>(humanInfo_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> humanInfoBuilder_;
+          com.common.msg.DataBean.HumanInfo, com.common.msg.DataBean.HumanInfo.Builder, com.common.msg.DataBean.HumanInfoOrBuilder> humanInfoBuilder_;
 
       /**
        * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
@@ -2119,7 +2119,7 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public java.util.List<com.common.msg.PlayerBean.HumanInfo> getHumanInfoList() {
+      public java.util.List<com.common.msg.DataBean.HumanInfo> getHumanInfoList() {
         if (humanInfoBuilder_ == null) {
           return java.util.Collections.unmodifiableList(humanInfo_);
         } else {
@@ -2147,7 +2147,7 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfo getHumanInfo(int index) {
+      public com.common.msg.DataBean.HumanInfo getHumanInfo(int index) {
         if (humanInfoBuilder_ == null) {
           return humanInfo_.get(index);
         } else {
@@ -2162,7 +2162,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder setHumanInfo(
-          int index, com.common.msg.PlayerBean.HumanInfo value) {
+          int index, com.common.msg.DataBean.HumanInfo value) {
         if (humanInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2183,7 +2183,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder setHumanInfo(
-          int index, com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
+          int index, com.common.msg.DataBean.HumanInfo.Builder builderForValue) {
         if (humanInfoBuilder_ == null) {
           ensureHumanInfoIsMutable();
           humanInfo_.set(index, builderForValue.build());
@@ -2200,7 +2200,7 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public Builder addHumanInfo(com.common.msg.PlayerBean.HumanInfo value) {
+      public Builder addHumanInfo(com.common.msg.DataBean.HumanInfo value) {
         if (humanInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2221,7 +2221,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder addHumanInfo(
-          int index, com.common.msg.PlayerBean.HumanInfo value) {
+          int index, com.common.msg.DataBean.HumanInfo value) {
         if (humanInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2242,7 +2242,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder addHumanInfo(
-          com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
+          com.common.msg.DataBean.HumanInfo.Builder builderForValue) {
         if (humanInfoBuilder_ == null) {
           ensureHumanInfoIsMutable();
           humanInfo_.add(builderForValue.build());
@@ -2260,7 +2260,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder addHumanInfo(
-          int index, com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
+          int index, com.common.msg.DataBean.HumanInfo.Builder builderForValue) {
         if (humanInfoBuilder_ == null) {
           ensureHumanInfoIsMutable();
           humanInfo_.add(index, builderForValue.build());
@@ -2278,7 +2278,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder addAllHumanInfo(
-          java.lang.Iterable<? extends com.common.msg.PlayerBean.HumanInfo> values) {
+          java.lang.Iterable<? extends com.common.msg.DataBean.HumanInfo> values) {
         if (humanInfoBuilder_ == null) {
           ensureHumanInfoIsMutable();
           super.addAll(values, humanInfo_);
@@ -2329,7 +2329,7 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfo.Builder getHumanInfoBuilder(
+      public com.common.msg.DataBean.HumanInfo.Builder getHumanInfoBuilder(
           int index) {
         return getHumanInfoFieldBuilder().getBuilder(index);
       }
@@ -2340,7 +2340,7 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
+      public com.common.msg.DataBean.HumanInfoOrBuilder getHumanInfoOrBuilder(
           int index) {
         if (humanInfoBuilder_ == null) {
           return humanInfo_.get(index);  } else {
@@ -2354,7 +2354,7 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public java.util.List<? extends com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+      public java.util.List<? extends com.common.msg.DataBean.HumanInfoOrBuilder> 
            getHumanInfoOrBuilderList() {
         if (humanInfoBuilder_ != null) {
           return humanInfoBuilder_.getMessageOrBuilderList();
@@ -2369,9 +2369,9 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfo.Builder addHumanInfoBuilder() {
+      public com.common.msg.DataBean.HumanInfo.Builder addHumanInfoBuilder() {
         return getHumanInfoFieldBuilder().addBuilder(
-            com.common.msg.PlayerBean.HumanInfo.getDefaultInstance());
+            com.common.msg.DataBean.HumanInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
@@ -2380,10 +2380,10 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfo.Builder addHumanInfoBuilder(
+      public com.common.msg.DataBean.HumanInfo.Builder addHumanInfoBuilder(
           int index) {
         return getHumanInfoFieldBuilder().addBuilder(
-            index, com.common.msg.PlayerBean.HumanInfo.getDefaultInstance());
+            index, com.common.msg.DataBean.HumanInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .bean.HumanInfo humanInfo = 2;</code>
@@ -2392,16 +2392,16 @@ public final class PlayerBean {
        *这里返回了humaninfo的list
        * </pre>
        */
-      public java.util.List<com.common.msg.PlayerBean.HumanInfo.Builder> 
+      public java.util.List<com.common.msg.DataBean.HumanInfo.Builder> 
            getHumanInfoBuilderList() {
         return getHumanInfoFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+          com.common.msg.DataBean.HumanInfo, com.common.msg.DataBean.HumanInfo.Builder, com.common.msg.DataBean.HumanInfoOrBuilder> 
           getHumanInfoFieldBuilder() {
         if (humanInfoBuilder_ == null) {
           humanInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder>(
+              com.common.msg.DataBean.HumanInfo, com.common.msg.DataBean.HumanInfo.Builder, com.common.msg.DataBean.HumanInfoOrBuilder>(
                   humanInfo_,
                   ((bitField0_ & 0x00000002) == 0x00000002),
                   getParentForChildren(),
@@ -2976,7 +2976,7 @@ public final class PlayerBean {
      *这里嵌套humaninfo对象
      * </pre>
      */
-    com.common.msg.PlayerBean.HumanInfo getHumanInfo();
+    com.common.msg.DataBean.HumanInfo getHumanInfo();
     /**
      * <code>optional .bean.HumanInfo humanInfo = 2;</code>
      *
@@ -2984,7 +2984,7 @@ public final class PlayerBean {
      *这里嵌套humaninfo对象
      * </pre>
      */
-    com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder();
+    com.common.msg.DataBean.HumanInfoOrBuilder getHumanInfoOrBuilder();
   }
   /**
    * Protobuf type {@code bean.GCCreateRole}
@@ -3043,11 +3043,11 @@ public final class PlayerBean {
               break;
             }
             case 18: {
-              com.common.msg.PlayerBean.HumanInfo.Builder subBuilder = null;
+              com.common.msg.DataBean.HumanInfo.Builder subBuilder = null;
               if (((bitField0_ & 0x00000002) == 0x00000002)) {
                 subBuilder = humanInfo_.toBuilder();
               }
-              humanInfo_ = input.readMessage(com.common.msg.PlayerBean.HumanInfo.PARSER, extensionRegistry);
+              humanInfo_ = input.readMessage(com.common.msg.DataBean.HumanInfo.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(humanInfo_);
                 humanInfo_ = subBuilder.buildPartial();
@@ -3113,7 +3113,7 @@ public final class PlayerBean {
 
     // optional .bean.HumanInfo humanInfo = 2;
     public static final int HUMANINFO_FIELD_NUMBER = 2;
-    private com.common.msg.PlayerBean.HumanInfo humanInfo_;
+    private com.common.msg.DataBean.HumanInfo humanInfo_;
     /**
      * <code>optional .bean.HumanInfo humanInfo = 2;</code>
      *
@@ -3131,7 +3131,7 @@ public final class PlayerBean {
      *这里嵌套humaninfo对象
      * </pre>
      */
-    public com.common.msg.PlayerBean.HumanInfo getHumanInfo() {
+    public com.common.msg.DataBean.HumanInfo getHumanInfo() {
       return humanInfo_;
     }
     /**
@@ -3141,13 +3141,13 @@ public final class PlayerBean {
      *这里嵌套humaninfo对象
      * </pre>
      */
-    public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder() {
+    public com.common.msg.DataBean.HumanInfoOrBuilder getHumanInfoOrBuilder() {
       return humanInfo_;
     }
 
     private void initFields() {
       playerId_ = 0L;
-      humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
+      humanInfo_ = com.common.msg.DataBean.HumanInfo.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -3314,7 +3314,7 @@ public final class PlayerBean {
         playerId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         if (humanInfoBuilder_ == null) {
-          humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
+          humanInfo_ = com.common.msg.DataBean.HumanInfo.getDefaultInstance();
         } else {
           humanInfoBuilder_.clear();
         }
@@ -3452,9 +3452,9 @@ public final class PlayerBean {
       }
 
       // optional .bean.HumanInfo humanInfo = 2;
-      private com.common.msg.PlayerBean.HumanInfo humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
+      private com.common.msg.DataBean.HumanInfo humanInfo_ = com.common.msg.DataBean.HumanInfo.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> humanInfoBuilder_;
+          com.common.msg.DataBean.HumanInfo, com.common.msg.DataBean.HumanInfo.Builder, com.common.msg.DataBean.HumanInfoOrBuilder> humanInfoBuilder_;
       /**
        * <code>optional .bean.HumanInfo humanInfo = 2;</code>
        *
@@ -3472,7 +3472,7 @@ public final class PlayerBean {
        *这里嵌套humaninfo对象
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfo getHumanInfo() {
+      public com.common.msg.DataBean.HumanInfo getHumanInfo() {
         if (humanInfoBuilder_ == null) {
           return humanInfo_;
         } else {
@@ -3486,7 +3486,7 @@ public final class PlayerBean {
        *这里嵌套humaninfo对象
        * </pre>
        */
-      public Builder setHumanInfo(com.common.msg.PlayerBean.HumanInfo value) {
+      public Builder setHumanInfo(com.common.msg.DataBean.HumanInfo value) {
         if (humanInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3507,7 +3507,7 @@ public final class PlayerBean {
        * </pre>
        */
       public Builder setHumanInfo(
-          com.common.msg.PlayerBean.HumanInfo.Builder builderForValue) {
+          com.common.msg.DataBean.HumanInfo.Builder builderForValue) {
         if (humanInfoBuilder_ == null) {
           humanInfo_ = builderForValue.build();
           onChanged();
@@ -3524,12 +3524,12 @@ public final class PlayerBean {
        *这里嵌套humaninfo对象
        * </pre>
        */
-      public Builder mergeHumanInfo(com.common.msg.PlayerBean.HumanInfo value) {
+      public Builder mergeHumanInfo(com.common.msg.DataBean.HumanInfo value) {
         if (humanInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              humanInfo_ != com.common.msg.PlayerBean.HumanInfo.getDefaultInstance()) {
+              humanInfo_ != com.common.msg.DataBean.HumanInfo.getDefaultInstance()) {
             humanInfo_ =
-              com.common.msg.PlayerBean.HumanInfo.newBuilder(humanInfo_).mergeFrom(value).buildPartial();
+              com.common.msg.DataBean.HumanInfo.newBuilder(humanInfo_).mergeFrom(value).buildPartial();
           } else {
             humanInfo_ = value;
           }
@@ -3549,7 +3549,7 @@ public final class PlayerBean {
        */
       public Builder clearHumanInfo() {
         if (humanInfoBuilder_ == null) {
-          humanInfo_ = com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
+          humanInfo_ = com.common.msg.DataBean.HumanInfo.getDefaultInstance();
           onChanged();
         } else {
           humanInfoBuilder_.clear();
@@ -3564,7 +3564,7 @@ public final class PlayerBean {
        *这里嵌套humaninfo对象
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfo.Builder getHumanInfoBuilder() {
+      public com.common.msg.DataBean.HumanInfo.Builder getHumanInfoBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getHumanInfoFieldBuilder().getBuilder();
@@ -3576,7 +3576,7 @@ public final class PlayerBean {
        *这里嵌套humaninfo对象
        * </pre>
        */
-      public com.common.msg.PlayerBean.HumanInfoOrBuilder getHumanInfoOrBuilder() {
+      public com.common.msg.DataBean.HumanInfoOrBuilder getHumanInfoOrBuilder() {
         if (humanInfoBuilder_ != null) {
           return humanInfoBuilder_.getMessageOrBuilder();
         } else {
@@ -3591,11 +3591,11 @@ public final class PlayerBean {
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder> 
+          com.common.msg.DataBean.HumanInfo, com.common.msg.DataBean.HumanInfo.Builder, com.common.msg.DataBean.HumanInfoOrBuilder> 
           getHumanInfoFieldBuilder() {
         if (humanInfoBuilder_ == null) {
           humanInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.common.msg.PlayerBean.HumanInfo, com.common.msg.PlayerBean.HumanInfo.Builder, com.common.msg.PlayerBean.HumanInfoOrBuilder>(
+              com.common.msg.DataBean.HumanInfo, com.common.msg.DataBean.HumanInfo.Builder, com.common.msg.DataBean.HumanInfoOrBuilder>(
                   humanInfo_,
                   getParentForChildren(),
                   isClean());
@@ -6205,2228 +6205,6 @@ public final class PlayerBean {
     // @@protoc_insertion_point(class_scope:bean.GCEnterScene)
   }
 
-  public interface HumanInfoOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required int64 roleId = 1;
-    /**
-     * <code>required int64 roleId = 1;</code>
-     *
-     * <pre>
-     *角色id
-     * </pre>
-     */
-    boolean hasRoleId();
-    /**
-     * <code>required int64 roleId = 1;</code>
-     *
-     * <pre>
-     *角色id
-     * </pre>
-     */
-    long getRoleId();
-
-    // optional string roleName = 2 [default = ""];
-    /**
-     * <code>optional string roleName = 2 [default = ""];</code>
-     *
-     * <pre>
-     *角色名称
-     * </pre>
-     */
-    boolean hasRoleName();
-    /**
-     * <code>optional string roleName = 2 [default = ""];</code>
-     *
-     * <pre>
-     *角色名称
-     * </pre>
-     */
-    java.lang.String getRoleName();
-    /**
-     * <code>optional string roleName = 2 [default = ""];</code>
-     *
-     * <pre>
-     *角色名称
-     * </pre>
-     */
-    com.google.protobuf.ByteString
-        getRoleNameBytes();
-
-    // optional int32 level = 3 [default = 1];
-    /**
-     * <code>optional int32 level = 3 [default = 1];</code>
-     *
-     * <pre>
-     *角色等级
-     * </pre>
-     */
-    boolean hasLevel();
-    /**
-     * <code>optional int32 level = 3 [default = 1];</code>
-     *
-     * <pre>
-     *角色等级
-     * </pre>
-     */
-    int getLevel();
-
-    // optional int32 allianceTypeId = 4 [default = 1];
-    /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-     *
-     * <pre>
-     *种族
-     * </pre>
-     */
-    boolean hasAllianceTypeId();
-    /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-     *
-     * <pre>
-     *种族
-     * </pre>
-     */
-    int getAllianceTypeId();
-
-    // optional int32 diamond = 5 [default = 0];
-    /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
-     *
-     * <pre>
-     *角色元宝数量
-     * </pre>
-     */
-    boolean hasDiamond();
-    /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
-     *
-     * <pre>
-     *角色元宝数量
-     * </pre>
-     */
-    int getDiamond();
-
-    // optional int32 gold = 6 [default = 0];
-    /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
-     *
-     * <pre>
-     *角色金币数量
-     * </pre>
-     */
-    boolean hasGold();
-    /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
-     *
-     * <pre>
-     *角色金币数量
-     * </pre>
-     */
-    int getGold();
-
-    // optional int32 coupon = 7 [default = 0];
-    /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
-     *
-     * <pre>
-     *点卷数量
-     * </pre>
-     */
-    boolean hasCoupon();
-    /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
-     *
-     * <pre>
-     *点卷数量
-     * </pre>
-     */
-    int getCoupon();
-
-    // optional int32 curExp = 8 [default = 0];
-    /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
-     *
-     * <pre>
-     *当前经验
-     * </pre>
-     */
-    boolean hasCurExp();
-    /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
-     *
-     * <pre>
-     *当前经验
-     * </pre>
-     */
-    int getCurExp();
-
-    // optional int32 maxExp = 9 [default = 0];
-    /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
-     *
-     * <pre>
-     *最大经验
-     * </pre>
-     */
-    boolean hasMaxExp();
-    /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
-     *
-     * <pre>
-     *最大经验
-     * </pre>
-     */
-    int getMaxExp();
-
-    // optional int32 sceneId = 10 [default = 0];
-    /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
-     *
-     * <pre>
-     *所在场景
-     * </pre>
-     */
-    boolean hasSceneId();
-    /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
-     *
-     * <pre>
-     *所在场景
-     * </pre>
-     */
-    int getSceneId();
-
-    // optional int32 primBagCount = 11 [default = 0];
-    /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
-     *
-     * <pre>
-     *主背包数量 
-     * </pre>
-     */
-    boolean hasPrimBagCount();
-    /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
-     *
-     * <pre>
-     *主背包数量 
-     * </pre>
-     */
-    int getPrimBagCount();
-
-    // optional int32 storyId = 12 [default = 0];
-    /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
-     *
-     * <pre>
-     *所进行的剧情
-     * </pre>
-     */
-    boolean hasStoryId();
-    /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
-     *
-     * <pre>
-     *所进行的剧情
-     * </pre>
-     */
-    int getStoryId();
-
-    // optional int32 guideId = 13 [default = 0];
-    /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导ID
-     * </pre>
-     */
-    boolean hasGuideId();
-    /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导ID
-     * </pre>
-     */
-    int getGuideId();
-
-    // optional int32 guideState = 14 [default = 0];
-    /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导状态
-     * </pre>
-     */
-    boolean hasGuideState();
-    /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导状态
-     * </pre>
-     */
-    int getGuideState();
-
-    // optional int32 roleKind = 15 [default = 0];
-    /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
-     *
-     * <pre>
-     *角色类型:0正常角色1竞技场角色其它场景角色
-     * </pre>
-     */
-    boolean hasRoleKind();
-    /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
-     *
-     * <pre>
-     *角色类型:0正常角色1竞技场角色其它场景角色
-     * </pre>
-     */
-    int getRoleKind();
-
-    // optional int32 vipLevel = 16 [default = 0];
-    /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
-     *
-     * <pre>
-     *vip等级
-     * </pre>
-     */
-    boolean hasVipLevel();
-    /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
-     *
-     * <pre>
-     *vip等级
-     * </pre>
-     */
-    int getVipLevel();
-  }
-  /**
-   * Protobuf type {@code bean.HumanInfo}
-   */
-  public static final class HumanInfo extends
-      com.google.protobuf.GeneratedMessage
-      implements HumanInfoOrBuilder {
-    // Use HumanInfo.newBuilder() to construct.
-    private HumanInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private HumanInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final HumanInfo defaultInstance;
-    public static HumanInfo getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public HumanInfo getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private HumanInfo(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              roleId_ = input.readInt64();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              roleName_ = input.readBytes();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              level_ = input.readInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              allianceTypeId_ = input.readInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              diamond_ = input.readInt32();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
-              gold_ = input.readInt32();
-              break;
-            }
-            case 56: {
-              bitField0_ |= 0x00000040;
-              coupon_ = input.readInt32();
-              break;
-            }
-            case 64: {
-              bitField0_ |= 0x00000080;
-              curExp_ = input.readInt32();
-              break;
-            }
-            case 72: {
-              bitField0_ |= 0x00000100;
-              maxExp_ = input.readInt32();
-              break;
-            }
-            case 80: {
-              bitField0_ |= 0x00000200;
-              sceneId_ = input.readInt32();
-              break;
-            }
-            case 88: {
-              bitField0_ |= 0x00000400;
-              primBagCount_ = input.readInt32();
-              break;
-            }
-            case 96: {
-              bitField0_ |= 0x00000800;
-              storyId_ = input.readInt32();
-              break;
-            }
-            case 104: {
-              bitField0_ |= 0x00001000;
-              guideId_ = input.readInt32();
-              break;
-            }
-            case 112: {
-              bitField0_ |= 0x00002000;
-              guideState_ = input.readInt32();
-              break;
-            }
-            case 120: {
-              bitField0_ |= 0x00004000;
-              roleKind_ = input.readInt32();
-              break;
-            }
-            case 128: {
-              bitField0_ |= 0x00008000;
-              vipLevel_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_descriptor;
-    }
-
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.common.msg.PlayerBean.HumanInfo.class, com.common.msg.PlayerBean.HumanInfo.Builder.class);
-    }
-
-    public static com.google.protobuf.Parser<HumanInfo> PARSER =
-        new com.google.protobuf.AbstractParser<HumanInfo>() {
-      public HumanInfo parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HumanInfo(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<HumanInfo> getParserForType() {
-      return PARSER;
-    }
-
-    private int bitField0_;
-    // required int64 roleId = 1;
-    public static final int ROLEID_FIELD_NUMBER = 1;
-    private long roleId_;
-    /**
-     * <code>required int64 roleId = 1;</code>
-     *
-     * <pre>
-     *角色id
-     * </pre>
-     */
-    public boolean hasRoleId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required int64 roleId = 1;</code>
-     *
-     * <pre>
-     *角色id
-     * </pre>
-     */
-    public long getRoleId() {
-      return roleId_;
-    }
-
-    // optional string roleName = 2 [default = ""];
-    public static final int ROLENAME_FIELD_NUMBER = 2;
-    private java.lang.Object roleName_;
-    /**
-     * <code>optional string roleName = 2 [default = ""];</code>
-     *
-     * <pre>
-     *角色名称
-     * </pre>
-     */
-    public boolean hasRoleName() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>optional string roleName = 2 [default = ""];</code>
-     *
-     * <pre>
-     *角色名称
-     * </pre>
-     */
-    public java.lang.String getRoleName() {
-      java.lang.Object ref = roleName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          roleName_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>optional string roleName = 2 [default = ""];</code>
-     *
-     * <pre>
-     *角色名称
-     * </pre>
-     */
-    public com.google.protobuf.ByteString
-        getRoleNameBytes() {
-      java.lang.Object ref = roleName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        roleName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    // optional int32 level = 3 [default = 1];
-    public static final int LEVEL_FIELD_NUMBER = 3;
-    private int level_;
-    /**
-     * <code>optional int32 level = 3 [default = 1];</code>
-     *
-     * <pre>
-     *角色等级
-     * </pre>
-     */
-    public boolean hasLevel() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>optional int32 level = 3 [default = 1];</code>
-     *
-     * <pre>
-     *角色等级
-     * </pre>
-     */
-    public int getLevel() {
-      return level_;
-    }
-
-    // optional int32 allianceTypeId = 4 [default = 1];
-    public static final int ALLIANCETYPEID_FIELD_NUMBER = 4;
-    private int allianceTypeId_;
-    /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-     *
-     * <pre>
-     *种族
-     * </pre>
-     */
-    public boolean hasAllianceTypeId() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-     *
-     * <pre>
-     *种族
-     * </pre>
-     */
-    public int getAllianceTypeId() {
-      return allianceTypeId_;
-    }
-
-    // optional int32 diamond = 5 [default = 0];
-    public static final int DIAMOND_FIELD_NUMBER = 5;
-    private int diamond_;
-    /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
-     *
-     * <pre>
-     *角色元宝数量
-     * </pre>
-     */
-    public boolean hasDiamond() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
-     *
-     * <pre>
-     *角色元宝数量
-     * </pre>
-     */
-    public int getDiamond() {
-      return diamond_;
-    }
-
-    // optional int32 gold = 6 [default = 0];
-    public static final int GOLD_FIELD_NUMBER = 6;
-    private int gold_;
-    /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
-     *
-     * <pre>
-     *角色金币数量
-     * </pre>
-     */
-    public boolean hasGold() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
-     *
-     * <pre>
-     *角色金币数量
-     * </pre>
-     */
-    public int getGold() {
-      return gold_;
-    }
-
-    // optional int32 coupon = 7 [default = 0];
-    public static final int COUPON_FIELD_NUMBER = 7;
-    private int coupon_;
-    /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
-     *
-     * <pre>
-     *点卷数量
-     * </pre>
-     */
-    public boolean hasCoupon() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
-     *
-     * <pre>
-     *点卷数量
-     * </pre>
-     */
-    public int getCoupon() {
-      return coupon_;
-    }
-
-    // optional int32 curExp = 8 [default = 0];
-    public static final int CUREXP_FIELD_NUMBER = 8;
-    private int curExp_;
-    /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
-     *
-     * <pre>
-     *当前经验
-     * </pre>
-     */
-    public boolean hasCurExp() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
-    }
-    /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
-     *
-     * <pre>
-     *当前经验
-     * </pre>
-     */
-    public int getCurExp() {
-      return curExp_;
-    }
-
-    // optional int32 maxExp = 9 [default = 0];
-    public static final int MAXEXP_FIELD_NUMBER = 9;
-    private int maxExp_;
-    /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
-     *
-     * <pre>
-     *最大经验
-     * </pre>
-     */
-    public boolean hasMaxExp() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
-    }
-    /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
-     *
-     * <pre>
-     *最大经验
-     * </pre>
-     */
-    public int getMaxExp() {
-      return maxExp_;
-    }
-
-    // optional int32 sceneId = 10 [default = 0];
-    public static final int SCENEID_FIELD_NUMBER = 10;
-    private int sceneId_;
-    /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
-     *
-     * <pre>
-     *所在场景
-     * </pre>
-     */
-    public boolean hasSceneId() {
-      return ((bitField0_ & 0x00000200) == 0x00000200);
-    }
-    /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
-     *
-     * <pre>
-     *所在场景
-     * </pre>
-     */
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    // optional int32 primBagCount = 11 [default = 0];
-    public static final int PRIMBAGCOUNT_FIELD_NUMBER = 11;
-    private int primBagCount_;
-    /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
-     *
-     * <pre>
-     *主背包数量 
-     * </pre>
-     */
-    public boolean hasPrimBagCount() {
-      return ((bitField0_ & 0x00000400) == 0x00000400);
-    }
-    /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
-     *
-     * <pre>
-     *主背包数量 
-     * </pre>
-     */
-    public int getPrimBagCount() {
-      return primBagCount_;
-    }
-
-    // optional int32 storyId = 12 [default = 0];
-    public static final int STORYID_FIELD_NUMBER = 12;
-    private int storyId_;
-    /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
-     *
-     * <pre>
-     *所进行的剧情
-     * </pre>
-     */
-    public boolean hasStoryId() {
-      return ((bitField0_ & 0x00000800) == 0x00000800);
-    }
-    /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
-     *
-     * <pre>
-     *所进行的剧情
-     * </pre>
-     */
-    public int getStoryId() {
-      return storyId_;
-    }
-
-    // optional int32 guideId = 13 [default = 0];
-    public static final int GUIDEID_FIELD_NUMBER = 13;
-    private int guideId_;
-    /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导ID
-     * </pre>
-     */
-    public boolean hasGuideId() {
-      return ((bitField0_ & 0x00001000) == 0x00001000);
-    }
-    /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导ID
-     * </pre>
-     */
-    public int getGuideId() {
-      return guideId_;
-    }
-
-    // optional int32 guideState = 14 [default = 0];
-    public static final int GUIDESTATE_FIELD_NUMBER = 14;
-    private int guideState_;
-    /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导状态
-     * </pre>
-     */
-    public boolean hasGuideState() {
-      return ((bitField0_ & 0x00002000) == 0x00002000);
-    }
-    /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
-     *
-     * <pre>
-     *新手引导状态
-     * </pre>
-     */
-    public int getGuideState() {
-      return guideState_;
-    }
-
-    // optional int32 roleKind = 15 [default = 0];
-    public static final int ROLEKIND_FIELD_NUMBER = 15;
-    private int roleKind_;
-    /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
-     *
-     * <pre>
-     *角色类型:0正常角色1竞技场角色其它场景角色
-     * </pre>
-     */
-    public boolean hasRoleKind() {
-      return ((bitField0_ & 0x00004000) == 0x00004000);
-    }
-    /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
-     *
-     * <pre>
-     *角色类型:0正常角色1竞技场角色其它场景角色
-     * </pre>
-     */
-    public int getRoleKind() {
-      return roleKind_;
-    }
-
-    // optional int32 vipLevel = 16 [default = 0];
-    public static final int VIPLEVEL_FIELD_NUMBER = 16;
-    private int vipLevel_;
-    /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
-     *
-     * <pre>
-     *vip等级
-     * </pre>
-     */
-    public boolean hasVipLevel() {
-      return ((bitField0_ & 0x00008000) == 0x00008000);
-    }
-    /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
-     *
-     * <pre>
-     *vip等级
-     * </pre>
-     */
-    public int getVipLevel() {
-      return vipLevel_;
-    }
-
-    private void initFields() {
-      roleId_ = 0L;
-      roleName_ = "";
-      level_ = 1;
-      allianceTypeId_ = 1;
-      diamond_ = 0;
-      gold_ = 0;
-      coupon_ = 0;
-      curExp_ = 0;
-      maxExp_ = 0;
-      sceneId_ = 0;
-      primBagCount_ = 0;
-      storyId_ = 0;
-      guideId_ = 0;
-      guideState_ = 0;
-      roleKind_ = 0;
-      vipLevel_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-
-      if (!hasRoleId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(1, roleId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getRoleNameBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, level_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, allianceTypeId_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(5, diamond_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt32(6, gold_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(7, coupon_);
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeInt32(8, curExp_);
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeInt32(9, maxExp_);
-      }
-      if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeInt32(10, sceneId_);
-      }
-      if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        output.writeInt32(11, primBagCount_);
-      }
-      if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeInt32(12, storyId_);
-      }
-      if (((bitField0_ & 0x00001000) == 0x00001000)) {
-        output.writeInt32(13, guideId_);
-      }
-      if (((bitField0_ & 0x00002000) == 0x00002000)) {
-        output.writeInt32(14, guideState_);
-      }
-      if (((bitField0_ & 0x00004000) == 0x00004000)) {
-        output.writeInt32(15, roleKind_);
-      }
-      if (((bitField0_ & 0x00008000) == 0x00008000)) {
-        output.writeInt32(16, vipLevel_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, roleId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getRoleNameBytes());
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, level_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, allianceTypeId_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, diamond_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, gold_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, coupon_);
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, curExp_);
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, maxExp_);
-      }
-      if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, sceneId_);
-      }
-      if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, primBagCount_);
-      }
-      if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, storyId_);
-      }
-      if (((bitField0_ & 0x00001000) == 0x00001000)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, guideId_);
-      }
-      if (((bitField0_ & 0x00002000) == 0x00002000)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, guideState_);
-      }
-      if (((bitField0_ & 0x00004000) == 0x00004000)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, roleKind_);
-      }
-      if (((bitField0_ & 0x00008000) == 0x00008000)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(16, vipLevel_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-    public static com.common.msg.PlayerBean.HumanInfo parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.common.msg.PlayerBean.HumanInfo prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code bean.HumanInfo}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.common.msg.PlayerBean.HumanInfoOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_descriptor;
-      }
-
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.common.msg.PlayerBean.HumanInfo.class, com.common.msg.PlayerBean.HumanInfo.Builder.class);
-      }
-
-      // Construct using com.common.msg.PlayerBean.HumanInfo.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-
-      public Builder clear() {
-        super.clear();
-        roleId_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        roleName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        level_ = 1;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        allianceTypeId_ = 1;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        diamond_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        gold_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        coupon_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000040);
-        curExp_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000080);
-        maxExp_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000100);
-        sceneId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000200);
-        primBagCount_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000400);
-        storyId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000800);
-        guideId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00001000);
-        guideState_ = 0;
-        bitField0_ = (bitField0_ & ~0x00002000);
-        roleKind_ = 0;
-        bitField0_ = (bitField0_ & ~0x00004000);
-        vipLevel_ = 0;
-        bitField0_ = (bitField0_ & ~0x00008000);
-        return this;
-      }
-
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.common.msg.PlayerBean.internal_static_bean_HumanInfo_descriptor;
-      }
-
-      public com.common.msg.PlayerBean.HumanInfo getDefaultInstanceForType() {
-        return com.common.msg.PlayerBean.HumanInfo.getDefaultInstance();
-      }
-
-      public com.common.msg.PlayerBean.HumanInfo build() {
-        com.common.msg.PlayerBean.HumanInfo result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.common.msg.PlayerBean.HumanInfo buildPartial() {
-        com.common.msg.PlayerBean.HumanInfo result = new com.common.msg.PlayerBean.HumanInfo(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.roleId_ = roleId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.roleName_ = roleName_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.level_ = level_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.allianceTypeId_ = allianceTypeId_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.diamond_ = diamond_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.gold_ = gold_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.coupon_ = coupon_;
-        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
-          to_bitField0_ |= 0x00000080;
-        }
-        result.curExp_ = curExp_;
-        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
-          to_bitField0_ |= 0x00000100;
-        }
-        result.maxExp_ = maxExp_;
-        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
-          to_bitField0_ |= 0x00000200;
-        }
-        result.sceneId_ = sceneId_;
-        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
-          to_bitField0_ |= 0x00000400;
-        }
-        result.primBagCount_ = primBagCount_;
-        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
-          to_bitField0_ |= 0x00000800;
-        }
-        result.storyId_ = storyId_;
-        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
-          to_bitField0_ |= 0x00001000;
-        }
-        result.guideId_ = guideId_;
-        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
-          to_bitField0_ |= 0x00002000;
-        }
-        result.guideState_ = guideState_;
-        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
-          to_bitField0_ |= 0x00004000;
-        }
-        result.roleKind_ = roleKind_;
-        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
-          to_bitField0_ |= 0x00008000;
-        }
-        result.vipLevel_ = vipLevel_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.common.msg.PlayerBean.HumanInfo) {
-          return mergeFrom((com.common.msg.PlayerBean.HumanInfo)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.common.msg.PlayerBean.HumanInfo other) {
-        if (other == com.common.msg.PlayerBean.HumanInfo.getDefaultInstance()) return this;
-        if (other.hasRoleId()) {
-          setRoleId(other.getRoleId());
-        }
-        if (other.hasRoleName()) {
-          bitField0_ |= 0x00000002;
-          roleName_ = other.roleName_;
-          onChanged();
-        }
-        if (other.hasLevel()) {
-          setLevel(other.getLevel());
-        }
-        if (other.hasAllianceTypeId()) {
-          setAllianceTypeId(other.getAllianceTypeId());
-        }
-        if (other.hasDiamond()) {
-          setDiamond(other.getDiamond());
-        }
-        if (other.hasGold()) {
-          setGold(other.getGold());
-        }
-        if (other.hasCoupon()) {
-          setCoupon(other.getCoupon());
-        }
-        if (other.hasCurExp()) {
-          setCurExp(other.getCurExp());
-        }
-        if (other.hasMaxExp()) {
-          setMaxExp(other.getMaxExp());
-        }
-        if (other.hasSceneId()) {
-          setSceneId(other.getSceneId());
-        }
-        if (other.hasPrimBagCount()) {
-          setPrimBagCount(other.getPrimBagCount());
-        }
-        if (other.hasStoryId()) {
-          setStoryId(other.getStoryId());
-        }
-        if (other.hasGuideId()) {
-          setGuideId(other.getGuideId());
-        }
-        if (other.hasGuideState()) {
-          setGuideState(other.getGuideState());
-        }
-        if (other.hasRoleKind()) {
-          setRoleKind(other.getRoleKind());
-        }
-        if (other.hasVipLevel()) {
-          setVipLevel(other.getVipLevel());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        if (!hasRoleId()) {
-          
-          return false;
-        }
-        return true;
-      }
-
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.common.msg.PlayerBean.HumanInfo parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.common.msg.PlayerBean.HumanInfo) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required int64 roleId = 1;
-      private long roleId_ ;
-      /**
-       * <code>required int64 roleId = 1;</code>
-       *
-       * <pre>
-       *角色id
-       * </pre>
-       */
-      public boolean hasRoleId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int64 roleId = 1;</code>
-       *
-       * <pre>
-       *角色id
-       * </pre>
-       */
-      public long getRoleId() {
-        return roleId_;
-      }
-      /**
-       * <code>required int64 roleId = 1;</code>
-       *
-       * <pre>
-       *角色id
-       * </pre>
-       */
-      public Builder setRoleId(long value) {
-        bitField0_ |= 0x00000001;
-        roleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int64 roleId = 1;</code>
-       *
-       * <pre>
-       *角色id
-       * </pre>
-       */
-      public Builder clearRoleId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        roleId_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      // optional string roleName = 2 [default = ""];
-      private java.lang.Object roleName_ = "";
-      /**
-       * <code>optional string roleName = 2 [default = ""];</code>
-       *
-       * <pre>
-       *角色名称
-       * </pre>
-       */
-      public boolean hasRoleName() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional string roleName = 2 [default = ""];</code>
-       *
-       * <pre>
-       *角色名称
-       * </pre>
-       */
-      public java.lang.String getRoleName() {
-        java.lang.Object ref = roleName_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          roleName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>optional string roleName = 2 [default = ""];</code>
-       *
-       * <pre>
-       *角色名称
-       * </pre>
-       */
-      public com.google.protobuf.ByteString
-          getRoleNameBytes() {
-        java.lang.Object ref = roleName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          roleName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string roleName = 2 [default = ""];</code>
-       *
-       * <pre>
-       *角色名称
-       * </pre>
-       */
-      public Builder setRoleName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        roleName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string roleName = 2 [default = ""];</code>
-       *
-       * <pre>
-       *角色名称
-       * </pre>
-       */
-      public Builder clearRoleName() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        roleName_ = getDefaultInstance().getRoleName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string roleName = 2 [default = ""];</code>
-       *
-       * <pre>
-       *角色名称
-       * </pre>
-       */
-      public Builder setRoleNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        roleName_ = value;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 level = 3 [default = 1];
-      private int level_ = 1;
-      /**
-       * <code>optional int32 level = 3 [default = 1];</code>
-       *
-       * <pre>
-       *角色等级
-       * </pre>
-       */
-      public boolean hasLevel() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional int32 level = 3 [default = 1];</code>
-       *
-       * <pre>
-       *角色等级
-       * </pre>
-       */
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>optional int32 level = 3 [default = 1];</code>
-       *
-       * <pre>
-       *角色等级
-       * </pre>
-       */
-      public Builder setLevel(int value) {
-        bitField0_ |= 0x00000004;
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 level = 3 [default = 1];</code>
-       *
-       * <pre>
-       *角色等级
-       * </pre>
-       */
-      public Builder clearLevel() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        level_ = 1;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 allianceTypeId = 4 [default = 1];
-      private int allianceTypeId_ = 1;
-      /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-       *
-       * <pre>
-       *种族
-       * </pre>
-       */
-      public boolean hasAllianceTypeId() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-       *
-       * <pre>
-       *种族
-       * </pre>
-       */
-      public int getAllianceTypeId() {
-        return allianceTypeId_;
-      }
-      /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-       *
-       * <pre>
-       *种族
-       * </pre>
-       */
-      public Builder setAllianceTypeId(int value) {
-        bitField0_ |= 0x00000008;
-        allianceTypeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
-       *
-       * <pre>
-       *种族
-       * </pre>
-       */
-      public Builder clearAllianceTypeId() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        allianceTypeId_ = 1;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 diamond = 5 [default = 0];
-      private int diamond_ ;
-      /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
-       *
-       * <pre>
-       *角色元宝数量
-       * </pre>
-       */
-      public boolean hasDiamond() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
-       *
-       * <pre>
-       *角色元宝数量
-       * </pre>
-       */
-      public int getDiamond() {
-        return diamond_;
-      }
-      /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
-       *
-       * <pre>
-       *角色元宝数量
-       * </pre>
-       */
-      public Builder setDiamond(int value) {
-        bitField0_ |= 0x00000010;
-        diamond_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
-       *
-       * <pre>
-       *角色元宝数量
-       * </pre>
-       */
-      public Builder clearDiamond() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        diamond_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 gold = 6 [default = 0];
-      private int gold_ ;
-      /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
-       *
-       * <pre>
-       *角色金币数量
-       * </pre>
-       */
-      public boolean hasGold() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
-       *
-       * <pre>
-       *角色金币数量
-       * </pre>
-       */
-      public int getGold() {
-        return gold_;
-      }
-      /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
-       *
-       * <pre>
-       *角色金币数量
-       * </pre>
-       */
-      public Builder setGold(int value) {
-        bitField0_ |= 0x00000020;
-        gold_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
-       *
-       * <pre>
-       *角色金币数量
-       * </pre>
-       */
-      public Builder clearGold() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        gold_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 coupon = 7 [default = 0];
-      private int coupon_ ;
-      /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
-       *
-       * <pre>
-       *点卷数量
-       * </pre>
-       */
-      public boolean hasCoupon() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
-       *
-       * <pre>
-       *点卷数量
-       * </pre>
-       */
-      public int getCoupon() {
-        return coupon_;
-      }
-      /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
-       *
-       * <pre>
-       *点卷数量
-       * </pre>
-       */
-      public Builder setCoupon(int value) {
-        bitField0_ |= 0x00000040;
-        coupon_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
-       *
-       * <pre>
-       *点卷数量
-       * </pre>
-       */
-      public Builder clearCoupon() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        coupon_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 curExp = 8 [default = 0];
-      private int curExp_ ;
-      /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
-       *
-       * <pre>
-       *当前经验
-       * </pre>
-       */
-      public boolean hasCurExp() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
-      }
-      /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
-       *
-       * <pre>
-       *当前经验
-       * </pre>
-       */
-      public int getCurExp() {
-        return curExp_;
-      }
-      /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
-       *
-       * <pre>
-       *当前经验
-       * </pre>
-       */
-      public Builder setCurExp(int value) {
-        bitField0_ |= 0x00000080;
-        curExp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
-       *
-       * <pre>
-       *当前经验
-       * </pre>
-       */
-      public Builder clearCurExp() {
-        bitField0_ = (bitField0_ & ~0x00000080);
-        curExp_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 maxExp = 9 [default = 0];
-      private int maxExp_ ;
-      /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
-       *
-       * <pre>
-       *最大经验
-       * </pre>
-       */
-      public boolean hasMaxExp() {
-        return ((bitField0_ & 0x00000100) == 0x00000100);
-      }
-      /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
-       *
-       * <pre>
-       *最大经验
-       * </pre>
-       */
-      public int getMaxExp() {
-        return maxExp_;
-      }
-      /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
-       *
-       * <pre>
-       *最大经验
-       * </pre>
-       */
-      public Builder setMaxExp(int value) {
-        bitField0_ |= 0x00000100;
-        maxExp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
-       *
-       * <pre>
-       *最大经验
-       * </pre>
-       */
-      public Builder clearMaxExp() {
-        bitField0_ = (bitField0_ & ~0x00000100);
-        maxExp_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 sceneId = 10 [default = 0];
-      private int sceneId_ ;
-      /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
-       *
-       * <pre>
-       *所在场景
-       * </pre>
-       */
-      public boolean hasSceneId() {
-        return ((bitField0_ & 0x00000200) == 0x00000200);
-      }
-      /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
-       *
-       * <pre>
-       *所在场景
-       * </pre>
-       */
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
-       *
-       * <pre>
-       *所在场景
-       * </pre>
-       */
-      public Builder setSceneId(int value) {
-        bitField0_ |= 0x00000200;
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
-       *
-       * <pre>
-       *所在场景
-       * </pre>
-       */
-      public Builder clearSceneId() {
-        bitField0_ = (bitField0_ & ~0x00000200);
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 primBagCount = 11 [default = 0];
-      private int primBagCount_ ;
-      /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
-       *
-       * <pre>
-       *主背包数量 
-       * </pre>
-       */
-      public boolean hasPrimBagCount() {
-        return ((bitField0_ & 0x00000400) == 0x00000400);
-      }
-      /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
-       *
-       * <pre>
-       *主背包数量 
-       * </pre>
-       */
-      public int getPrimBagCount() {
-        return primBagCount_;
-      }
-      /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
-       *
-       * <pre>
-       *主背包数量 
-       * </pre>
-       */
-      public Builder setPrimBagCount(int value) {
-        bitField0_ |= 0x00000400;
-        primBagCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
-       *
-       * <pre>
-       *主背包数量 
-       * </pre>
-       */
-      public Builder clearPrimBagCount() {
-        bitField0_ = (bitField0_ & ~0x00000400);
-        primBagCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 storyId = 12 [default = 0];
-      private int storyId_ ;
-      /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
-       *
-       * <pre>
-       *所进行的剧情
-       * </pre>
-       */
-      public boolean hasStoryId() {
-        return ((bitField0_ & 0x00000800) == 0x00000800);
-      }
-      /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
-       *
-       * <pre>
-       *所进行的剧情
-       * </pre>
-       */
-      public int getStoryId() {
-        return storyId_;
-      }
-      /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
-       *
-       * <pre>
-       *所进行的剧情
-       * </pre>
-       */
-      public Builder setStoryId(int value) {
-        bitField0_ |= 0x00000800;
-        storyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
-       *
-       * <pre>
-       *所进行的剧情
-       * </pre>
-       */
-      public Builder clearStoryId() {
-        bitField0_ = (bitField0_ & ~0x00000800);
-        storyId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 guideId = 13 [default = 0];
-      private int guideId_ ;
-      /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导ID
-       * </pre>
-       */
-      public boolean hasGuideId() {
-        return ((bitField0_ & 0x00001000) == 0x00001000);
-      }
-      /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导ID
-       * </pre>
-       */
-      public int getGuideId() {
-        return guideId_;
-      }
-      /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导ID
-       * </pre>
-       */
-      public Builder setGuideId(int value) {
-        bitField0_ |= 0x00001000;
-        guideId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导ID
-       * </pre>
-       */
-      public Builder clearGuideId() {
-        bitField0_ = (bitField0_ & ~0x00001000);
-        guideId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 guideState = 14 [default = 0];
-      private int guideState_ ;
-      /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导状态
-       * </pre>
-       */
-      public boolean hasGuideState() {
-        return ((bitField0_ & 0x00002000) == 0x00002000);
-      }
-      /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导状态
-       * </pre>
-       */
-      public int getGuideState() {
-        return guideState_;
-      }
-      /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导状态
-       * </pre>
-       */
-      public Builder setGuideState(int value) {
-        bitField0_ |= 0x00002000;
-        guideState_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
-       *
-       * <pre>
-       *新手引导状态
-       * </pre>
-       */
-      public Builder clearGuideState() {
-        bitField0_ = (bitField0_ & ~0x00002000);
-        guideState_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 roleKind = 15 [default = 0];
-      private int roleKind_ ;
-      /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
-       *
-       * <pre>
-       *角色类型:0正常角色1竞技场角色其它场景角色
-       * </pre>
-       */
-      public boolean hasRoleKind() {
-        return ((bitField0_ & 0x00004000) == 0x00004000);
-      }
-      /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
-       *
-       * <pre>
-       *角色类型:0正常角色1竞技场角色其它场景角色
-       * </pre>
-       */
-      public int getRoleKind() {
-        return roleKind_;
-      }
-      /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
-       *
-       * <pre>
-       *角色类型:0正常角色1竞技场角色其它场景角色
-       * </pre>
-       */
-      public Builder setRoleKind(int value) {
-        bitField0_ |= 0x00004000;
-        roleKind_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
-       *
-       * <pre>
-       *角色类型:0正常角色1竞技场角色其它场景角色
-       * </pre>
-       */
-      public Builder clearRoleKind() {
-        bitField0_ = (bitField0_ & ~0x00004000);
-        roleKind_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // optional int32 vipLevel = 16 [default = 0];
-      private int vipLevel_ ;
-      /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
-       *
-       * <pre>
-       *vip等级
-       * </pre>
-       */
-      public boolean hasVipLevel() {
-        return ((bitField0_ & 0x00008000) == 0x00008000);
-      }
-      /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
-       *
-       * <pre>
-       *vip等级
-       * </pre>
-       */
-      public int getVipLevel() {
-        return vipLevel_;
-      }
-      /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
-       *
-       * <pre>
-       *vip等级
-       * </pre>
-       */
-      public Builder setVipLevel(int value) {
-        bitField0_ |= 0x00008000;
-        vipLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
-       *
-       * <pre>
-       *vip等级
-       * </pre>
-       */
-      public Builder clearVipLevel() {
-        bitField0_ = (bitField0_ & ~0x00008000);
-        vipLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:bean.HumanInfo)
-    }
-
-    static {
-      defaultInstance = new HumanInfo(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:bean.HumanInfo)
-  }
-
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_bean_CGPlayerCheckLogin_descriptor;
   private static
@@ -8482,11 +6260,6 @@ public final class PlayerBean {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_bean_GCEnterScene_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_bean_HumanInfo_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_bean_HumanInfo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -8496,31 +6269,23 @@ public final class PlayerBean {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014player.proto\022\004bean\"N\n\022CGPlayerCheckLog" +
-      "in\022\020\n\010playerId\030\001 \002(\003\022\022\n\010userCode\030\002 \001(\t:\000" +
-      "\022\022\n\010deviceID\030\003 \001(\t:\000\"&\n\022GCPlayerCheckLog" +
-      "in\022\020\n\010playerId\030\001 \002(\003\"!\n\rCGGetRoleList\022\020\n" +
-      "\010playerId\030\001 \002(\003\"E\n\rGCGetRoleList\022\020\n\010play" +
-      "erId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \003(\0132\017.bean.Hum" +
-      "anInfo\"4\n\014CGCreateRole\022\020\n\010playerId\030\001 \002(\003" +
-      "\022\022\n\ntemplateId\030\002 \002(\005\"D\n\014GCCreateRole\022\020\n\010" +
-      "playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \001(\0132\017.bean" +
-      ".HumanInfo\"0\n\014CGSelectRole\022\020\n\010playerId\030\001",
-      " \002(\003\022\016\n\006roleId\030\002 \002(\003\"0\n\014CGRoleReName\022\016\n\006" +
-      "roleId\030\001 \002(\003\022\020\n\010roleName\030\002 \002(\t\" \n\014GCRole" +
-      "ReName\022\020\n\010roleName\030\001 \002(\t\"/\n\014CGEnterScene" +
-      "\022\016\n\006roleId\030\001 \002(\003\022\017\n\007sceneId\030\002 \002(\005\"/\n\014GCE" +
-      "nterScene\022\016\n\006roleId\030\001 \002(\003\022\017\n\007sceneId\030\002 \002" +
-      "(\005\"\320\002\n\tHumanInfo\022\016\n\006roleId\030\001 \002(\003\022\022\n\010role" +
-      "Name\030\002 \001(\t:\000\022\020\n\005level\030\003 \001(\005:\0011\022\031\n\016allian" +
-      "ceTypeId\030\004 \001(\005:\0011\022\022\n\007diamond\030\005 \001(\005:\0010\022\017\n" +
-      "\004gold\030\006 \001(\005:\0010\022\021\n\006coupon\030\007 \001(\005:\0010\022\021\n\006cur" +
-      "Exp\030\010 \001(\005:\0010\022\021\n\006maxExp\030\t \001(\005:\0010\022\022\n\007scene",
-      "Id\030\n \001(\005:\0010\022\027\n\014primBagCount\030\013 \001(\005:\0010\022\022\n\007" +
-      "storyId\030\014 \001(\005:\0010\022\022\n\007guideId\030\r \001(\005:\0010\022\025\n\n" +
-      "guideState\030\016 \001(\005:\0010\022\023\n\010roleKind\030\017 \001(\005:\0010" +
-      "\022\023\n\010vipLevel\030\020 \001(\005:\0010B\034\n\016com.common.msgB" +
-      "\nPlayerBean"
+      "\n\014player.proto\022\004bean\032\ndata.proto\"N\n\022CGPl" +
+      "ayerCheckLogin\022\020\n\010playerId\030\001 \002(\003\022\022\n\010user" +
+      "Code\030\002 \001(\t:\000\022\022\n\010deviceID\030\003 \001(\t:\000\"&\n\022GCPl" +
+      "ayerCheckLogin\022\020\n\010playerId\030\001 \002(\003\"!\n\rCGGe" +
+      "tRoleList\022\020\n\010playerId\030\001 \002(\003\"E\n\rGCGetRole" +
+      "List\022\020\n\010playerId\030\001 \002(\003\022\"\n\thumanInfo\030\002 \003(" +
+      "\0132\017.bean.HumanInfo\"4\n\014CGCreateRole\022\020\n\010pl" +
+      "ayerId\030\001 \002(\003\022\022\n\ntemplateId\030\002 \002(\005\"D\n\014GCCr" +
+      "eateRole\022\020\n\010playerId\030\001 \002(\003\022\"\n\thumanInfo\030" +
+      "\002 \001(\0132\017.bean.HumanInfo\"0\n\014CGSelectRole\022\020",
+      "\n\010playerId\030\001 \002(\003\022\016\n\006roleId\030\002 \002(\003\"0\n\014CGRo" +
+      "leReName\022\016\n\006roleId\030\001 \002(\003\022\020\n\010roleName\030\002 \002" +
+      "(\t\" \n\014GCRoleReName\022\020\n\010roleName\030\001 \002(\t\"/\n\014" +
+      "CGEnterScene\022\016\n\006roleId\030\001 \002(\003\022\017\n\007sceneId\030" +
+      "\002 \002(\005\"/\n\014GCEnterScene\022\016\n\006roleId\030\001 \002(\003\022\017\n" +
+      "\007sceneId\030\002 \002(\005B\034\n\016com.common.msgB\nPlayer" +
+      "Bean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -8593,18 +6358,13 @@ public final class PlayerBean {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCEnterScene_descriptor,
               new java.lang.String[] { "RoleId", "SceneId", });
-          internal_static_bean_HumanInfo_descriptor =
-            getDescriptor().getMessageTypes().get(11);
-          internal_static_bean_HumanInfo_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_bean_HumanInfo_descriptor,
-              new java.lang.String[] { "RoleId", "RoleName", "Level", "AllianceTypeId", "Diamond", "Gold", "Coupon", "CurExp", "MaxExp", "SceneId", "PrimBagCount", "StoryId", "GuideId", "GuideState", "RoleKind", "VipLevel", });
           return null;
         }
       };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.common.msg.DataBean.getDescriptor(),
         }, assigner);
   }
 
