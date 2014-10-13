@@ -910,41 +910,41 @@ public final class HumanBean {
   public interface KeyValueDataOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 level = 1 [default = 1];
+    // required int32 key = 1 [default = 1];
     /**
-     * <code>required int32 level = 1 [default = 1];</code>
+     * <code>required int32 key = 1 [default = 1];</code>
      *
      * <pre>
      *属性key
      * </pre>
      */
-    boolean hasLevel();
+    boolean hasKey();
     /**
-     * <code>required int32 level = 1 [default = 1];</code>
+     * <code>required int32 key = 1 [default = 1];</code>
      *
      * <pre>
      *属性key
      * </pre>
      */
-    int getLevel();
+    int getKey();
 
-    // required int32 allianceTypeId = 2 [default = 1];
+    // required int32 value = 2 [default = 1];
     /**
-     * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+     * <code>required int32 value = 2 [default = 1];</code>
      *
      * <pre>
      *属性值
      * </pre>
      */
-    boolean hasAllianceTypeId();
+    boolean hasValue();
     /**
-     * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+     * <code>required int32 value = 2 [default = 1];</code>
      *
      * <pre>
      *属性值
      * </pre>
      */
-    int getAllianceTypeId();
+    int getValue();
   }
   /**
    * Protobuf type {@code bean.KeyValueData}
@@ -999,12 +999,12 @@ public final class HumanBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              level_ = input.readInt32();
+              key_ = input.readInt32();
               break;
             }
             case 16: {
               bitField0_ |= 0x00000002;
-              allianceTypeId_ = input.readInt32();
+              value_ = input.readInt32();
               break;
             }
           }
@@ -1047,68 +1047,68 @@ public final class HumanBean {
     }
 
     private int bitField0_;
-    // required int32 level = 1 [default = 1];
-    public static final int LEVEL_FIELD_NUMBER = 1;
-    private int level_;
+    // required int32 key = 1 [default = 1];
+    public static final int KEY_FIELD_NUMBER = 1;
+    private int key_;
     /**
-     * <code>required int32 level = 1 [default = 1];</code>
+     * <code>required int32 key = 1 [default = 1];</code>
      *
      * <pre>
      *属性key
      * </pre>
      */
-    public boolean hasLevel() {
+    public boolean hasKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 level = 1 [default = 1];</code>
+     * <code>required int32 key = 1 [default = 1];</code>
      *
      * <pre>
      *属性key
      * </pre>
      */
-    public int getLevel() {
-      return level_;
+    public int getKey() {
+      return key_;
     }
 
-    // required int32 allianceTypeId = 2 [default = 1];
-    public static final int ALLIANCETYPEID_FIELD_NUMBER = 2;
-    private int allianceTypeId_;
+    // required int32 value = 2 [default = 1];
+    public static final int VALUE_FIELD_NUMBER = 2;
+    private int value_;
     /**
-     * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+     * <code>required int32 value = 2 [default = 1];</code>
      *
      * <pre>
      *属性值
      * </pre>
      */
-    public boolean hasAllianceTypeId() {
+    public boolean hasValue() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+     * <code>required int32 value = 2 [default = 1];</code>
      *
      * <pre>
      *属性值
      * </pre>
      */
-    public int getAllianceTypeId() {
-      return allianceTypeId_;
+    public int getValue() {
+      return value_;
     }
 
     private void initFields() {
-      level_ = 1;
-      allianceTypeId_ = 1;
+      key_ = 1;
+      value_ = 1;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasLevel()) {
+      if (!hasKey()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasAllianceTypeId()) {
+      if (!hasValue()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1120,10 +1120,10 @@ public final class HumanBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, level_);
+        output.writeInt32(1, key_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, allianceTypeId_);
+        output.writeInt32(2, value_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1136,11 +1136,11 @@ public final class HumanBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, level_);
+          .computeInt32Size(1, key_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, allianceTypeId_);
+          .computeInt32Size(2, value_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1258,9 +1258,9 @@ public final class HumanBean {
 
       public Builder clear() {
         super.clear();
-        level_ = 1;
+        key_ = 1;
         bitField0_ = (bitField0_ & ~0x00000001);
-        allianceTypeId_ = 1;
+        value_ = 1;
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -1293,11 +1293,11 @@ public final class HumanBean {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.level_ = level_;
+        result.key_ = key_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.allianceTypeId_ = allianceTypeId_;
+        result.value_ = value_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1314,22 +1314,22 @@ public final class HumanBean {
 
       public Builder mergeFrom(com.common.msg.HumanBean.KeyValueData other) {
         if (other == com.common.msg.HumanBean.KeyValueData.getDefaultInstance()) return this;
-        if (other.hasLevel()) {
-          setLevel(other.getLevel());
+        if (other.hasKey()) {
+          setKey(other.getKey());
         }
-        if (other.hasAllianceTypeId()) {
-          setAllianceTypeId(other.getAllianceTypeId());
+        if (other.hasValue()) {
+          setValue(other.getValue());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasLevel()) {
+        if (!hasKey()) {
           
           return false;
         }
-        if (!hasAllianceTypeId()) {
+        if (!hasValue()) {
           
           return false;
         }
@@ -1355,100 +1355,100 @@ public final class HumanBean {
       }
       private int bitField0_;
 
-      // required int32 level = 1 [default = 1];
-      private int level_ = 1;
+      // required int32 key = 1 [default = 1];
+      private int key_ = 1;
       /**
-       * <code>required int32 level = 1 [default = 1];</code>
+       * <code>required int32 key = 1 [default = 1];</code>
        *
        * <pre>
        *属性key
        * </pre>
        */
-      public boolean hasLevel() {
+      public boolean hasKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 level = 1 [default = 1];</code>
+       * <code>required int32 key = 1 [default = 1];</code>
        *
        * <pre>
        *属性key
        * </pre>
        */
-      public int getLevel() {
-        return level_;
+      public int getKey() {
+        return key_;
       }
       /**
-       * <code>required int32 level = 1 [default = 1];</code>
+       * <code>required int32 key = 1 [default = 1];</code>
        *
        * <pre>
        *属性key
        * </pre>
        */
-      public Builder setLevel(int value) {
+      public Builder setKey(int value) {
         bitField0_ |= 0x00000001;
-        level_ = value;
+        key_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 level = 1 [default = 1];</code>
+       * <code>required int32 key = 1 [default = 1];</code>
        *
        * <pre>
        *属性key
        * </pre>
        */
-      public Builder clearLevel() {
+      public Builder clearKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        level_ = 1;
+        key_ = 1;
         onChanged();
         return this;
       }
 
-      // required int32 allianceTypeId = 2 [default = 1];
-      private int allianceTypeId_ = 1;
+      // required int32 value = 2 [default = 1];
+      private int value_ = 1;
       /**
-       * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+       * <code>required int32 value = 2 [default = 1];</code>
        *
        * <pre>
        *属性值
        * </pre>
        */
-      public boolean hasAllianceTypeId() {
+      public boolean hasValue() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+       * <code>required int32 value = 2 [default = 1];</code>
        *
        * <pre>
        *属性值
        * </pre>
        */
-      public int getAllianceTypeId() {
-        return allianceTypeId_;
+      public int getValue() {
+        return value_;
       }
       /**
-       * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+       * <code>required int32 value = 2 [default = 1];</code>
        *
        * <pre>
        *属性值
        * </pre>
        */
-      public Builder setAllianceTypeId(int value) {
+      public Builder setValue(int value) {
         bitField0_ |= 0x00000002;
-        allianceTypeId_ = value;
+        value_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 allianceTypeId = 2 [default = 1];</code>
+       * <code>required int32 value = 2 [default = 1];</code>
        *
        * <pre>
        *属性值
        * </pre>
        */
-      public Builder clearAllianceTypeId() {
+      public Builder clearValue() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        allianceTypeId_ = 1;
+        value_ = 1;
         onChanged();
         return this;
       }
@@ -1485,10 +1485,9 @@ public final class HumanBean {
     java.lang.String[] descriptorData = {
       "\n\013human.proto\022\004bean\"`\n\026GCRoleSymbolChang" +
       "edInt\022\014\n\004type\030\001 \002(\003\022\016\n\006roleId\030\002 \002(\003\022(\n\014k" +
-      "eyValueData\030\003 \003(\0132\022.bean.KeyValueData\";\n" +
-      "\014KeyValueData\022\020\n\005level\030\001 \002(\005:\0011\022\031\n\016allia" +
-      "nceTypeId\030\002 \002(\005:\0011B\033\n\016com.common.msgB\tHu" +
-      "manBean"
+      "eyValueData\030\003 \003(\0132\022.bean.KeyValueData\"0\n" +
+      "\014KeyValueData\022\016\n\003key\030\001 \002(\005:\0011\022\020\n\005value\030\002" +
+      " \002(\005:\0011B\033\n\016com.common.msgB\tHumanBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1506,7 +1505,7 @@ public final class HumanBean {
           internal_static_bean_KeyValueData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_KeyValueData_descriptor,
-              new java.lang.String[] { "Level", "AllianceTypeId", });
+              new java.lang.String[] { "Key", "Value", });
           return null;
         }
       };
