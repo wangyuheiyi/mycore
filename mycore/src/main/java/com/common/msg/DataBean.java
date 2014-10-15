@@ -56,9 +56,27 @@ public final class DataBean {
     com.google.protobuf.ByteString
         getRoleNameBytes();
 
-    // optional int32 level = 3 [default = 1];
+    // optional int32 templateId = 3 [default = 0];
     /**
-     * <code>optional int32 level = 3 [default = 1];</code>
+     * <code>optional int32 templateId = 3 [default = 0];</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
+     */
+    boolean hasTemplateId();
+    /**
+     * <code>optional int32 templateId = 3 [default = 0];</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
+     */
+    int getTemplateId();
+
+    // optional int32 level = 4 [default = 1];
+    /**
+     * <code>optional int32 level = 4 [default = 1];</code>
      *
      * <pre>
      *角色等级
@@ -66,7 +84,7 @@ public final class DataBean {
      */
     boolean hasLevel();
     /**
-     * <code>optional int32 level = 3 [default = 1];</code>
+     * <code>optional int32 level = 4 [default = 1];</code>
      *
      * <pre>
      *角色等级
@@ -74,9 +92,9 @@ public final class DataBean {
      */
     int getLevel();
 
-    // optional int32 allianceTypeId = 4 [default = 1];
+    // optional int32 allianceTypeId = 5 [default = 1];
     /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+     * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
      *
      * <pre>
      *种族
@@ -84,7 +102,7 @@ public final class DataBean {
      */
     boolean hasAllianceTypeId();
     /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+     * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
      *
      * <pre>
      *种族
@@ -92,9 +110,9 @@ public final class DataBean {
      */
     int getAllianceTypeId();
 
-    // optional int32 diamond = 5 [default = 0];
+    // optional int32 diamond = 6 [default = 0];
     /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
+     * <code>optional int32 diamond = 6 [default = 0];</code>
      *
      * <pre>
      *角色元宝数量
@@ -102,7 +120,7 @@ public final class DataBean {
      */
     boolean hasDiamond();
     /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
+     * <code>optional int32 diamond = 6 [default = 0];</code>
      *
      * <pre>
      *角色元宝数量
@@ -110,9 +128,9 @@ public final class DataBean {
      */
     int getDiamond();
 
-    // optional int32 gold = 6 [default = 0];
+    // optional int32 gold = 7 [default = 0];
     /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
+     * <code>optional int32 gold = 7 [default = 0];</code>
      *
      * <pre>
      *角色金币数量
@@ -120,7 +138,7 @@ public final class DataBean {
      */
     boolean hasGold();
     /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
+     * <code>optional int32 gold = 7 [default = 0];</code>
      *
      * <pre>
      *角色金币数量
@@ -128,9 +146,9 @@ public final class DataBean {
      */
     int getGold();
 
-    // optional int32 coupon = 7 [default = 0];
+    // optional int32 coupon = 8 [default = 0];
     /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
+     * <code>optional int32 coupon = 8 [default = 0];</code>
      *
      * <pre>
      *点卷数量
@@ -138,7 +156,7 @@ public final class DataBean {
      */
     boolean hasCoupon();
     /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
+     * <code>optional int32 coupon = 8 [default = 0];</code>
      *
      * <pre>
      *点卷数量
@@ -146,9 +164,9 @@ public final class DataBean {
      */
     int getCoupon();
 
-    // optional int32 curExp = 8 [default = 0];
+    // optional int32 curExp = 9 [default = 0];
     /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
+     * <code>optional int32 curExp = 9 [default = 0];</code>
      *
      * <pre>
      *当前经验
@@ -156,7 +174,7 @@ public final class DataBean {
      */
     boolean hasCurExp();
     /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
+     * <code>optional int32 curExp = 9 [default = 0];</code>
      *
      * <pre>
      *当前经验
@@ -164,9 +182,9 @@ public final class DataBean {
      */
     int getCurExp();
 
-    // optional int32 maxExp = 9 [default = 0];
+    // optional int32 maxExp = 10 [default = 0];
     /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
+     * <code>optional int32 maxExp = 10 [default = 0];</code>
      *
      * <pre>
      *最大经验
@@ -174,7 +192,7 @@ public final class DataBean {
      */
     boolean hasMaxExp();
     /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
+     * <code>optional int32 maxExp = 10 [default = 0];</code>
      *
      * <pre>
      *最大经验
@@ -182,9 +200,9 @@ public final class DataBean {
      */
     int getMaxExp();
 
-    // optional int32 sceneId = 10 [default = 0];
+    // optional int32 sceneId = 11 [default = 0];
     /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
+     * <code>optional int32 sceneId = 11 [default = 0];</code>
      *
      * <pre>
      *所在场景
@@ -192,7 +210,7 @@ public final class DataBean {
      */
     boolean hasSceneId();
     /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
+     * <code>optional int32 sceneId = 11 [default = 0];</code>
      *
      * <pre>
      *所在场景
@@ -200,9 +218,9 @@ public final class DataBean {
      */
     int getSceneId();
 
-    // optional int32 primBagCount = 11 [default = 0];
+    // optional int32 primBagCount = 12 [default = 0];
     /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
+     * <code>optional int32 primBagCount = 12 [default = 0];</code>
      *
      * <pre>
      *主背包数量 
@@ -210,7 +228,7 @@ public final class DataBean {
      */
     boolean hasPrimBagCount();
     /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
+     * <code>optional int32 primBagCount = 12 [default = 0];</code>
      *
      * <pre>
      *主背包数量 
@@ -218,9 +236,9 @@ public final class DataBean {
      */
     int getPrimBagCount();
 
-    // optional int32 storyId = 12 [default = 0];
+    // optional int32 storyId = 13 [default = 0];
     /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
+     * <code>optional int32 storyId = 13 [default = 0];</code>
      *
      * <pre>
      *所进行的剧情
@@ -228,7 +246,7 @@ public final class DataBean {
      */
     boolean hasStoryId();
     /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
+     * <code>optional int32 storyId = 13 [default = 0];</code>
      *
      * <pre>
      *所进行的剧情
@@ -236,9 +254,9 @@ public final class DataBean {
      */
     int getStoryId();
 
-    // optional int32 guideId = 13 [default = 0];
+    // optional int32 guideId = 14 [default = 0];
     /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
+     * <code>optional int32 guideId = 14 [default = 0];</code>
      *
      * <pre>
      *新手引导ID
@@ -246,7 +264,7 @@ public final class DataBean {
      */
     boolean hasGuideId();
     /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
+     * <code>optional int32 guideId = 14 [default = 0];</code>
      *
      * <pre>
      *新手引导ID
@@ -254,9 +272,9 @@ public final class DataBean {
      */
     int getGuideId();
 
-    // optional int32 guideState = 14 [default = 0];
+    // optional int32 guideState = 15 [default = 0];
     /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
+     * <code>optional int32 guideState = 15 [default = 0];</code>
      *
      * <pre>
      *新手引导状态
@@ -264,7 +282,7 @@ public final class DataBean {
      */
     boolean hasGuideState();
     /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
+     * <code>optional int32 guideState = 15 [default = 0];</code>
      *
      * <pre>
      *新手引导状态
@@ -272,9 +290,9 @@ public final class DataBean {
      */
     int getGuideState();
 
-    // optional int32 roleKind = 15 [default = 0];
+    // optional int32 roleKind = 16 [default = 0];
     /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
+     * <code>optional int32 roleKind = 16 [default = 0];</code>
      *
      * <pre>
      *角色类型:0正常角色1竞技场角色其它场景角色
@@ -282,7 +300,7 @@ public final class DataBean {
      */
     boolean hasRoleKind();
     /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
+     * <code>optional int32 roleKind = 16 [default = 0];</code>
      *
      * <pre>
      *角色类型:0正常角色1竞技场角色其它场景角色
@@ -290,9 +308,9 @@ public final class DataBean {
      */
     int getRoleKind();
 
-    // optional int32 vipLevel = 16 [default = 0];
+    // optional int32 vipLevel = 17 [default = 0];
     /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
+     * <code>optional int32 vipLevel = 17 [default = 0];</code>
      *
      * <pre>
      *vip等级
@@ -300,7 +318,7 @@ public final class DataBean {
      */
     boolean hasVipLevel();
     /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
+     * <code>optional int32 vipLevel = 17 [default = 0];</code>
      *
      * <pre>
      *vip等级
@@ -371,71 +389,76 @@ public final class DataBean {
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              level_ = input.readInt32();
+              templateId_ = input.readInt32();
               break;
             }
             case 32: {
               bitField0_ |= 0x00000008;
-              allianceTypeId_ = input.readInt32();
+              level_ = input.readInt32();
               break;
             }
             case 40: {
               bitField0_ |= 0x00000010;
-              diamond_ = input.readInt32();
+              allianceTypeId_ = input.readInt32();
               break;
             }
             case 48: {
               bitField0_ |= 0x00000020;
-              gold_ = input.readInt32();
+              diamond_ = input.readInt32();
               break;
             }
             case 56: {
               bitField0_ |= 0x00000040;
-              coupon_ = input.readInt32();
+              gold_ = input.readInt32();
               break;
             }
             case 64: {
               bitField0_ |= 0x00000080;
-              curExp_ = input.readInt32();
+              coupon_ = input.readInt32();
               break;
             }
             case 72: {
               bitField0_ |= 0x00000100;
-              maxExp_ = input.readInt32();
+              curExp_ = input.readInt32();
               break;
             }
             case 80: {
               bitField0_ |= 0x00000200;
-              sceneId_ = input.readInt32();
+              maxExp_ = input.readInt32();
               break;
             }
             case 88: {
               bitField0_ |= 0x00000400;
-              primBagCount_ = input.readInt32();
+              sceneId_ = input.readInt32();
               break;
             }
             case 96: {
               bitField0_ |= 0x00000800;
-              storyId_ = input.readInt32();
+              primBagCount_ = input.readInt32();
               break;
             }
             case 104: {
               bitField0_ |= 0x00001000;
-              guideId_ = input.readInt32();
+              storyId_ = input.readInt32();
               break;
             }
             case 112: {
               bitField0_ |= 0x00002000;
-              guideState_ = input.readInt32();
+              guideId_ = input.readInt32();
               break;
             }
             case 120: {
               bitField0_ |= 0x00004000;
-              roleKind_ = input.readInt32();
+              guideState_ = input.readInt32();
               break;
             }
             case 128: {
               bitField0_ |= 0x00008000;
+              roleKind_ = input.readInt32();
+              break;
+            }
+            case 136: {
+              bitField0_ |= 0x00010000;
               vipLevel_ = input.readInt32();
               break;
             }
@@ -558,21 +581,45 @@ public final class DataBean {
       }
     }
 
-    // optional int32 level = 3 [default = 1];
-    public static final int LEVEL_FIELD_NUMBER = 3;
+    // optional int32 templateId = 3 [default = 0];
+    public static final int TEMPLATEID_FIELD_NUMBER = 3;
+    private int templateId_;
+    /**
+     * <code>optional int32 templateId = 3 [default = 0];</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
+     */
+    public boolean hasTemplateId() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 templateId = 3 [default = 0];</code>
+     *
+     * <pre>
+     *角色模板id
+     * </pre>
+     */
+    public int getTemplateId() {
+      return templateId_;
+    }
+
+    // optional int32 level = 4 [default = 1];
+    public static final int LEVEL_FIELD_NUMBER = 4;
     private int level_;
     /**
-     * <code>optional int32 level = 3 [default = 1];</code>
+     * <code>optional int32 level = 4 [default = 1];</code>
      *
      * <pre>
      *角色等级
      * </pre>
      */
     public boolean hasLevel() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>optional int32 level = 3 [default = 1];</code>
+     * <code>optional int32 level = 4 [default = 1];</code>
      *
      * <pre>
      *角色等级
@@ -582,21 +629,21 @@ public final class DataBean {
       return level_;
     }
 
-    // optional int32 allianceTypeId = 4 [default = 1];
-    public static final int ALLIANCETYPEID_FIELD_NUMBER = 4;
+    // optional int32 allianceTypeId = 5 [default = 1];
+    public static final int ALLIANCETYPEID_FIELD_NUMBER = 5;
     private int allianceTypeId_;
     /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+     * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
      *
      * <pre>
      *种族
      * </pre>
      */
     public boolean hasAllianceTypeId() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
+      return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+     * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
      *
      * <pre>
      *种族
@@ -606,21 +653,21 @@ public final class DataBean {
       return allianceTypeId_;
     }
 
-    // optional int32 diamond = 5 [default = 0];
-    public static final int DIAMOND_FIELD_NUMBER = 5;
+    // optional int32 diamond = 6 [default = 0];
+    public static final int DIAMOND_FIELD_NUMBER = 6;
     private int diamond_;
     /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
+     * <code>optional int32 diamond = 6 [default = 0];</code>
      *
      * <pre>
      *角色元宝数量
      * </pre>
      */
     public boolean hasDiamond() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
+      return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>optional int32 diamond = 5 [default = 0];</code>
+     * <code>optional int32 diamond = 6 [default = 0];</code>
      *
      * <pre>
      *角色元宝数量
@@ -630,21 +677,21 @@ public final class DataBean {
       return diamond_;
     }
 
-    // optional int32 gold = 6 [default = 0];
-    public static final int GOLD_FIELD_NUMBER = 6;
+    // optional int32 gold = 7 [default = 0];
+    public static final int GOLD_FIELD_NUMBER = 7;
     private int gold_;
     /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
+     * <code>optional int32 gold = 7 [default = 0];</code>
      *
      * <pre>
      *角色金币数量
      * </pre>
      */
     public boolean hasGold() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
+      return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
-     * <code>optional int32 gold = 6 [default = 0];</code>
+     * <code>optional int32 gold = 7 [default = 0];</code>
      *
      * <pre>
      *角色金币数量
@@ -654,21 +701,21 @@ public final class DataBean {
       return gold_;
     }
 
-    // optional int32 coupon = 7 [default = 0];
-    public static final int COUPON_FIELD_NUMBER = 7;
+    // optional int32 coupon = 8 [default = 0];
+    public static final int COUPON_FIELD_NUMBER = 8;
     private int coupon_;
     /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
+     * <code>optional int32 coupon = 8 [default = 0];</code>
      *
      * <pre>
      *点卷数量
      * </pre>
      */
     public boolean hasCoupon() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
+      return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
-     * <code>optional int32 coupon = 7 [default = 0];</code>
+     * <code>optional int32 coupon = 8 [default = 0];</code>
      *
      * <pre>
      *点卷数量
@@ -678,21 +725,21 @@ public final class DataBean {
       return coupon_;
     }
 
-    // optional int32 curExp = 8 [default = 0];
-    public static final int CUREXP_FIELD_NUMBER = 8;
+    // optional int32 curExp = 9 [default = 0];
+    public static final int CUREXP_FIELD_NUMBER = 9;
     private int curExp_;
     /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
+     * <code>optional int32 curExp = 9 [default = 0];</code>
      *
      * <pre>
      *当前经验
      * </pre>
      */
     public boolean hasCurExp() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
+      return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
-     * <code>optional int32 curExp = 8 [default = 0];</code>
+     * <code>optional int32 curExp = 9 [default = 0];</code>
      *
      * <pre>
      *当前经验
@@ -702,21 +749,21 @@ public final class DataBean {
       return curExp_;
     }
 
-    // optional int32 maxExp = 9 [default = 0];
-    public static final int MAXEXP_FIELD_NUMBER = 9;
+    // optional int32 maxExp = 10 [default = 0];
+    public static final int MAXEXP_FIELD_NUMBER = 10;
     private int maxExp_;
     /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
+     * <code>optional int32 maxExp = 10 [default = 0];</code>
      *
      * <pre>
      *最大经验
      * </pre>
      */
     public boolean hasMaxExp() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
+      return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
-     * <code>optional int32 maxExp = 9 [default = 0];</code>
+     * <code>optional int32 maxExp = 10 [default = 0];</code>
      *
      * <pre>
      *最大经验
@@ -726,21 +773,21 @@ public final class DataBean {
       return maxExp_;
     }
 
-    // optional int32 sceneId = 10 [default = 0];
-    public static final int SCENEID_FIELD_NUMBER = 10;
+    // optional int32 sceneId = 11 [default = 0];
+    public static final int SCENEID_FIELD_NUMBER = 11;
     private int sceneId_;
     /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
+     * <code>optional int32 sceneId = 11 [default = 0];</code>
      *
      * <pre>
      *所在场景
      * </pre>
      */
     public boolean hasSceneId() {
-      return ((bitField0_ & 0x00000200) == 0x00000200);
+      return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     /**
-     * <code>optional int32 sceneId = 10 [default = 0];</code>
+     * <code>optional int32 sceneId = 11 [default = 0];</code>
      *
      * <pre>
      *所在场景
@@ -750,21 +797,21 @@ public final class DataBean {
       return sceneId_;
     }
 
-    // optional int32 primBagCount = 11 [default = 0];
-    public static final int PRIMBAGCOUNT_FIELD_NUMBER = 11;
+    // optional int32 primBagCount = 12 [default = 0];
+    public static final int PRIMBAGCOUNT_FIELD_NUMBER = 12;
     private int primBagCount_;
     /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
+     * <code>optional int32 primBagCount = 12 [default = 0];</code>
      *
      * <pre>
      *主背包数量 
      * </pre>
      */
     public boolean hasPrimBagCount() {
-      return ((bitField0_ & 0x00000400) == 0x00000400);
+      return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     /**
-     * <code>optional int32 primBagCount = 11 [default = 0];</code>
+     * <code>optional int32 primBagCount = 12 [default = 0];</code>
      *
      * <pre>
      *主背包数量 
@@ -774,21 +821,21 @@ public final class DataBean {
       return primBagCount_;
     }
 
-    // optional int32 storyId = 12 [default = 0];
-    public static final int STORYID_FIELD_NUMBER = 12;
+    // optional int32 storyId = 13 [default = 0];
+    public static final int STORYID_FIELD_NUMBER = 13;
     private int storyId_;
     /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
+     * <code>optional int32 storyId = 13 [default = 0];</code>
      *
      * <pre>
      *所进行的剧情
      * </pre>
      */
     public boolean hasStoryId() {
-      return ((bitField0_ & 0x00000800) == 0x00000800);
+      return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     /**
-     * <code>optional int32 storyId = 12 [default = 0];</code>
+     * <code>optional int32 storyId = 13 [default = 0];</code>
      *
      * <pre>
      *所进行的剧情
@@ -798,21 +845,21 @@ public final class DataBean {
       return storyId_;
     }
 
-    // optional int32 guideId = 13 [default = 0];
-    public static final int GUIDEID_FIELD_NUMBER = 13;
+    // optional int32 guideId = 14 [default = 0];
+    public static final int GUIDEID_FIELD_NUMBER = 14;
     private int guideId_;
     /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
+     * <code>optional int32 guideId = 14 [default = 0];</code>
      *
      * <pre>
      *新手引导ID
      * </pre>
      */
     public boolean hasGuideId() {
-      return ((bitField0_ & 0x00001000) == 0x00001000);
+      return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     /**
-     * <code>optional int32 guideId = 13 [default = 0];</code>
+     * <code>optional int32 guideId = 14 [default = 0];</code>
      *
      * <pre>
      *新手引导ID
@@ -822,21 +869,21 @@ public final class DataBean {
       return guideId_;
     }
 
-    // optional int32 guideState = 14 [default = 0];
-    public static final int GUIDESTATE_FIELD_NUMBER = 14;
+    // optional int32 guideState = 15 [default = 0];
+    public static final int GUIDESTATE_FIELD_NUMBER = 15;
     private int guideState_;
     /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
+     * <code>optional int32 guideState = 15 [default = 0];</code>
      *
      * <pre>
      *新手引导状态
      * </pre>
      */
     public boolean hasGuideState() {
-      return ((bitField0_ & 0x00002000) == 0x00002000);
+      return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     /**
-     * <code>optional int32 guideState = 14 [default = 0];</code>
+     * <code>optional int32 guideState = 15 [default = 0];</code>
      *
      * <pre>
      *新手引导状态
@@ -846,21 +893,21 @@ public final class DataBean {
       return guideState_;
     }
 
-    // optional int32 roleKind = 15 [default = 0];
-    public static final int ROLEKIND_FIELD_NUMBER = 15;
+    // optional int32 roleKind = 16 [default = 0];
+    public static final int ROLEKIND_FIELD_NUMBER = 16;
     private int roleKind_;
     /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
+     * <code>optional int32 roleKind = 16 [default = 0];</code>
      *
      * <pre>
      *角色类型:0正常角色1竞技场角色其它场景角色
      * </pre>
      */
     public boolean hasRoleKind() {
-      return ((bitField0_ & 0x00004000) == 0x00004000);
+      return ((bitField0_ & 0x00008000) == 0x00008000);
     }
     /**
-     * <code>optional int32 roleKind = 15 [default = 0];</code>
+     * <code>optional int32 roleKind = 16 [default = 0];</code>
      *
      * <pre>
      *角色类型:0正常角色1竞技场角色其它场景角色
@@ -870,21 +917,21 @@ public final class DataBean {
       return roleKind_;
     }
 
-    // optional int32 vipLevel = 16 [default = 0];
-    public static final int VIPLEVEL_FIELD_NUMBER = 16;
+    // optional int32 vipLevel = 17 [default = 0];
+    public static final int VIPLEVEL_FIELD_NUMBER = 17;
     private int vipLevel_;
     /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
+     * <code>optional int32 vipLevel = 17 [default = 0];</code>
      *
      * <pre>
      *vip等级
      * </pre>
      */
     public boolean hasVipLevel() {
-      return ((bitField0_ & 0x00008000) == 0x00008000);
+      return ((bitField0_ & 0x00010000) == 0x00010000);
     }
     /**
-     * <code>optional int32 vipLevel = 16 [default = 0];</code>
+     * <code>optional int32 vipLevel = 17 [default = 0];</code>
      *
      * <pre>
      *vip等级
@@ -897,6 +944,7 @@ public final class DataBean {
     private void initFields() {
       roleId_ = 0L;
       roleName_ = "";
+      templateId_ = 0;
       level_ = 1;
       allianceTypeId_ = 1;
       diamond_ = 0;
@@ -935,46 +983,49 @@ public final class DataBean {
         output.writeBytes(2, getRoleNameBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, level_);
+        output.writeInt32(3, templateId_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, allianceTypeId_);
+        output.writeInt32(4, level_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(5, diamond_);
+        output.writeInt32(5, allianceTypeId_);
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt32(6, gold_);
+        output.writeInt32(6, diamond_);
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(7, coupon_);
+        output.writeInt32(7, gold_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeInt32(8, curExp_);
+        output.writeInt32(8, coupon_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeInt32(9, maxExp_);
+        output.writeInt32(9, curExp_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeInt32(10, sceneId_);
+        output.writeInt32(10, maxExp_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        output.writeInt32(11, primBagCount_);
+        output.writeInt32(11, sceneId_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeInt32(12, storyId_);
+        output.writeInt32(12, primBagCount_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
-        output.writeInt32(13, guideId_);
+        output.writeInt32(13, storyId_);
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
-        output.writeInt32(14, guideState_);
+        output.writeInt32(14, guideId_);
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
-        output.writeInt32(15, roleKind_);
+        output.writeInt32(15, guideState_);
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
-        output.writeInt32(16, vipLevel_);
+        output.writeInt32(16, roleKind_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        output.writeInt32(17, vipLevel_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -995,59 +1046,63 @@ public final class DataBean {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, level_);
+          .computeInt32Size(3, templateId_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, allianceTypeId_);
+          .computeInt32Size(4, level_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, diamond_);
+          .computeInt32Size(5, allianceTypeId_);
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, gold_);
+          .computeInt32Size(6, diamond_);
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, coupon_);
+          .computeInt32Size(7, gold_);
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, curExp_);
+          .computeInt32Size(8, coupon_);
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, maxExp_);
+          .computeInt32Size(9, curExp_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, sceneId_);
+          .computeInt32Size(10, maxExp_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, primBagCount_);
+          .computeInt32Size(11, sceneId_);
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, storyId_);
+          .computeInt32Size(12, primBagCount_);
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, guideId_);
+          .computeInt32Size(13, storyId_);
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, guideState_);
+          .computeInt32Size(14, guideId_);
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, roleKind_);
+          .computeInt32Size(15, guideState_);
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(16, vipLevel_);
+          .computeInt32Size(16, roleKind_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(17, vipLevel_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1169,34 +1224,36 @@ public final class DataBean {
         bitField0_ = (bitField0_ & ~0x00000001);
         roleName_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        level_ = 1;
+        templateId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
-        allianceTypeId_ = 1;
+        level_ = 1;
         bitField0_ = (bitField0_ & ~0x00000008);
-        diamond_ = 0;
+        allianceTypeId_ = 1;
         bitField0_ = (bitField0_ & ~0x00000010);
-        gold_ = 0;
+        diamond_ = 0;
         bitField0_ = (bitField0_ & ~0x00000020);
-        coupon_ = 0;
+        gold_ = 0;
         bitField0_ = (bitField0_ & ~0x00000040);
-        curExp_ = 0;
+        coupon_ = 0;
         bitField0_ = (bitField0_ & ~0x00000080);
-        maxExp_ = 0;
+        curExp_ = 0;
         bitField0_ = (bitField0_ & ~0x00000100);
-        sceneId_ = 0;
+        maxExp_ = 0;
         bitField0_ = (bitField0_ & ~0x00000200);
-        primBagCount_ = 0;
+        sceneId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000400);
-        storyId_ = 0;
+        primBagCount_ = 0;
         bitField0_ = (bitField0_ & ~0x00000800);
-        guideId_ = 0;
+        storyId_ = 0;
         bitField0_ = (bitField0_ & ~0x00001000);
-        guideState_ = 0;
+        guideId_ = 0;
         bitField0_ = (bitField0_ & ~0x00002000);
-        roleKind_ = 0;
+        guideState_ = 0;
         bitField0_ = (bitField0_ & ~0x00004000);
-        vipLevel_ = 0;
+        roleKind_ = 0;
         bitField0_ = (bitField0_ & ~0x00008000);
+        vipLevel_ = 0;
+        bitField0_ = (bitField0_ & ~0x00010000);
         return this;
       }
 
@@ -1236,57 +1293,61 @@ public final class DataBean {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.level_ = level_;
+        result.templateId_ = templateId_;
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.allianceTypeId_ = allianceTypeId_;
+        result.level_ = level_;
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
-        result.diamond_ = diamond_;
+        result.allianceTypeId_ = allianceTypeId_;
         if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
           to_bitField0_ |= 0x00000020;
         }
-        result.gold_ = gold_;
+        result.diamond_ = diamond_;
         if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
           to_bitField0_ |= 0x00000040;
         }
-        result.coupon_ = coupon_;
+        result.gold_ = gold_;
         if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
           to_bitField0_ |= 0x00000080;
         }
-        result.curExp_ = curExp_;
+        result.coupon_ = coupon_;
         if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
           to_bitField0_ |= 0x00000100;
         }
-        result.maxExp_ = maxExp_;
+        result.curExp_ = curExp_;
         if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
           to_bitField0_ |= 0x00000200;
         }
-        result.sceneId_ = sceneId_;
+        result.maxExp_ = maxExp_;
         if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
           to_bitField0_ |= 0x00000400;
         }
-        result.primBagCount_ = primBagCount_;
+        result.sceneId_ = sceneId_;
         if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
           to_bitField0_ |= 0x00000800;
         }
-        result.storyId_ = storyId_;
+        result.primBagCount_ = primBagCount_;
         if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
           to_bitField0_ |= 0x00001000;
         }
-        result.guideId_ = guideId_;
+        result.storyId_ = storyId_;
         if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
           to_bitField0_ |= 0x00002000;
         }
-        result.guideState_ = guideState_;
+        result.guideId_ = guideId_;
         if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
           to_bitField0_ |= 0x00004000;
         }
-        result.roleKind_ = roleKind_;
+        result.guideState_ = guideState_;
         if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
           to_bitField0_ |= 0x00008000;
+        }
+        result.roleKind_ = roleKind_;
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00010000;
         }
         result.vipLevel_ = vipLevel_;
         result.bitField0_ = to_bitField0_;
@@ -1312,6 +1373,9 @@ public final class DataBean {
           bitField0_ |= 0x00000002;
           roleName_ = other.roleName_;
           onChanged();
+        }
+        if (other.hasTemplateId()) {
+          setTemplateId(other.getTemplateId());
         }
         if (other.hasLevel()) {
           setLevel(other.getLevel());
@@ -1533,20 +1597,69 @@ public final class DataBean {
         return this;
       }
 
-      // optional int32 level = 3 [default = 1];
+      // optional int32 templateId = 3 [default = 0];
+      private int templateId_ ;
+      /**
+       * <code>optional int32 templateId = 3 [default = 0];</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
+       */
+      public boolean hasTemplateId() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 templateId = 3 [default = 0];</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
+       */
+      public int getTemplateId() {
+        return templateId_;
+      }
+      /**
+       * <code>optional int32 templateId = 3 [default = 0];</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
+       */
+      public Builder setTemplateId(int value) {
+        bitField0_ |= 0x00000004;
+        templateId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 templateId = 3 [default = 0];</code>
+       *
+       * <pre>
+       *角色模板id
+       * </pre>
+       */
+      public Builder clearTemplateId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        templateId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 level = 4 [default = 1];
       private int level_ = 1;
       /**
-       * <code>optional int32 level = 3 [default = 1];</code>
+       * <code>optional int32 level = 4 [default = 1];</code>
        *
        * <pre>
        *角色等级
        * </pre>
        */
       public boolean hasLevel() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>optional int32 level = 3 [default = 1];</code>
+       * <code>optional int32 level = 4 [default = 1];</code>
        *
        * <pre>
        *角色等级
@@ -1556,46 +1669,46 @@ public final class DataBean {
         return level_;
       }
       /**
-       * <code>optional int32 level = 3 [default = 1];</code>
+       * <code>optional int32 level = 4 [default = 1];</code>
        *
        * <pre>
        *角色等级
        * </pre>
        */
       public Builder setLevel(int value) {
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000008;
         level_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 level = 3 [default = 1];</code>
+       * <code>optional int32 level = 4 [default = 1];</code>
        *
        * <pre>
        *角色等级
        * </pre>
        */
       public Builder clearLevel() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000008);
         level_ = 1;
         onChanged();
         return this;
       }
 
-      // optional int32 allianceTypeId = 4 [default = 1];
+      // optional int32 allianceTypeId = 5 [default = 1];
       private int allianceTypeId_ = 1;
       /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+       * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
        *
        * <pre>
        *种族
        * </pre>
        */
       public boolean hasAllianceTypeId() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+        return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+       * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
        *
        * <pre>
        *种族
@@ -1605,46 +1718,46 @@ public final class DataBean {
         return allianceTypeId_;
       }
       /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+       * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
        *
        * <pre>
        *种族
        * </pre>
        */
       public Builder setAllianceTypeId(int value) {
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000010;
         allianceTypeId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 allianceTypeId = 4 [default = 1];</code>
+       * <code>optional int32 allianceTypeId = 5 [default = 1];</code>
        *
        * <pre>
        *种族
        * </pre>
        */
       public Builder clearAllianceTypeId() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000010);
         allianceTypeId_ = 1;
         onChanged();
         return this;
       }
 
-      // optional int32 diamond = 5 [default = 0];
+      // optional int32 diamond = 6 [default = 0];
       private int diamond_ ;
       /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
+       * <code>optional int32 diamond = 6 [default = 0];</code>
        *
        * <pre>
        *角色元宝数量
        * </pre>
        */
       public boolean hasDiamond() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
+        return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
+       * <code>optional int32 diamond = 6 [default = 0];</code>
        *
        * <pre>
        *角色元宝数量
@@ -1654,46 +1767,46 @@ public final class DataBean {
         return diamond_;
       }
       /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
+       * <code>optional int32 diamond = 6 [default = 0];</code>
        *
        * <pre>
        *角色元宝数量
        * </pre>
        */
       public Builder setDiamond(int value) {
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000020;
         diamond_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 diamond = 5 [default = 0];</code>
+       * <code>optional int32 diamond = 6 [default = 0];</code>
        *
        * <pre>
        *角色元宝数量
        * </pre>
        */
       public Builder clearDiamond() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000020);
         diamond_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 gold = 6 [default = 0];
+      // optional int32 gold = 7 [default = 0];
       private int gold_ ;
       /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
+       * <code>optional int32 gold = 7 [default = 0];</code>
        *
        * <pre>
        *角色金币数量
        * </pre>
        */
       public boolean hasGold() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
+        return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
+       * <code>optional int32 gold = 7 [default = 0];</code>
        *
        * <pre>
        *角色金币数量
@@ -1703,46 +1816,46 @@ public final class DataBean {
         return gold_;
       }
       /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
+       * <code>optional int32 gold = 7 [default = 0];</code>
        *
        * <pre>
        *角色金币数量
        * </pre>
        */
       public Builder setGold(int value) {
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000040;
         gold_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 gold = 6 [default = 0];</code>
+       * <code>optional int32 gold = 7 [default = 0];</code>
        *
        * <pre>
        *角色金币数量
        * </pre>
        */
       public Builder clearGold() {
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000040);
         gold_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 coupon = 7 [default = 0];
+      // optional int32 coupon = 8 [default = 0];
       private int coupon_ ;
       /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
+       * <code>optional int32 coupon = 8 [default = 0];</code>
        *
        * <pre>
        *点卷数量
        * </pre>
        */
       public boolean hasCoupon() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
+        return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
+       * <code>optional int32 coupon = 8 [default = 0];</code>
        *
        * <pre>
        *点卷数量
@@ -1752,46 +1865,46 @@ public final class DataBean {
         return coupon_;
       }
       /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
+       * <code>optional int32 coupon = 8 [default = 0];</code>
        *
        * <pre>
        *点卷数量
        * </pre>
        */
       public Builder setCoupon(int value) {
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000080;
         coupon_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 coupon = 7 [default = 0];</code>
+       * <code>optional int32 coupon = 8 [default = 0];</code>
        *
        * <pre>
        *点卷数量
        * </pre>
        */
       public Builder clearCoupon() {
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000080);
         coupon_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 curExp = 8 [default = 0];
+      // optional int32 curExp = 9 [default = 0];
       private int curExp_ ;
       /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
+       * <code>optional int32 curExp = 9 [default = 0];</code>
        *
        * <pre>
        *当前经验
        * </pre>
        */
       public boolean hasCurExp() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
+        return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
+       * <code>optional int32 curExp = 9 [default = 0];</code>
        *
        * <pre>
        *当前经验
@@ -1801,46 +1914,46 @@ public final class DataBean {
         return curExp_;
       }
       /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
+       * <code>optional int32 curExp = 9 [default = 0];</code>
        *
        * <pre>
        *当前经验
        * </pre>
        */
       public Builder setCurExp(int value) {
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000100;
         curExp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 curExp = 8 [default = 0];</code>
+       * <code>optional int32 curExp = 9 [default = 0];</code>
        *
        * <pre>
        *当前经验
        * </pre>
        */
       public Builder clearCurExp() {
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000100);
         curExp_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 maxExp = 9 [default = 0];
+      // optional int32 maxExp = 10 [default = 0];
       private int maxExp_ ;
       /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
+       * <code>optional int32 maxExp = 10 [default = 0];</code>
        *
        * <pre>
        *最大经验
        * </pre>
        */
       public boolean hasMaxExp() {
-        return ((bitField0_ & 0x00000100) == 0x00000100);
+        return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
+       * <code>optional int32 maxExp = 10 [default = 0];</code>
        *
        * <pre>
        *最大经验
@@ -1850,46 +1963,46 @@ public final class DataBean {
         return maxExp_;
       }
       /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
+       * <code>optional int32 maxExp = 10 [default = 0];</code>
        *
        * <pre>
        *最大经验
        * </pre>
        */
       public Builder setMaxExp(int value) {
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00000200;
         maxExp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 maxExp = 9 [default = 0];</code>
+       * <code>optional int32 maxExp = 10 [default = 0];</code>
        *
        * <pre>
        *最大经验
        * </pre>
        */
       public Builder clearMaxExp() {
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00000200);
         maxExp_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 sceneId = 10 [default = 0];
+      // optional int32 sceneId = 11 [default = 0];
       private int sceneId_ ;
       /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
+       * <code>optional int32 sceneId = 11 [default = 0];</code>
        *
        * <pre>
        *所在场景
        * </pre>
        */
       public boolean hasSceneId() {
-        return ((bitField0_ & 0x00000200) == 0x00000200);
+        return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
+       * <code>optional int32 sceneId = 11 [default = 0];</code>
        *
        * <pre>
        *所在场景
@@ -1899,46 +2012,46 @@ public final class DataBean {
         return sceneId_;
       }
       /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
+       * <code>optional int32 sceneId = 11 [default = 0];</code>
        *
        * <pre>
        *所在场景
        * </pre>
        */
       public Builder setSceneId(int value) {
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00000400;
         sceneId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 sceneId = 10 [default = 0];</code>
+       * <code>optional int32 sceneId = 11 [default = 0];</code>
        *
        * <pre>
        *所在场景
        * </pre>
        */
       public Builder clearSceneId() {
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00000400);
         sceneId_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 primBagCount = 11 [default = 0];
+      // optional int32 primBagCount = 12 [default = 0];
       private int primBagCount_ ;
       /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
+       * <code>optional int32 primBagCount = 12 [default = 0];</code>
        *
        * <pre>
        *主背包数量 
        * </pre>
        */
       public boolean hasPrimBagCount() {
-        return ((bitField0_ & 0x00000400) == 0x00000400);
+        return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
+       * <code>optional int32 primBagCount = 12 [default = 0];</code>
        *
        * <pre>
        *主背包数量 
@@ -1948,46 +2061,46 @@ public final class DataBean {
         return primBagCount_;
       }
       /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
+       * <code>optional int32 primBagCount = 12 [default = 0];</code>
        *
        * <pre>
        *主背包数量 
        * </pre>
        */
       public Builder setPrimBagCount(int value) {
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00000800;
         primBagCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 primBagCount = 11 [default = 0];</code>
+       * <code>optional int32 primBagCount = 12 [default = 0];</code>
        *
        * <pre>
        *主背包数量 
        * </pre>
        */
       public Builder clearPrimBagCount() {
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00000800);
         primBagCount_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 storyId = 12 [default = 0];
+      // optional int32 storyId = 13 [default = 0];
       private int storyId_ ;
       /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
+       * <code>optional int32 storyId = 13 [default = 0];</code>
        *
        * <pre>
        *所进行的剧情
        * </pre>
        */
       public boolean hasStoryId() {
-        return ((bitField0_ & 0x00000800) == 0x00000800);
+        return ((bitField0_ & 0x00001000) == 0x00001000);
       }
       /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
+       * <code>optional int32 storyId = 13 [default = 0];</code>
        *
        * <pre>
        *所进行的剧情
@@ -1997,46 +2110,46 @@ public final class DataBean {
         return storyId_;
       }
       /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
+       * <code>optional int32 storyId = 13 [default = 0];</code>
        *
        * <pre>
        *所进行的剧情
        * </pre>
        */
       public Builder setStoryId(int value) {
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00001000;
         storyId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 storyId = 12 [default = 0];</code>
+       * <code>optional int32 storyId = 13 [default = 0];</code>
        *
        * <pre>
        *所进行的剧情
        * </pre>
        */
       public Builder clearStoryId() {
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00001000);
         storyId_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 guideId = 13 [default = 0];
+      // optional int32 guideId = 14 [default = 0];
       private int guideId_ ;
       /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
+       * <code>optional int32 guideId = 14 [default = 0];</code>
        *
        * <pre>
        *新手引导ID
        * </pre>
        */
       public boolean hasGuideId() {
-        return ((bitField0_ & 0x00001000) == 0x00001000);
+        return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
+       * <code>optional int32 guideId = 14 [default = 0];</code>
        *
        * <pre>
        *新手引导ID
@@ -2046,46 +2159,46 @@ public final class DataBean {
         return guideId_;
       }
       /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
+       * <code>optional int32 guideId = 14 [default = 0];</code>
        *
        * <pre>
        *新手引导ID
        * </pre>
        */
       public Builder setGuideId(int value) {
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00002000;
         guideId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 guideId = 13 [default = 0];</code>
+       * <code>optional int32 guideId = 14 [default = 0];</code>
        *
        * <pre>
        *新手引导ID
        * </pre>
        */
       public Builder clearGuideId() {
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00002000);
         guideId_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 guideState = 14 [default = 0];
+      // optional int32 guideState = 15 [default = 0];
       private int guideState_ ;
       /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
+       * <code>optional int32 guideState = 15 [default = 0];</code>
        *
        * <pre>
        *新手引导状态
        * </pre>
        */
       public boolean hasGuideState() {
-        return ((bitField0_ & 0x00002000) == 0x00002000);
+        return ((bitField0_ & 0x00004000) == 0x00004000);
       }
       /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
+       * <code>optional int32 guideState = 15 [default = 0];</code>
        *
        * <pre>
        *新手引导状态
@@ -2095,46 +2208,46 @@ public final class DataBean {
         return guideState_;
       }
       /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
+       * <code>optional int32 guideState = 15 [default = 0];</code>
        *
        * <pre>
        *新手引导状态
        * </pre>
        */
       public Builder setGuideState(int value) {
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00004000;
         guideState_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 guideState = 14 [default = 0];</code>
+       * <code>optional int32 guideState = 15 [default = 0];</code>
        *
        * <pre>
        *新手引导状态
        * </pre>
        */
       public Builder clearGuideState() {
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00004000);
         guideState_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 roleKind = 15 [default = 0];
+      // optional int32 roleKind = 16 [default = 0];
       private int roleKind_ ;
       /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
+       * <code>optional int32 roleKind = 16 [default = 0];</code>
        *
        * <pre>
        *角色类型:0正常角色1竞技场角色其它场景角色
        * </pre>
        */
       public boolean hasRoleKind() {
-        return ((bitField0_ & 0x00004000) == 0x00004000);
+        return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
+       * <code>optional int32 roleKind = 16 [default = 0];</code>
        *
        * <pre>
        *角色类型:0正常角色1竞技场角色其它场景角色
@@ -2144,46 +2257,46 @@ public final class DataBean {
         return roleKind_;
       }
       /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
+       * <code>optional int32 roleKind = 16 [default = 0];</code>
        *
        * <pre>
        *角色类型:0正常角色1竞技场角色其它场景角色
        * </pre>
        */
       public Builder setRoleKind(int value) {
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x00008000;
         roleKind_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 roleKind = 15 [default = 0];</code>
+       * <code>optional int32 roleKind = 16 [default = 0];</code>
        *
        * <pre>
        *角色类型:0正常角色1竞技场角色其它场景角色
        * </pre>
        */
       public Builder clearRoleKind() {
-        bitField0_ = (bitField0_ & ~0x00004000);
+        bitField0_ = (bitField0_ & ~0x00008000);
         roleKind_ = 0;
         onChanged();
         return this;
       }
 
-      // optional int32 vipLevel = 16 [default = 0];
+      // optional int32 vipLevel = 17 [default = 0];
       private int vipLevel_ ;
       /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
+       * <code>optional int32 vipLevel = 17 [default = 0];</code>
        *
        * <pre>
        *vip等级
        * </pre>
        */
       public boolean hasVipLevel() {
-        return ((bitField0_ & 0x00008000) == 0x00008000);
+        return ((bitField0_ & 0x00010000) == 0x00010000);
       }
       /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
+       * <code>optional int32 vipLevel = 17 [default = 0];</code>
        *
        * <pre>
        *vip等级
@@ -2193,27 +2306,27 @@ public final class DataBean {
         return vipLevel_;
       }
       /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
+       * <code>optional int32 vipLevel = 17 [default = 0];</code>
        *
        * <pre>
        *vip等级
        * </pre>
        */
       public Builder setVipLevel(int value) {
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x00010000;
         vipLevel_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 vipLevel = 16 [default = 0];</code>
+       * <code>optional int32 vipLevel = 17 [default = 0];</code>
        *
        * <pre>
        *vip等级
        * </pre>
        */
       public Builder clearVipLevel() {
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00010000);
         vipLevel_ = 0;
         onChanged();
         return this;
@@ -2244,16 +2357,17 @@ public final class DataBean {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\ndata.proto\022\004bean\"\320\002\n\tHumanInfo\022\016\n\006role" +
-      "Id\030\001 \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\020\n\005level\030\003 " +
-      "\001(\005:\0011\022\031\n\016allianceTypeId\030\004 \001(\005:\0011\022\022\n\007dia" +
-      "mond\030\005 \001(\005:\0010\022\017\n\004gold\030\006 \001(\005:\0010\022\021\n\006coupon" +
-      "\030\007 \001(\005:\0010\022\021\n\006curExp\030\010 \001(\005:\0010\022\021\n\006maxExp\030\t" +
-      " \001(\005:\0010\022\022\n\007sceneId\030\n \001(\005:\0010\022\027\n\014primBagCo" +
-      "unt\030\013 \001(\005:\0010\022\022\n\007storyId\030\014 \001(\005:\0010\022\022\n\007guid" +
-      "eId\030\r \001(\005:\0010\022\025\n\nguideState\030\016 \001(\005:\0010\022\023\n\010r" +
-      "oleKind\030\017 \001(\005:\0010\022\023\n\010vipLevel\030\020 \001(\005:\0010B\032\n" +
-      "\016com.common.msgB\010DataBean"
+      "\n\ndata.proto\022\004bean\"\347\002\n\tHumanInfo\022\016\n\006role" +
+      "Id\030\001 \002(\003\022\022\n\010roleName\030\002 \001(\t:\000\022\025\n\ntemplate" +
+      "Id\030\003 \001(\005:\0010\022\020\n\005level\030\004 \001(\005:\0011\022\031\n\016allianc" +
+      "eTypeId\030\005 \001(\005:\0011\022\022\n\007diamond\030\006 \001(\005:\0010\022\017\n\004" +
+      "gold\030\007 \001(\005:\0010\022\021\n\006coupon\030\010 \001(\005:\0010\022\021\n\006curE" +
+      "xp\030\t \001(\005:\0010\022\021\n\006maxExp\030\n \001(\005:\0010\022\022\n\007sceneI" +
+      "d\030\013 \001(\005:\0010\022\027\n\014primBagCount\030\014 \001(\005:\0010\022\022\n\007s" +
+      "toryId\030\r \001(\005:\0010\022\022\n\007guideId\030\016 \001(\005:\0010\022\025\n\ng" +
+      "uideState\030\017 \001(\005:\0010\022\023\n\010roleKind\030\020 \001(\005:\0010\022" +
+      "\023\n\010vipLevel\030\021 \001(\005:\0010B\032\n\016com.common.msgB\010",
+      "DataBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -2265,7 +2379,7 @@ public final class DataBean {
           internal_static_bean_HumanInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_HumanInfo_descriptor,
-              new java.lang.String[] { "RoleId", "RoleName", "Level", "AllianceTypeId", "Diamond", "Gold", "Coupon", "CurExp", "MaxExp", "SceneId", "PrimBagCount", "StoryId", "GuideId", "GuideState", "RoleKind", "VipLevel", });
+              new java.lang.String[] { "RoleId", "RoleName", "TemplateId", "Level", "AllianceTypeId", "Diamond", "Gold", "Coupon", "CurExp", "MaxExp", "SceneId", "PrimBagCount", "StoryId", "GuideId", "GuideState", "RoleKind", "VipLevel", });
           return null;
         }
       };
