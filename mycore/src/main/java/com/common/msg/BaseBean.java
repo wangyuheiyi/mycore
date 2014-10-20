@@ -19,6 +19,11 @@ public final class BaseBean {
     registry.add(com.common.msg.BaseBean.cgEnterScene);
     registry.add(com.common.msg.BaseBean.gcEnterScene);
     registry.add(com.common.msg.BaseBean.gcRoleSymbolChangedInt);
+    registry.add(com.common.msg.BaseBean.gcGetBuildList);
+    registry.add(com.common.msg.BaseBean.cgCreatBuild);
+    registry.add(com.common.msg.BaseBean.gcCreatBuild);
+    registry.add(com.common.msg.BaseBean.gcUpdateBuildData);
+    registry.add(com.common.msg.BaseBean.gcUpdateBuildIngData);
     registry.add(com.common.msg.BaseBean.missionInfo);
     registry.add(com.common.msg.BaseBean.missionReward);
   }
@@ -294,13 +299,33 @@ public final class BaseBean {
        */
       GCROLESYMBOLCHANGEDINT(11, 12),
       /**
-       * <code>MISSIONINFO = 13;</code>
+       * <code>GCGETBUILDLIST = 13;</code>
        */
-      MISSIONINFO(12, 13),
+      GCGETBUILDLIST(12, 13),
       /**
-       * <code>MISSIONREWARD = 14;</code>
+       * <code>CGCREATBUILD = 14;</code>
        */
-      MISSIONREWARD(13, 14),
+      CGCREATBUILD(13, 14),
+      /**
+       * <code>GCCREATBUILD = 15;</code>
+       */
+      GCCREATBUILD(14, 15),
+      /**
+       * <code>GCUPDATEBUILDDATA = 16;</code>
+       */
+      GCUPDATEBUILDDATA(15, 16),
+      /**
+       * <code>GCUPDATEBUILDINGDATA = 17;</code>
+       */
+      GCUPDATEBUILDINGDATA(16, 17),
+      /**
+       * <code>MISSIONINFO = 18;</code>
+       */
+      MISSIONINFO(17, 18),
+      /**
+       * <code>MISSIONREWARD = 19;</code>
+       */
+      MISSIONREWARD(18, 19),
       ;
 
       /**
@@ -352,13 +377,33 @@ public final class BaseBean {
        */
       public static final int GCROLESYMBOLCHANGEDINT_VALUE = 12;
       /**
-       * <code>MISSIONINFO = 13;</code>
+       * <code>GCGETBUILDLIST = 13;</code>
        */
-      public static final int MISSIONINFO_VALUE = 13;
+      public static final int GCGETBUILDLIST_VALUE = 13;
       /**
-       * <code>MISSIONREWARD = 14;</code>
+       * <code>CGCREATBUILD = 14;</code>
        */
-      public static final int MISSIONREWARD_VALUE = 14;
+      public static final int CGCREATBUILD_VALUE = 14;
+      /**
+       * <code>GCCREATBUILD = 15;</code>
+       */
+      public static final int GCCREATBUILD_VALUE = 15;
+      /**
+       * <code>GCUPDATEBUILDDATA = 16;</code>
+       */
+      public static final int GCUPDATEBUILDDATA_VALUE = 16;
+      /**
+       * <code>GCUPDATEBUILDINGDATA = 17;</code>
+       */
+      public static final int GCUPDATEBUILDINGDATA_VALUE = 17;
+      /**
+       * <code>MISSIONINFO = 18;</code>
+       */
+      public static final int MISSIONINFO_VALUE = 18;
+      /**
+       * <code>MISSIONREWARD = 19;</code>
+       */
+      public static final int MISSIONREWARD_VALUE = 19;
 
 
       public final int getNumber() { return value; }
@@ -377,8 +422,13 @@ public final class BaseBean {
           case 10: return CGENTERSCENE;
           case 11: return GCENTERSCENE;
           case 12: return GCROLESYMBOLCHANGEDINT;
-          case 13: return MISSIONINFO;
-          case 14: return MISSIONREWARD;
+          case 13: return GCGETBUILDLIST;
+          case 14: return CGCREATBUILD;
+          case 15: return GCCREATBUILD;
+          case 16: return GCUPDATEBUILDDATA;
+          case 17: return GCUPDATEBUILDINGDATA;
+          case 18: return MISSIONINFO;
+          case 19: return MISSIONREWARD;
           default: return null;
         }
       }
@@ -952,7 +1002,62 @@ public final class BaseBean {
           .newFileScopedGeneratedExtension(
         com.common.msg.HumanBean.GCRoleSymbolChangedInt.class,
         com.common.msg.HumanBean.GCRoleSymbolChangedInt.getDefaultInstance());
-  public static final int MISSIONINFO_FIELD_NUMBER = 300;
+  public static final int GCGETBUILDLIST_FIELD_NUMBER = 300;
+  /**
+   * <code>extend .bean.BaseMessage { ... }</code>
+   */
+  public static final
+    com.google.protobuf.GeneratedMessage.GeneratedExtension<
+      com.common.msg.BaseBean.BaseMessage,
+      com.common.msg.BuildBean.GCGetBuildList> gcGetBuildList = com.google.protobuf.GeneratedMessage
+          .newFileScopedGeneratedExtension(
+        com.common.msg.BuildBean.GCGetBuildList.class,
+        com.common.msg.BuildBean.GCGetBuildList.getDefaultInstance());
+  public static final int CGCREATBUILD_FIELD_NUMBER = 301;
+  /**
+   * <code>extend .bean.BaseMessage { ... }</code>
+   */
+  public static final
+    com.google.protobuf.GeneratedMessage.GeneratedExtension<
+      com.common.msg.BaseBean.BaseMessage,
+      com.common.msg.BuildBean.CGCreatBuild> cgCreatBuild = com.google.protobuf.GeneratedMessage
+          .newFileScopedGeneratedExtension(
+        com.common.msg.BuildBean.CGCreatBuild.class,
+        com.common.msg.BuildBean.CGCreatBuild.getDefaultInstance());
+  public static final int GCCREATBUILD_FIELD_NUMBER = 302;
+  /**
+   * <code>extend .bean.BaseMessage { ... }</code>
+   */
+  public static final
+    com.google.protobuf.GeneratedMessage.GeneratedExtension<
+      com.common.msg.BaseBean.BaseMessage,
+      com.common.msg.BuildBean.GCCreatBuild> gcCreatBuild = com.google.protobuf.GeneratedMessage
+          .newFileScopedGeneratedExtension(
+        com.common.msg.BuildBean.GCCreatBuild.class,
+        com.common.msg.BuildBean.GCCreatBuild.getDefaultInstance());
+  public static final int GCUPDATEBUILDDATA_FIELD_NUMBER = 303;
+  /**
+   * <code>extend .bean.BaseMessage { ... }</code>
+   */
+  public static final
+    com.google.protobuf.GeneratedMessage.GeneratedExtension<
+      com.common.msg.BaseBean.BaseMessage,
+      com.common.msg.BuildBean.GCUpdateBuildData> gcUpdateBuildData = com.google.protobuf.GeneratedMessage
+          .newFileScopedGeneratedExtension(
+        com.common.msg.BuildBean.GCUpdateBuildData.class,
+        com.common.msg.BuildBean.GCUpdateBuildData.getDefaultInstance());
+  public static final int GCUPDATEBUILDINGDATA_FIELD_NUMBER = 304;
+  /**
+   * <code>extend .bean.BaseMessage { ... }</code>
+   */
+  public static final
+    com.google.protobuf.GeneratedMessage.GeneratedExtension<
+      com.common.msg.BaseBean.BaseMessage,
+      com.common.msg.BuildBean.GCUpdateBuildIngData> gcUpdateBuildIngData = com.google.protobuf.GeneratedMessage
+          .newFileScopedGeneratedExtension(
+        com.common.msg.BuildBean.GCUpdateBuildIngData.class,
+        com.common.msg.BuildBean.GCUpdateBuildIngData.getDefaultInstance());
+  public static final int MISSIONINFO_FIELD_NUMBER = 400;
   /**
    * <code>extend .bean.BaseMessage { ... }</code>
    */
@@ -963,7 +1068,7 @@ public final class BaseBean {
           .newFileScopedGeneratedExtension(
         com.common.msg.MissionBean.MissionInfo.class,
         com.common.msg.MissionBean.MissionInfo.getDefaultInstance());
-  public static final int MISSIONREWARD_FIELD_NUMBER = 301;
+  public static final int MISSIONREWARD_FIELD_NUMBER = 401;
   /**
    * <code>extend .bean.BaseMessage { ... }</code>
    */
@@ -989,42 +1094,53 @@ public final class BaseBean {
   static {
     java.lang.String[] descriptorData = {
       "\n\rmessage.proto\022\004bean\032\rmission.proto\032\014pl" +
-      "ayer.proto\032\013human.proto\"\303\003\n\013BaseMessage\022" +
-      "$\n\004type\030\001 \002(\0162\026.bean.BaseMessage.Type\0222\n" +
-      "\013messageCode\030\002 \002(\0162\035.bean.BaseMessage.Me" +
-      "ssageCode\",\n\004Type\022\021\n\rGLOBALMESSAGE\020\001\022\021\n\r" +
-      "PLAYERMESSAGE\020\002\"\241\002\n\013MessageCode\022\026\n\022CGPLA" +
-      "YERCHECKLOGIN\020\001\022\026\n\022GCPLAYERCHECKLOGIN\020\002\022" +
-      "\021\n\rCGGETROLELIST\020\003\022\021\n\rGCGETROLELIST\020\004\022\020\n" +
-      "\014CGCREATEROLE\020\005\022\020\n\014GCCREATEROLE\020\006\022\020\n\014CGS" +
-      "ELECTROLE\020\007\022\020\n\014CGROLERENAME\020\010\022\020\n\014GCROLER",
-      "ENAME\020\t\022\020\n\014CGENTERSCENE\020\n\022\020\n\014GCENTERSCEN" +
-      "E\020\013\022\032\n\026GCROLESYMBOLCHANGEDINT\020\014\022\017\n\013MISSI" +
-      "ONINFO\020\r\022\021\n\rMISSIONREWARD\020\016*\010\010d\020\200\200\200\200\002:G\n" +
-      "\022cgPlayerCheckLogin\022\021.bean.BaseMessage\030d" +
-      " \001(\0132\030.bean.CGPlayerCheckLogin:G\n\022gcPlay" +
-      "erCheckLogin\022\021.bean.BaseMessage\030e \001(\0132\030." +
-      "bean.GCPlayerCheckLogin:=\n\rcgGetRoleList" +
-      "\022\021.bean.BaseMessage\030f \001(\0132\023.bean.CGGetRo" +
-      "leList:=\n\rgcGetRoleList\022\021.bean.BaseMessa" +
-      "ge\030g \001(\0132\023.bean.GCGetRoleList:;\n\014cgCreat",
-      "eRole\022\021.bean.BaseMessage\030h \001(\0132\022.bean.CG" +
-      "CreateRole:;\n\014gcCreateRole\022\021.bean.BaseMe" +
-      "ssage\030i \001(\0132\022.bean.GCCreateRole:;\n\014cgSel" +
-      "ectRole\022\021.bean.BaseMessage\030j \001(\0132\022.bean." +
-      "CGSelectRole:;\n\014cgRoleReName\022\021.bean.Base" +
-      "Message\030k \001(\0132\022.bean.CGRoleReName:;\n\014gcR" +
-      "oleReName\022\021.bean.BaseMessage\030l \001(\0132\022.bea" +
-      "n.GCRoleReName:;\n\014cgEnterScene\022\021.bean.Ba" +
-      "seMessage\030m \001(\0132\022.bean.CGEnterScene:;\n\014g" +
-      "cEnterScene\022\021.bean.BaseMessage\030n \001(\0132\022.b",
-      "ean.GCEnterScene:P\n\026gcRoleSymbolChangedI" +
-      "nt\022\021.bean.BaseMessage\030\310\001 \001(\0132\034.bean.GCRo" +
-      "leSymbolChangedInt::\n\013missionInfo\022\021.bean" +
-      ".BaseMessage\030\254\002 \001(\0132\021.bean.MissionInfo:>" +
-      "\n\rmissionReward\022\021.bean.BaseMessage\030\255\002 \001(" +
-      "\0132\023.bean.MissionRewardB\032\n\016com.common.msg" +
-      "B\010BaseBean"
+      "ayer.proto\032\013human.proto\032\013build.proto\"\254\004\n" +
+      "\013BaseMessage\022$\n\004type\030\001 \002(\0162\026.bean.BaseMe" +
+      "ssage.Type\0222\n\013messageCode\030\002 \002(\0162\035.bean.B" +
+      "aseMessage.MessageCode\",\n\004Type\022\021\n\rGLOBAL" +
+      "MESSAGE\020\001\022\021\n\rPLAYERMESSAGE\020\002\"\212\003\n\013Message" +
+      "Code\022\026\n\022CGPLAYERCHECKLOGIN\020\001\022\026\n\022GCPLAYER" +
+      "CHECKLOGIN\020\002\022\021\n\rCGGETROLELIST\020\003\022\021\n\rGCGET" +
+      "ROLELIST\020\004\022\020\n\014CGCREATEROLE\020\005\022\020\n\014GCCREATE" +
+      "ROLE\020\006\022\020\n\014CGSELECTROLE\020\007\022\020\n\014CGROLERENAME",
+      "\020\010\022\020\n\014GCROLERENAME\020\t\022\020\n\014CGENTERSCENE\020\n\022\020" +
+      "\n\014GCENTERSCENE\020\013\022\032\n\026GCROLESYMBOLCHANGEDI" +
+      "NT\020\014\022\022\n\016GCGETBUILDLIST\020\r\022\020\n\014CGCREATBUILD" +
+      "\020\016\022\020\n\014GCCREATBUILD\020\017\022\025\n\021GCUPDATEBUILDDAT" +
+      "A\020\020\022\030\n\024GCUPDATEBUILDINGDATA\020\021\022\017\n\013MISSION" +
+      "INFO\020\022\022\021\n\rMISSIONREWARD\020\023*\010\010d\020\200\200\200\200\002:G\n\022c" +
+      "gPlayerCheckLogin\022\021.bean.BaseMessage\030d \001" +
+      "(\0132\030.bean.CGPlayerCheckLogin:G\n\022gcPlayer" +
+      "CheckLogin\022\021.bean.BaseMessage\030e \001(\0132\030.be" +
+      "an.GCPlayerCheckLogin:=\n\rcgGetRoleList\022\021",
+      ".bean.BaseMessage\030f \001(\0132\023.bean.CGGetRole" +
+      "List:=\n\rgcGetRoleList\022\021.bean.BaseMessage" +
+      "\030g \001(\0132\023.bean.GCGetRoleList:;\n\014cgCreateR" +
+      "ole\022\021.bean.BaseMessage\030h \001(\0132\022.bean.CGCr" +
+      "eateRole:;\n\014gcCreateRole\022\021.bean.BaseMess" +
+      "age\030i \001(\0132\022.bean.GCCreateRole:;\n\014cgSelec" +
+      "tRole\022\021.bean.BaseMessage\030j \001(\0132\022.bean.CG" +
+      "SelectRole:;\n\014cgRoleReName\022\021.bean.BaseMe" +
+      "ssage\030k \001(\0132\022.bean.CGRoleReName:;\n\014gcRol" +
+      "eReName\022\021.bean.BaseMessage\030l \001(\0132\022.bean.",
+      "GCRoleReName:;\n\014cgEnterScene\022\021.bean.Base" +
+      "Message\030m \001(\0132\022.bean.CGEnterScene:;\n\014gcE" +
+      "nterScene\022\021.bean.BaseMessage\030n \001(\0132\022.bea" +
+      "n.GCEnterScene:P\n\026gcRoleSymbolChangedInt" +
+      "\022\021.bean.BaseMessage\030\310\001 \001(\0132\034.bean.GCRole" +
+      "SymbolChangedInt:@\n\016gcGetBuildList\022\021.bea" +
+      "n.BaseMessage\030\254\002 \001(\0132\024.bean.GCGetBuildLi" +
+      "st:<\n\014cgCreatBuild\022\021.bean.BaseMessage\030\255\002" +
+      " \001(\0132\022.bean.CGCreatBuild:<\n\014gcCreatBuild" +
+      "\022\021.bean.BaseMessage\030\256\002 \001(\0132\022.bean.GCCrea",
+      "tBuild:F\n\021gcUpdateBuildData\022\021.bean.BaseM" +
+      "essage\030\257\002 \001(\0132\027.bean.GCUpdateBuildData:L" +
+      "\n\024gcUpdateBuildIngData\022\021.bean.BaseMessag" +
+      "e\030\260\002 \001(\0132\032.bean.GCUpdateBuildIngData::\n\013" +
+      "missionInfo\022\021.bean.BaseMessage\030\220\003 \001(\0132\021." +
+      "bean.MissionInfo:>\n\rmissionReward\022\021.bean" +
+      ".BaseMessage\030\221\003 \001(\0132\023.bean.MissionReward" +
+      "B\032\n\016com.common.msgB\010BaseBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1049,8 +1165,13 @@ public final class BaseBean {
           cgEnterScene.internalInit(descriptor.getExtensions().get(9));
           gcEnterScene.internalInit(descriptor.getExtensions().get(10));
           gcRoleSymbolChangedInt.internalInit(descriptor.getExtensions().get(11));
-          missionInfo.internalInit(descriptor.getExtensions().get(12));
-          missionReward.internalInit(descriptor.getExtensions().get(13));
+          gcGetBuildList.internalInit(descriptor.getExtensions().get(12));
+          cgCreatBuild.internalInit(descriptor.getExtensions().get(13));
+          gcCreatBuild.internalInit(descriptor.getExtensions().get(14));
+          gcUpdateBuildData.internalInit(descriptor.getExtensions().get(15));
+          gcUpdateBuildIngData.internalInit(descriptor.getExtensions().get(16));
+          missionInfo.internalInit(descriptor.getExtensions().get(17));
+          missionReward.internalInit(descriptor.getExtensions().get(18));
           return null;
         }
       };
@@ -1060,6 +1181,7 @@ public final class BaseBean {
           com.common.msg.MissionBean.getDescriptor(),
           com.common.msg.PlayerBean.getDescriptor(),
           com.common.msg.HumanBean.getDescriptor(),
+          com.common.msg.BuildBean.getDescriptor(),
         }, assigner);
   }
 

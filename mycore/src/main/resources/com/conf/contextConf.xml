@@ -15,9 +15,9 @@
 	   	<constructor-arg value="com/conf/handlerConf.xml" />
 	   </bean>
 	   
-	     
-	   <bean id="operationContext" class="com.common.context.impl.BaseContext" >
-	   	<constructor-arg value="com/conf/operationConf.xml" />
+	    
+	   <bean id="managerContext" class="com.common.context.impl.BaseContext" >
+	   	<constructor-arg value="com/conf/managerConf.xml" />
 	   </bean>
 	   
 	   
