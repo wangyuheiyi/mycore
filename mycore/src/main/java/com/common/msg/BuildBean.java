@@ -1969,7 +1969,7 @@ public final class BuildBean {
     // @@protoc_insertion_point(class_scope:bean.CGCreatBuild)
   }
 
-  public interface GCCreatBuildOrBuilder
+  public interface CGQuickBuildOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int64 buildId = 1;
@@ -1983,24 +1983,24 @@ public final class BuildBean {
     long getBuildId();
   }
   /**
-   * Protobuf type {@code bean.GCCreatBuild}
+   * Protobuf type {@code bean.CGQuickBuild}
    */
-  public static final class GCCreatBuild extends
+  public static final class CGQuickBuild extends
       com.google.protobuf.GeneratedMessage
-      implements GCCreatBuildOrBuilder {
-    // Use GCCreatBuild.newBuilder() to construct.
-    private GCCreatBuild(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements CGQuickBuildOrBuilder {
+    // Use CGQuickBuild.newBuilder() to construct.
+    private CGQuickBuild(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private GCCreatBuild(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private CGQuickBuild(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final GCCreatBuild defaultInstance;
-    public static GCCreatBuild getDefaultInstance() {
+    private static final CGQuickBuild defaultInstance;
+    public static CGQuickBuild getDefaultInstance() {
       return defaultInstance;
     }
 
-    public GCCreatBuild getDefaultInstanceForType() {
+    public CGQuickBuild getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -2010,7 +2010,7 @@ public final class BuildBean {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private GCCreatBuild(
+    private CGQuickBuild(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2052,28 +2052,28 @@ public final class BuildBean {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.common.msg.BuildBean.internal_static_bean_GCCreatBuild_descriptor;
+      return com.common.msg.BuildBean.internal_static_bean_CGQuickBuild_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.common.msg.BuildBean.internal_static_bean_GCCreatBuild_fieldAccessorTable
+      return com.common.msg.BuildBean.internal_static_bean_CGQuickBuild_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.common.msg.BuildBean.GCCreatBuild.class, com.common.msg.BuildBean.GCCreatBuild.Builder.class);
+              com.common.msg.BuildBean.CGQuickBuild.class, com.common.msg.BuildBean.CGQuickBuild.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<GCCreatBuild> PARSER =
-        new com.google.protobuf.AbstractParser<GCCreatBuild>() {
-      public GCCreatBuild parsePartialFrom(
+    public static com.google.protobuf.Parser<CGQuickBuild> PARSER =
+        new com.google.protobuf.AbstractParser<CGQuickBuild>() {
+      public CGQuickBuild parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GCCreatBuild(input, extensionRegistry);
+        return new CGQuickBuild(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<GCCreatBuild> getParserForType() {
+    public com.google.protobuf.Parser<CGQuickBuild> getParserForType() {
       return PARSER;
     }
 
@@ -2141,53 +2141,53 @@ public final class BuildBean {
       return super.writeReplace();
     }
 
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(byte[] data)
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(java.io.InputStream input)
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseDelimitedFrom(java.io.InputStream input)
+    public static com.common.msg.BuildBean.CGQuickBuild parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseDelimitedFrom(
+    public static com.common.msg.BuildBean.CGQuickBuild parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.common.msg.BuildBean.GCCreatBuild parseFrom(
+    public static com.common.msg.BuildBean.CGQuickBuild parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2196,7 +2196,7 @@ public final class BuildBean {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.common.msg.BuildBean.GCCreatBuild prototype) {
+    public static Builder newBuilder(com.common.msg.BuildBean.CGQuickBuild prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -2208,24 +2208,24 @@ public final class BuildBean {
       return builder;
     }
     /**
-     * Protobuf type {@code bean.GCCreatBuild}
+     * Protobuf type {@code bean.CGQuickBuild}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.common.msg.BuildBean.GCCreatBuildOrBuilder {
+       implements com.common.msg.BuildBean.CGQuickBuildOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.common.msg.BuildBean.internal_static_bean_GCCreatBuild_descriptor;
+        return com.common.msg.BuildBean.internal_static_bean_CGQuickBuild_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.common.msg.BuildBean.internal_static_bean_GCCreatBuild_fieldAccessorTable
+        return com.common.msg.BuildBean.internal_static_bean_CGQuickBuild_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.common.msg.BuildBean.GCCreatBuild.class, com.common.msg.BuildBean.GCCreatBuild.Builder.class);
+                com.common.msg.BuildBean.CGQuickBuild.class, com.common.msg.BuildBean.CGQuickBuild.Builder.class);
       }
 
-      // Construct using com.common.msg.BuildBean.GCCreatBuild.newBuilder()
+      // Construct using com.common.msg.BuildBean.CGQuickBuild.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2256,23 +2256,23 @@ public final class BuildBean {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.common.msg.BuildBean.internal_static_bean_GCCreatBuild_descriptor;
+        return com.common.msg.BuildBean.internal_static_bean_CGQuickBuild_descriptor;
       }
 
-      public com.common.msg.BuildBean.GCCreatBuild getDefaultInstanceForType() {
-        return com.common.msg.BuildBean.GCCreatBuild.getDefaultInstance();
+      public com.common.msg.BuildBean.CGQuickBuild getDefaultInstanceForType() {
+        return com.common.msg.BuildBean.CGQuickBuild.getDefaultInstance();
       }
 
-      public com.common.msg.BuildBean.GCCreatBuild build() {
-        com.common.msg.BuildBean.GCCreatBuild result = buildPartial();
+      public com.common.msg.BuildBean.CGQuickBuild build() {
+        com.common.msg.BuildBean.CGQuickBuild result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.common.msg.BuildBean.GCCreatBuild buildPartial() {
-        com.common.msg.BuildBean.GCCreatBuild result = new com.common.msg.BuildBean.GCCreatBuild(this);
+      public com.common.msg.BuildBean.CGQuickBuild buildPartial() {
+        com.common.msg.BuildBean.CGQuickBuild result = new com.common.msg.BuildBean.CGQuickBuild(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2285,16 +2285,16 @@ public final class BuildBean {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.common.msg.BuildBean.GCCreatBuild) {
-          return mergeFrom((com.common.msg.BuildBean.GCCreatBuild)other);
+        if (other instanceof com.common.msg.BuildBean.CGQuickBuild) {
+          return mergeFrom((com.common.msg.BuildBean.CGQuickBuild)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.common.msg.BuildBean.GCCreatBuild other) {
-        if (other == com.common.msg.BuildBean.GCCreatBuild.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.common.msg.BuildBean.CGQuickBuild other) {
+        if (other == com.common.msg.BuildBean.CGQuickBuild.getDefaultInstance()) return this;
         if (other.hasBuildId()) {
           setBuildId(other.getBuildId());
         }
@@ -2314,11 +2314,11 @@ public final class BuildBean {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.common.msg.BuildBean.GCCreatBuild parsedMessage = null;
+        com.common.msg.BuildBean.CGQuickBuild parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.common.msg.BuildBean.GCCreatBuild) e.getUnfinishedMessage();
+          parsedMessage = (com.common.msg.BuildBean.CGQuickBuild) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2362,15 +2362,419 @@ public final class BuildBean {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:bean.GCCreatBuild)
+      // @@protoc_insertion_point(builder_scope:bean.CGQuickBuild)
     }
 
     static {
-      defaultInstance = new GCCreatBuild(true);
+      defaultInstance = new CGQuickBuild(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:bean.GCCreatBuild)
+    // @@protoc_insertion_point(class_scope:bean.CGQuickBuild)
+  }
+
+  public interface CGBreakBuildOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int64 buildId = 1;
+    /**
+     * <code>required int64 buildId = 1;</code>
+     */
+    boolean hasBuildId();
+    /**
+     * <code>required int64 buildId = 1;</code>
+     */
+    long getBuildId();
+  }
+  /**
+   * Protobuf type {@code bean.CGBreakBuild}
+   */
+  public static final class CGBreakBuild extends
+      com.google.protobuf.GeneratedMessage
+      implements CGBreakBuildOrBuilder {
+    // Use CGBreakBuild.newBuilder() to construct.
+    private CGBreakBuild(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CGBreakBuild(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CGBreakBuild defaultInstance;
+    public static CGBreakBuild getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CGBreakBuild getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CGBreakBuild(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              buildId_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.common.msg.BuildBean.internal_static_bean_CGBreakBuild_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.common.msg.BuildBean.internal_static_bean_CGBreakBuild_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.common.msg.BuildBean.CGBreakBuild.class, com.common.msg.BuildBean.CGBreakBuild.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CGBreakBuild> PARSER =
+        new com.google.protobuf.AbstractParser<CGBreakBuild>() {
+      public CGBreakBuild parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CGBreakBuild(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CGBreakBuild> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int64 buildId = 1;
+    public static final int BUILDID_FIELD_NUMBER = 1;
+    private long buildId_;
+    /**
+     * <code>required int64 buildId = 1;</code>
+     */
+    public boolean hasBuildId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int64 buildId = 1;</code>
+     */
+    public long getBuildId() {
+      return buildId_;
+    }
+
+    private void initFields() {
+      buildId_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasBuildId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt64(1, buildId_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, buildId_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.common.msg.BuildBean.CGBreakBuild parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.common.msg.BuildBean.CGBreakBuild prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code bean.CGBreakBuild}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements com.common.msg.BuildBean.CGBreakBuildOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.common.msg.BuildBean.internal_static_bean_CGBreakBuild_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.common.msg.BuildBean.internal_static_bean_CGBreakBuild_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.common.msg.BuildBean.CGBreakBuild.class, com.common.msg.BuildBean.CGBreakBuild.Builder.class);
+      }
+
+      // Construct using com.common.msg.BuildBean.CGBreakBuild.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        buildId_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.common.msg.BuildBean.internal_static_bean_CGBreakBuild_descriptor;
+      }
+
+      public com.common.msg.BuildBean.CGBreakBuild getDefaultInstanceForType() {
+        return com.common.msg.BuildBean.CGBreakBuild.getDefaultInstance();
+      }
+
+      public com.common.msg.BuildBean.CGBreakBuild build() {
+        com.common.msg.BuildBean.CGBreakBuild result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.common.msg.BuildBean.CGBreakBuild buildPartial() {
+        com.common.msg.BuildBean.CGBreakBuild result = new com.common.msg.BuildBean.CGBreakBuild(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.buildId_ = buildId_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.common.msg.BuildBean.CGBreakBuild) {
+          return mergeFrom((com.common.msg.BuildBean.CGBreakBuild)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.common.msg.BuildBean.CGBreakBuild other) {
+        if (other == com.common.msg.BuildBean.CGBreakBuild.getDefaultInstance()) return this;
+        if (other.hasBuildId()) {
+          setBuildId(other.getBuildId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasBuildId()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.common.msg.BuildBean.CGBreakBuild parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.common.msg.BuildBean.CGBreakBuild) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int64 buildId = 1;
+      private long buildId_ ;
+      /**
+       * <code>required int64 buildId = 1;</code>
+       */
+      public boolean hasBuildId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int64 buildId = 1;</code>
+       */
+      public long getBuildId() {
+        return buildId_;
+      }
+      /**
+       * <code>required int64 buildId = 1;</code>
+       */
+      public Builder setBuildId(long value) {
+        bitField0_ |= 0x00000001;
+        buildId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int64 buildId = 1;</code>
+       */
+      public Builder clearBuildId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        buildId_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:bean.CGBreakBuild)
+    }
+
+    static {
+      defaultInstance = new CGBreakBuild(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:bean.CGBreakBuild)
   }
 
   public interface GCUpdateBuildDataOrBuilder
@@ -2389,6 +2793,16 @@ public final class BuildBean {
      * <code>required .bean.BuildClientData buildData = 1;</code>
      */
     com.common.msg.BuildBean.BuildClientDataOrBuilder getBuildDataOrBuilder();
+
+    // optional int32 updateState = 2;
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    boolean hasUpdateState();
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    int getUpdateState();
   }
   /**
    * Protobuf type {@code bean.GCUpdateBuildData}
@@ -2454,6 +2868,11 @@ public final class BuildBean {
               bitField0_ |= 0x00000001;
               break;
             }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              updateState_ = input.readInt32();
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -2516,8 +2935,25 @@ public final class BuildBean {
       return buildData_;
     }
 
+    // optional int32 updateState = 2;
+    public static final int UPDATESTATE_FIELD_NUMBER = 2;
+    private int updateState_;
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    public boolean hasUpdateState() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    public int getUpdateState() {
+      return updateState_;
+    }
+
     private void initFields() {
       buildData_ = com.common.msg.BuildBean.BuildClientData.getDefaultInstance();
+      updateState_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2542,6 +2978,9 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeMessage(1, buildData_);
       }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, updateState_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -2554,6 +2993,10 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, buildData_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, updateState_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2678,6 +3121,8 @@ public final class BuildBean {
           buildDataBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
+        updateState_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -2714,6 +3159,10 @@ public final class BuildBean {
         } else {
           result.buildData_ = buildDataBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.updateState_ = updateState_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2732,6 +3181,9 @@ public final class BuildBean {
         if (other == com.common.msg.BuildBean.GCUpdateBuildData.getDefaultInstance()) return this;
         if (other.hasBuildData()) {
           mergeBuildData(other.getBuildData());
+        }
+        if (other.hasUpdateState()) {
+          setUpdateState(other.getUpdateState());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -2885,6 +3337,39 @@ public final class BuildBean {
         return buildDataBuilder_;
       }
 
+      // optional int32 updateState = 2;
+      private int updateState_ ;
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public boolean hasUpdateState() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public int getUpdateState() {
+        return updateState_;
+      }
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public Builder setUpdateState(int value) {
+        bitField0_ |= 0x00000002;
+        updateState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public Builder clearUpdateState() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        updateState_ = 0;
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:bean.GCUpdateBuildData)
     }
 
@@ -2912,6 +3397,16 @@ public final class BuildBean {
      * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
      */
     com.common.msg.BuildBean.BuildClientIngDataOrBuilder getBuildIngDataOrBuilder();
+
+    // optional int32 updateState = 2;
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    boolean hasUpdateState();
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    int getUpdateState();
   }
   /**
    * Protobuf type {@code bean.GCUpdateBuildIngData}
@@ -2977,6 +3472,11 @@ public final class BuildBean {
               bitField0_ |= 0x00000001;
               break;
             }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              updateState_ = input.readInt32();
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -3039,8 +3539,25 @@ public final class BuildBean {
       return buildIngData_;
     }
 
+    // optional int32 updateState = 2;
+    public static final int UPDATESTATE_FIELD_NUMBER = 2;
+    private int updateState_;
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    public boolean hasUpdateState() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 updateState = 2;</code>
+     */
+    public int getUpdateState() {
+      return updateState_;
+    }
+
     private void initFields() {
       buildIngData_ = com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance();
+      updateState_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -3065,6 +3582,9 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeMessage(1, buildIngData_);
       }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, updateState_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -3077,6 +3597,10 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, buildIngData_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, updateState_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3201,6 +3725,8 @@ public final class BuildBean {
           buildIngDataBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
+        updateState_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -3237,6 +3763,10 @@ public final class BuildBean {
         } else {
           result.buildIngData_ = buildIngDataBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.updateState_ = updateState_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -3255,6 +3785,9 @@ public final class BuildBean {
         if (other == com.common.msg.BuildBean.GCUpdateBuildIngData.getDefaultInstance()) return this;
         if (other.hasBuildIngData()) {
           mergeBuildIngData(other.getBuildIngData());
+        }
+        if (other.hasUpdateState()) {
+          setUpdateState(other.getUpdateState());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -3406,6 +3939,39 @@ public final class BuildBean {
           buildIngData_ = null;
         }
         return buildIngDataBuilder_;
+      }
+
+      // optional int32 updateState = 2;
+      private int updateState_ ;
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public boolean hasUpdateState() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public int getUpdateState() {
+        return updateState_;
+      }
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public Builder setUpdateState(int value) {
+        bitField0_ |= 0x00000002;
+        updateState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 updateState = 2;</code>
+       */
+      public Builder clearUpdateState() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        updateState_ = 0;
+        onChanged();
+        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:bean.GCUpdateBuildIngData)
@@ -4690,10 +5256,15 @@ public final class BuildBean {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_bean_CGCreatBuild_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_bean_GCCreatBuild_descriptor;
+    internal_static_bean_CGQuickBuild_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_bean_GCCreatBuild_fieldAccessorTable;
+      internal_static_bean_CGQuickBuild_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_bean_CGBreakBuild_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_bean_CGBreakBuild_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_bean_GCUpdateBuildData_descriptor;
   private static
@@ -4729,16 +5300,18 @@ public final class BuildBean {
       "\tbuildData\030\006 \003(\0132\025.bean.BuildClientData\022" +
       ".\n\014buildIngData\030\007 \003(\0132\030.bean.BuildClient" +
       "IngData\"2\n\014CGCreatBuild\022\016\n\006roleId\030\001 \002(\003\022" +
-      "\022\n\ntemplateId\030\002 \001(\005\"\037\n\014GCCreatBuild\022\017\n\007b" +
-      "uildId\030\001 \002(\003\"=\n\021GCUpdateBuildData\022(\n\tbui" +
-      "ldData\030\001 \002(\0132\025.bean.BuildClientData\"F\n\024G" +
-      "CUpdateBuildIngData\022.\n\014BuildIngData\030\001 \002(",
-      "\0132\030.bean.BuildClientIngData\"L\n\017BuildClie" +
-      "ntData\022\017\n\007buildId\030\001 \002(\003\022\022\n\ntemplateId\030\002 " +
-      "\001(\005\022\024\n\014outPutCdTime\030\003 \001(\003\"T\n\022BuildClient" +
-      "IngData\022\017\n\007buildId\030\001 \002(\003\022\022\n\ntemplateId\030\002" +
-      " \001(\005\022\031\n\021buildFinishCdTime\030\003 \001(\003B\033\n\016com.c" +
-      "ommon.msgB\tBuildBean"
+      "\022\n\ntemplateId\030\002 \001(\005\"\037\n\014CGQuickBuild\022\017\n\007b" +
+      "uildId\030\001 \002(\003\"\037\n\014CGBreakBuild\022\017\n\007buildId\030" +
+      "\001 \002(\003\"R\n\021GCUpdateBuildData\022(\n\tbuildData\030" +
+      "\001 \002(\0132\025.bean.BuildClientData\022\023\n\013updateSt",
+      "ate\030\002 \001(\005\"[\n\024GCUpdateBuildIngData\022.\n\014Bui" +
+      "ldIngData\030\001 \002(\0132\030.bean.BuildClientIngDat" +
+      "a\022\023\n\013updateState\030\002 \001(\005\"L\n\017BuildClientDat" +
+      "a\022\017\n\007buildId\030\001 \002(\003\022\022\n\ntemplateId\030\002 \001(\005\022\024" +
+      "\n\014outPutCdTime\030\003 \001(\003\"T\n\022BuildClientIngDa" +
+      "ta\022\017\n\007buildId\030\001 \002(\003\022\022\n\ntemplateId\030\002 \001(\005\022" +
+      "\031\n\021buildFinishCdTime\030\003 \001(\003B\033\n\016com.common" +
+      ".msgB\tBuildBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -4757,32 +5330,38 @@ public final class BuildBean {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_CGCreatBuild_descriptor,
               new java.lang.String[] { "RoleId", "TemplateId", });
-          internal_static_bean_GCCreatBuild_descriptor =
+          internal_static_bean_CGQuickBuild_descriptor =
             getDescriptor().getMessageTypes().get(2);
-          internal_static_bean_GCCreatBuild_fieldAccessorTable = new
+          internal_static_bean_CGQuickBuild_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_bean_GCCreatBuild_descriptor,
+              internal_static_bean_CGQuickBuild_descriptor,
+              new java.lang.String[] { "BuildId", });
+          internal_static_bean_CGBreakBuild_descriptor =
+            getDescriptor().getMessageTypes().get(3);
+          internal_static_bean_CGBreakBuild_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_bean_CGBreakBuild_descriptor,
               new java.lang.String[] { "BuildId", });
           internal_static_bean_GCUpdateBuildData_descriptor =
-            getDescriptor().getMessageTypes().get(3);
+            getDescriptor().getMessageTypes().get(4);
           internal_static_bean_GCUpdateBuildData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCUpdateBuildData_descriptor,
-              new java.lang.String[] { "BuildData", });
+              new java.lang.String[] { "BuildData", "UpdateState", });
           internal_static_bean_GCUpdateBuildIngData_descriptor =
-            getDescriptor().getMessageTypes().get(4);
+            getDescriptor().getMessageTypes().get(5);
           internal_static_bean_GCUpdateBuildIngData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCUpdateBuildIngData_descriptor,
-              new java.lang.String[] { "BuildIngData", });
+              new java.lang.String[] { "BuildIngData", "UpdateState", });
           internal_static_bean_BuildClientData_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+            getDescriptor().getMessageTypes().get(6);
           internal_static_bean_BuildClientData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_BuildClientData_descriptor,
               new java.lang.String[] { "BuildId", "TemplateId", "OutPutCdTime", });
           internal_static_bean_BuildClientIngData_descriptor =
-            getDescriptor().getMessageTypes().get(6);
+            getDescriptor().getMessageTypes().get(7);
           internal_static_bean_BuildClientIngData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_BuildClientIngData_descriptor,
