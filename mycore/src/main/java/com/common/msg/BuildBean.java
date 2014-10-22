@@ -2780,29 +2780,30 @@ public final class BuildBean {
   public interface GCUpdateBuildDataOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required .bean.BuildClientData buildData = 1;
+    // repeated .bean.BuildClientData buildData = 1;
     /**
-     * <code>required .bean.BuildClientData buildData = 1;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    boolean hasBuildData();
+    java.util.List<com.common.msg.BuildBean.BuildClientData> 
+        getBuildDataList();
     /**
-     * <code>required .bean.BuildClientData buildData = 1;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    com.common.msg.BuildBean.BuildClientData getBuildData();
+    com.common.msg.BuildBean.BuildClientData getBuildData(int index);
     /**
-     * <code>required .bean.BuildClientData buildData = 1;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    com.common.msg.BuildBean.BuildClientDataOrBuilder getBuildDataOrBuilder();
-
-    // optional int32 updateState = 2;
+    int getBuildDataCount();
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    boolean hasUpdateState();
+    java.util.List<? extends com.common.msg.BuildBean.BuildClientDataOrBuilder> 
+        getBuildDataOrBuilderList();
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    int getUpdateState();
+    com.common.msg.BuildBean.BuildClientDataOrBuilder getBuildDataOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code bean.GCUpdateBuildData}
@@ -2856,21 +2857,11 @@ public final class BuildBean {
               break;
             }
             case 10: {
-              com.common.msg.BuildBean.BuildClientData.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000001) == 0x00000001)) {
-                subBuilder = buildData_.toBuilder();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                buildData_ = new java.util.ArrayList<com.common.msg.BuildBean.BuildClientData>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              buildData_ = input.readMessage(com.common.msg.BuildBean.BuildClientData.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(buildData_);
-                buildData_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000001;
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              updateState_ = input.readInt32();
+              buildData_.add(input.readMessage(com.common.msg.BuildBean.BuildClientData.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2881,6 +2872,9 @@ public final class BuildBean {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          buildData_ = java.util.Collections.unmodifiableList(buildData_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -2912,61 +2906,55 @@ public final class BuildBean {
       return PARSER;
     }
 
-    private int bitField0_;
-    // required .bean.BuildClientData buildData = 1;
+    // repeated .bean.BuildClientData buildData = 1;
     public static final int BUILDDATA_FIELD_NUMBER = 1;
-    private com.common.msg.BuildBean.BuildClientData buildData_;
+    private java.util.List<com.common.msg.BuildBean.BuildClientData> buildData_;
     /**
-     * <code>required .bean.BuildClientData buildData = 1;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    public boolean hasBuildData() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required .bean.BuildClientData buildData = 1;</code>
-     */
-    public com.common.msg.BuildBean.BuildClientData getBuildData() {
+    public java.util.List<com.common.msg.BuildBean.BuildClientData> getBuildDataList() {
       return buildData_;
     }
     /**
-     * <code>required .bean.BuildClientData buildData = 1;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    public com.common.msg.BuildBean.BuildClientDataOrBuilder getBuildDataOrBuilder() {
+    public java.util.List<? extends com.common.msg.BuildBean.BuildClientDataOrBuilder> 
+        getBuildDataOrBuilderList() {
       return buildData_;
     }
-
-    // optional int32 updateState = 2;
-    public static final int UPDATESTATE_FIELD_NUMBER = 2;
-    private int updateState_;
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    public boolean hasUpdateState() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+    public int getBuildDataCount() {
+      return buildData_.size();
     }
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
      */
-    public int getUpdateState() {
-      return updateState_;
+    public com.common.msg.BuildBean.BuildClientData getBuildData(int index) {
+      return buildData_.get(index);
+    }
+    /**
+     * <code>repeated .bean.BuildClientData buildData = 1;</code>
+     */
+    public com.common.msg.BuildBean.BuildClientDataOrBuilder getBuildDataOrBuilder(
+        int index) {
+      return buildData_.get(index);
     }
 
     private void initFields() {
-      buildData_ = com.common.msg.BuildBean.BuildClientData.getDefaultInstance();
-      updateState_ = 0;
+      buildData_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasBuildData()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getBuildData().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
+      for (int i = 0; i < getBuildDataCount(); i++) {
+        if (!getBuildData(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
       }
       memoizedIsInitialized = 1;
       return true;
@@ -2975,11 +2963,8 @@ public final class BuildBean {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, buildData_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, updateState_);
+      for (int i = 0; i < buildData_.size(); i++) {
+        output.writeMessage(1, buildData_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -2990,13 +2975,9 @@ public final class BuildBean {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      for (int i = 0; i < buildData_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, buildData_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, updateState_);
+          .computeMessageSize(1, buildData_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3116,13 +3097,11 @@ public final class BuildBean {
       public Builder clear() {
         super.clear();
         if (buildDataBuilder_ == null) {
-          buildData_ = com.common.msg.BuildBean.BuildClientData.getDefaultInstance();
+          buildData_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           buildDataBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        updateState_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -3150,20 +3129,15 @@ public final class BuildBean {
       public com.common.msg.BuildBean.GCUpdateBuildData buildPartial() {
         com.common.msg.BuildBean.GCUpdateBuildData result = new com.common.msg.BuildBean.GCUpdateBuildData(this);
         int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
         if (buildDataBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            buildData_ = java.util.Collections.unmodifiableList(buildData_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
           result.buildData_ = buildData_;
         } else {
           result.buildData_ = buildDataBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.updateState_ = updateState_;
-        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -3179,24 +3153,42 @@ public final class BuildBean {
 
       public Builder mergeFrom(com.common.msg.BuildBean.GCUpdateBuildData other) {
         if (other == com.common.msg.BuildBean.GCUpdateBuildData.getDefaultInstance()) return this;
-        if (other.hasBuildData()) {
-          mergeBuildData(other.getBuildData());
-        }
-        if (other.hasUpdateState()) {
-          setUpdateState(other.getUpdateState());
+        if (buildDataBuilder_ == null) {
+          if (!other.buildData_.isEmpty()) {
+            if (buildData_.isEmpty()) {
+              buildData_ = other.buildData_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureBuildDataIsMutable();
+              buildData_.addAll(other.buildData_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.buildData_.isEmpty()) {
+            if (buildDataBuilder_.isEmpty()) {
+              buildDataBuilder_.dispose();
+              buildDataBuilder_ = null;
+              buildData_ = other.buildData_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              buildDataBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getBuildDataFieldBuilder() : null;
+            } else {
+              buildDataBuilder_.addAllMessages(other.buildData_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasBuildData()) {
-          
-          return false;
-        }
-        if (!getBuildData().isInitialized()) {
-          
-          return false;
+        for (int i = 0; i < getBuildDataCount(); i++) {
+          if (!getBuildData(i).isInitialized()) {
+            
+            return false;
+          }
         }
         return true;
       }
@@ -3220,154 +3212,244 @@ public final class BuildBean {
       }
       private int bitField0_;
 
-      // required .bean.BuildClientData buildData = 1;
-      private com.common.msg.BuildBean.BuildClientData buildData_ = com.common.msg.BuildBean.BuildClientData.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          com.common.msg.BuildBean.BuildClientData, com.common.msg.BuildBean.BuildClientData.Builder, com.common.msg.BuildBean.BuildClientDataOrBuilder> buildDataBuilder_;
-      /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
-       */
-      public boolean hasBuildData() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+      // repeated .bean.BuildClientData buildData = 1;
+      private java.util.List<com.common.msg.BuildBean.BuildClientData> buildData_ =
+        java.util.Collections.emptyList();
+      private void ensureBuildDataIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          buildData_ = new java.util.ArrayList<com.common.msg.BuildBean.BuildClientData>(buildData_);
+          bitField0_ |= 0x00000001;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.common.msg.BuildBean.BuildClientData, com.common.msg.BuildBean.BuildClientData.Builder, com.common.msg.BuildBean.BuildClientDataOrBuilder> buildDataBuilder_;
+
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
-      public com.common.msg.BuildBean.BuildClientData getBuildData() {
+      public java.util.List<com.common.msg.BuildBean.BuildClientData> getBuildDataList() {
         if (buildDataBuilder_ == null) {
-          return buildData_;
+          return java.util.Collections.unmodifiableList(buildData_);
         } else {
-          return buildDataBuilder_.getMessage();
+          return buildDataBuilder_.getMessageList();
         }
       }
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
-      public Builder setBuildData(com.common.msg.BuildBean.BuildClientData value) {
+      public int getBuildDataCount() {
+        if (buildDataBuilder_ == null) {
+          return buildData_.size();
+        } else {
+          return buildDataBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientData getBuildData(int index) {
+        if (buildDataBuilder_ == null) {
+          return buildData_.get(index);
+        } else {
+          return buildDataBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public Builder setBuildData(
+          int index, com.common.msg.BuildBean.BuildClientData value) {
         if (buildDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          buildData_ = value;
+          ensureBuildDataIsMutable();
+          buildData_.set(index, value);
           onChanged();
         } else {
-          buildDataBuilder_.setMessage(value);
+          buildDataBuilder_.setMessage(index, value);
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
       public Builder setBuildData(
+          int index, com.common.msg.BuildBean.BuildClientData.Builder builderForValue) {
+        if (buildDataBuilder_ == null) {
+          ensureBuildDataIsMutable();
+          buildData_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          buildDataBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public Builder addBuildData(com.common.msg.BuildBean.BuildClientData value) {
+        if (buildDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBuildDataIsMutable();
+          buildData_.add(value);
+          onChanged();
+        } else {
+          buildDataBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public Builder addBuildData(
+          int index, com.common.msg.BuildBean.BuildClientData value) {
+        if (buildDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBuildDataIsMutable();
+          buildData_.add(index, value);
+          onChanged();
+        } else {
+          buildDataBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public Builder addBuildData(
           com.common.msg.BuildBean.BuildClientData.Builder builderForValue) {
         if (buildDataBuilder_ == null) {
-          buildData_ = builderForValue.build();
+          ensureBuildDataIsMutable();
+          buildData_.add(builderForValue.build());
           onChanged();
         } else {
-          buildDataBuilder_.setMessage(builderForValue.build());
+          buildDataBuilder_.addMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
-      public Builder mergeBuildData(com.common.msg.BuildBean.BuildClientData value) {
+      public Builder addBuildData(
+          int index, com.common.msg.BuildBean.BuildClientData.Builder builderForValue) {
         if (buildDataBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              buildData_ != com.common.msg.BuildBean.BuildClientData.getDefaultInstance()) {
-            buildData_ =
-              com.common.msg.BuildBean.BuildClientData.newBuilder(buildData_).mergeFrom(value).buildPartial();
-          } else {
-            buildData_ = value;
-          }
+          ensureBuildDataIsMutable();
+          buildData_.add(index, builderForValue.build());
           onChanged();
         } else {
-          buildDataBuilder_.mergeFrom(value);
+          buildDataBuilder_.addMessage(index, builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public Builder addAllBuildData(
+          java.lang.Iterable<? extends com.common.msg.BuildBean.BuildClientData> values) {
+        if (buildDataBuilder_ == null) {
+          ensureBuildDataIsMutable();
+          super.addAll(values, buildData_);
+          onChanged();
+        } else {
+          buildDataBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
       public Builder clearBuildData() {
         if (buildDataBuilder_ == null) {
-          buildData_ = com.common.msg.BuildBean.BuildClientData.getDefaultInstance();
+          buildData_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           buildDataBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
-      public com.common.msg.BuildBean.BuildClientData.Builder getBuildDataBuilder() {
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return getBuildDataFieldBuilder().getBuilder();
+      public Builder removeBuildData(int index) {
+        if (buildDataBuilder_ == null) {
+          ensureBuildDataIsMutable();
+          buildData_.remove(index);
+          onChanged();
+        } else {
+          buildDataBuilder_.remove(index);
+        }
+        return this;
       }
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
-      public com.common.msg.BuildBean.BuildClientDataOrBuilder getBuildDataOrBuilder() {
-        if (buildDataBuilder_ != null) {
-          return buildDataBuilder_.getMessageOrBuilder();
-        } else {
-          return buildData_;
+      public com.common.msg.BuildBean.BuildClientData.Builder getBuildDataBuilder(
+          int index) {
+        return getBuildDataFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientDataOrBuilder getBuildDataOrBuilder(
+          int index) {
+        if (buildDataBuilder_ == null) {
+          return buildData_.get(index);  } else {
+          return buildDataBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>required .bean.BuildClientData buildData = 1;</code>
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
        */
-      private com.google.protobuf.SingleFieldBuilder<
+      public java.util.List<? extends com.common.msg.BuildBean.BuildClientDataOrBuilder> 
+           getBuildDataOrBuilderList() {
+        if (buildDataBuilder_ != null) {
+          return buildDataBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(buildData_);
+        }
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientData.Builder addBuildDataBuilder() {
+        return getBuildDataFieldBuilder().addBuilder(
+            com.common.msg.BuildBean.BuildClientData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientData.Builder addBuildDataBuilder(
+          int index) {
+        return getBuildDataFieldBuilder().addBuilder(
+            index, com.common.msg.BuildBean.BuildClientData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .bean.BuildClientData buildData = 1;</code>
+       */
+      public java.util.List<com.common.msg.BuildBean.BuildClientData.Builder> 
+           getBuildDataBuilderList() {
+        return getBuildDataFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
           com.common.msg.BuildBean.BuildClientData, com.common.msg.BuildBean.BuildClientData.Builder, com.common.msg.BuildBean.BuildClientDataOrBuilder> 
           getBuildDataFieldBuilder() {
         if (buildDataBuilder_ == null) {
-          buildDataBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+          buildDataBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
               com.common.msg.BuildBean.BuildClientData, com.common.msg.BuildBean.BuildClientData.Builder, com.common.msg.BuildBean.BuildClientDataOrBuilder>(
                   buildData_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
                   isClean());
           buildData_ = null;
         }
         return buildDataBuilder_;
-      }
-
-      // optional int32 updateState = 2;
-      private int updateState_ ;
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public boolean hasUpdateState() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public int getUpdateState() {
-        return updateState_;
-      }
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public Builder setUpdateState(int value) {
-        bitField0_ |= 0x00000002;
-        updateState_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public Builder clearUpdateState() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        updateState_ = 0;
-        onChanged();
-        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:bean.GCUpdateBuildData)
@@ -3384,29 +3466,30 @@ public final class BuildBean {
   public interface GCUpdateBuildIngDataOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required .bean.BuildClientIngData BuildIngData = 1;
+    // repeated .bean.BuildClientIngData BuildIngData = 1;
     /**
-     * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    boolean hasBuildIngData();
+    java.util.List<com.common.msg.BuildBean.BuildClientIngData> 
+        getBuildIngDataList();
     /**
-     * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    com.common.msg.BuildBean.BuildClientIngData getBuildIngData();
+    com.common.msg.BuildBean.BuildClientIngData getBuildIngData(int index);
     /**
-     * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    com.common.msg.BuildBean.BuildClientIngDataOrBuilder getBuildIngDataOrBuilder();
-
-    // optional int32 updateState = 2;
+    int getBuildIngDataCount();
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    boolean hasUpdateState();
+    java.util.List<? extends com.common.msg.BuildBean.BuildClientIngDataOrBuilder> 
+        getBuildIngDataOrBuilderList();
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    int getUpdateState();
+    com.common.msg.BuildBean.BuildClientIngDataOrBuilder getBuildIngDataOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code bean.GCUpdateBuildIngData}
@@ -3460,21 +3543,11 @@ public final class BuildBean {
               break;
             }
             case 10: {
-              com.common.msg.BuildBean.BuildClientIngData.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000001) == 0x00000001)) {
-                subBuilder = buildIngData_.toBuilder();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                buildIngData_ = new java.util.ArrayList<com.common.msg.BuildBean.BuildClientIngData>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              buildIngData_ = input.readMessage(com.common.msg.BuildBean.BuildClientIngData.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(buildIngData_);
-                buildIngData_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000001;
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              updateState_ = input.readInt32();
+              buildIngData_.add(input.readMessage(com.common.msg.BuildBean.BuildClientIngData.PARSER, extensionRegistry));
               break;
             }
           }
@@ -3485,6 +3558,9 @@ public final class BuildBean {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          buildIngData_ = java.util.Collections.unmodifiableList(buildIngData_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -3516,61 +3592,55 @@ public final class BuildBean {
       return PARSER;
     }
 
-    private int bitField0_;
-    // required .bean.BuildClientIngData BuildIngData = 1;
+    // repeated .bean.BuildClientIngData BuildIngData = 1;
     public static final int BUILDINGDATA_FIELD_NUMBER = 1;
-    private com.common.msg.BuildBean.BuildClientIngData buildIngData_;
+    private java.util.List<com.common.msg.BuildBean.BuildClientIngData> buildIngData_;
     /**
-     * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    public boolean hasBuildIngData() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
-     */
-    public com.common.msg.BuildBean.BuildClientIngData getBuildIngData() {
+    public java.util.List<com.common.msg.BuildBean.BuildClientIngData> getBuildIngDataList() {
       return buildIngData_;
     }
     /**
-     * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    public com.common.msg.BuildBean.BuildClientIngDataOrBuilder getBuildIngDataOrBuilder() {
+    public java.util.List<? extends com.common.msg.BuildBean.BuildClientIngDataOrBuilder> 
+        getBuildIngDataOrBuilderList() {
       return buildIngData_;
     }
-
-    // optional int32 updateState = 2;
-    public static final int UPDATESTATE_FIELD_NUMBER = 2;
-    private int updateState_;
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    public boolean hasUpdateState() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+    public int getBuildIngDataCount() {
+      return buildIngData_.size();
     }
     /**
-     * <code>optional int32 updateState = 2;</code>
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
      */
-    public int getUpdateState() {
-      return updateState_;
+    public com.common.msg.BuildBean.BuildClientIngData getBuildIngData(int index) {
+      return buildIngData_.get(index);
+    }
+    /**
+     * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+     */
+    public com.common.msg.BuildBean.BuildClientIngDataOrBuilder getBuildIngDataOrBuilder(
+        int index) {
+      return buildIngData_.get(index);
     }
 
     private void initFields() {
-      buildIngData_ = com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance();
-      updateState_ = 0;
+      buildIngData_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasBuildIngData()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getBuildIngData().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
+      for (int i = 0; i < getBuildIngDataCount(); i++) {
+        if (!getBuildIngData(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
       }
       memoizedIsInitialized = 1;
       return true;
@@ -3579,11 +3649,8 @@ public final class BuildBean {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, buildIngData_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, updateState_);
+      for (int i = 0; i < buildIngData_.size(); i++) {
+        output.writeMessage(1, buildIngData_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -3594,13 +3661,9 @@ public final class BuildBean {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      for (int i = 0; i < buildIngData_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, buildIngData_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, updateState_);
+          .computeMessageSize(1, buildIngData_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3720,13 +3783,11 @@ public final class BuildBean {
       public Builder clear() {
         super.clear();
         if (buildIngDataBuilder_ == null) {
-          buildIngData_ = com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance();
+          buildIngData_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           buildIngDataBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        updateState_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -3754,20 +3815,15 @@ public final class BuildBean {
       public com.common.msg.BuildBean.GCUpdateBuildIngData buildPartial() {
         com.common.msg.BuildBean.GCUpdateBuildIngData result = new com.common.msg.BuildBean.GCUpdateBuildIngData(this);
         int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
         if (buildIngDataBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            buildIngData_ = java.util.Collections.unmodifiableList(buildIngData_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
           result.buildIngData_ = buildIngData_;
         } else {
           result.buildIngData_ = buildIngDataBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.updateState_ = updateState_;
-        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -3783,24 +3839,42 @@ public final class BuildBean {
 
       public Builder mergeFrom(com.common.msg.BuildBean.GCUpdateBuildIngData other) {
         if (other == com.common.msg.BuildBean.GCUpdateBuildIngData.getDefaultInstance()) return this;
-        if (other.hasBuildIngData()) {
-          mergeBuildIngData(other.getBuildIngData());
-        }
-        if (other.hasUpdateState()) {
-          setUpdateState(other.getUpdateState());
+        if (buildIngDataBuilder_ == null) {
+          if (!other.buildIngData_.isEmpty()) {
+            if (buildIngData_.isEmpty()) {
+              buildIngData_ = other.buildIngData_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureBuildIngDataIsMutable();
+              buildIngData_.addAll(other.buildIngData_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.buildIngData_.isEmpty()) {
+            if (buildIngDataBuilder_.isEmpty()) {
+              buildIngDataBuilder_.dispose();
+              buildIngDataBuilder_ = null;
+              buildIngData_ = other.buildIngData_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              buildIngDataBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getBuildIngDataFieldBuilder() : null;
+            } else {
+              buildIngDataBuilder_.addAllMessages(other.buildIngData_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasBuildIngData()) {
-          
-          return false;
-        }
-        if (!getBuildIngData().isInitialized()) {
-          
-          return false;
+        for (int i = 0; i < getBuildIngDataCount(); i++) {
+          if (!getBuildIngData(i).isInitialized()) {
+            
+            return false;
+          }
         }
         return true;
       }
@@ -3824,154 +3898,244 @@ public final class BuildBean {
       }
       private int bitField0_;
 
-      // required .bean.BuildClientIngData BuildIngData = 1;
-      private com.common.msg.BuildBean.BuildClientIngData buildIngData_ = com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          com.common.msg.BuildBean.BuildClientIngData, com.common.msg.BuildBean.BuildClientIngData.Builder, com.common.msg.BuildBean.BuildClientIngDataOrBuilder> buildIngDataBuilder_;
-      /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
-       */
-      public boolean hasBuildIngData() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+      // repeated .bean.BuildClientIngData BuildIngData = 1;
+      private java.util.List<com.common.msg.BuildBean.BuildClientIngData> buildIngData_ =
+        java.util.Collections.emptyList();
+      private void ensureBuildIngDataIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          buildIngData_ = new java.util.ArrayList<com.common.msg.BuildBean.BuildClientIngData>(buildIngData_);
+          bitField0_ |= 0x00000001;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.common.msg.BuildBean.BuildClientIngData, com.common.msg.BuildBean.BuildClientIngData.Builder, com.common.msg.BuildBean.BuildClientIngDataOrBuilder> buildIngDataBuilder_;
+
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
-      public com.common.msg.BuildBean.BuildClientIngData getBuildIngData() {
+      public java.util.List<com.common.msg.BuildBean.BuildClientIngData> getBuildIngDataList() {
         if (buildIngDataBuilder_ == null) {
-          return buildIngData_;
+          return java.util.Collections.unmodifiableList(buildIngData_);
         } else {
-          return buildIngDataBuilder_.getMessage();
+          return buildIngDataBuilder_.getMessageList();
         }
       }
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
-      public Builder setBuildIngData(com.common.msg.BuildBean.BuildClientIngData value) {
+      public int getBuildIngDataCount() {
+        if (buildIngDataBuilder_ == null) {
+          return buildIngData_.size();
+        } else {
+          return buildIngDataBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientIngData getBuildIngData(int index) {
+        if (buildIngDataBuilder_ == null) {
+          return buildIngData_.get(index);
+        } else {
+          return buildIngDataBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public Builder setBuildIngData(
+          int index, com.common.msg.BuildBean.BuildClientIngData value) {
         if (buildIngDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          buildIngData_ = value;
+          ensureBuildIngDataIsMutable();
+          buildIngData_.set(index, value);
           onChanged();
         } else {
-          buildIngDataBuilder_.setMessage(value);
+          buildIngDataBuilder_.setMessage(index, value);
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
       public Builder setBuildIngData(
+          int index, com.common.msg.BuildBean.BuildClientIngData.Builder builderForValue) {
+        if (buildIngDataBuilder_ == null) {
+          ensureBuildIngDataIsMutable();
+          buildIngData_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          buildIngDataBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public Builder addBuildIngData(com.common.msg.BuildBean.BuildClientIngData value) {
+        if (buildIngDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBuildIngDataIsMutable();
+          buildIngData_.add(value);
+          onChanged();
+        } else {
+          buildIngDataBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public Builder addBuildIngData(
+          int index, com.common.msg.BuildBean.BuildClientIngData value) {
+        if (buildIngDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBuildIngDataIsMutable();
+          buildIngData_.add(index, value);
+          onChanged();
+        } else {
+          buildIngDataBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public Builder addBuildIngData(
           com.common.msg.BuildBean.BuildClientIngData.Builder builderForValue) {
         if (buildIngDataBuilder_ == null) {
-          buildIngData_ = builderForValue.build();
+          ensureBuildIngDataIsMutable();
+          buildIngData_.add(builderForValue.build());
           onChanged();
         } else {
-          buildIngDataBuilder_.setMessage(builderForValue.build());
+          buildIngDataBuilder_.addMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
-      public Builder mergeBuildIngData(com.common.msg.BuildBean.BuildClientIngData value) {
+      public Builder addBuildIngData(
+          int index, com.common.msg.BuildBean.BuildClientIngData.Builder builderForValue) {
         if (buildIngDataBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              buildIngData_ != com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance()) {
-            buildIngData_ =
-              com.common.msg.BuildBean.BuildClientIngData.newBuilder(buildIngData_).mergeFrom(value).buildPartial();
-          } else {
-            buildIngData_ = value;
-          }
+          ensureBuildIngDataIsMutable();
+          buildIngData_.add(index, builderForValue.build());
           onChanged();
         } else {
-          buildIngDataBuilder_.mergeFrom(value);
+          buildIngDataBuilder_.addMessage(index, builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public Builder addAllBuildIngData(
+          java.lang.Iterable<? extends com.common.msg.BuildBean.BuildClientIngData> values) {
+        if (buildIngDataBuilder_ == null) {
+          ensureBuildIngDataIsMutable();
+          super.addAll(values, buildIngData_);
+          onChanged();
+        } else {
+          buildIngDataBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
       public Builder clearBuildIngData() {
         if (buildIngDataBuilder_ == null) {
-          buildIngData_ = com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance();
+          buildIngData_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           buildIngDataBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
-      public com.common.msg.BuildBean.BuildClientIngData.Builder getBuildIngDataBuilder() {
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return getBuildIngDataFieldBuilder().getBuilder();
+      public Builder removeBuildIngData(int index) {
+        if (buildIngDataBuilder_ == null) {
+          ensureBuildIngDataIsMutable();
+          buildIngData_.remove(index);
+          onChanged();
+        } else {
+          buildIngDataBuilder_.remove(index);
+        }
+        return this;
       }
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
-      public com.common.msg.BuildBean.BuildClientIngDataOrBuilder getBuildIngDataOrBuilder() {
-        if (buildIngDataBuilder_ != null) {
-          return buildIngDataBuilder_.getMessageOrBuilder();
-        } else {
-          return buildIngData_;
+      public com.common.msg.BuildBean.BuildClientIngData.Builder getBuildIngDataBuilder(
+          int index) {
+        return getBuildIngDataFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientIngDataOrBuilder getBuildIngDataOrBuilder(
+          int index) {
+        if (buildIngDataBuilder_ == null) {
+          return buildIngData_.get(index);  } else {
+          return buildIngDataBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>required .bean.BuildClientIngData BuildIngData = 1;</code>
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
        */
-      private com.google.protobuf.SingleFieldBuilder<
+      public java.util.List<? extends com.common.msg.BuildBean.BuildClientIngDataOrBuilder> 
+           getBuildIngDataOrBuilderList() {
+        if (buildIngDataBuilder_ != null) {
+          return buildIngDataBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(buildIngData_);
+        }
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientIngData.Builder addBuildIngDataBuilder() {
+        return getBuildIngDataFieldBuilder().addBuilder(
+            com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public com.common.msg.BuildBean.BuildClientIngData.Builder addBuildIngDataBuilder(
+          int index) {
+        return getBuildIngDataFieldBuilder().addBuilder(
+            index, com.common.msg.BuildBean.BuildClientIngData.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .bean.BuildClientIngData BuildIngData = 1;</code>
+       */
+      public java.util.List<com.common.msg.BuildBean.BuildClientIngData.Builder> 
+           getBuildIngDataBuilderList() {
+        return getBuildIngDataFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
           com.common.msg.BuildBean.BuildClientIngData, com.common.msg.BuildBean.BuildClientIngData.Builder, com.common.msg.BuildBean.BuildClientIngDataOrBuilder> 
           getBuildIngDataFieldBuilder() {
         if (buildIngDataBuilder_ == null) {
-          buildIngDataBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+          buildIngDataBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
               com.common.msg.BuildBean.BuildClientIngData, com.common.msg.BuildBean.BuildClientIngData.Builder, com.common.msg.BuildBean.BuildClientIngDataOrBuilder>(
                   buildIngData_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
                   isClean());
           buildIngData_ = null;
         }
         return buildIngDataBuilder_;
-      }
-
-      // optional int32 updateState = 2;
-      private int updateState_ ;
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public boolean hasUpdateState() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public int getUpdateState() {
-        return updateState_;
-      }
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public Builder setUpdateState(int value) {
-        bitField0_ |= 0x00000002;
-        updateState_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 updateState = 2;</code>
-       */
-      public Builder clearUpdateState() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        updateState_ = 0;
-        onChanged();
-        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:bean.GCUpdateBuildIngData)
@@ -4033,6 +4197,16 @@ public final class BuildBean {
      * </pre>
      */
     long getOutPutCdTime();
+
+    // optional int32 updateState = 4;
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    boolean hasUpdateState();
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    int getUpdateState();
   }
   /**
    * Protobuf type {@code bean.BuildClientData}
@@ -4098,6 +4272,11 @@ public final class BuildBean {
             case 24: {
               bitField0_ |= 0x00000004;
               outPutCdTime_ = input.readInt64();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              updateState_ = input.readInt32();
               break;
             }
           }
@@ -4204,10 +4383,27 @@ public final class BuildBean {
       return outPutCdTime_;
     }
 
+    // optional int32 updateState = 4;
+    public static final int UPDATESTATE_FIELD_NUMBER = 4;
+    private int updateState_;
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    public boolean hasUpdateState() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    public int getUpdateState() {
+      return updateState_;
+    }
+
     private void initFields() {
       buildId_ = 0L;
       templateId_ = 0;
       outPutCdTime_ = 0L;
+      updateState_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -4234,6 +4430,9 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeInt64(3, outPutCdTime_);
       }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, updateState_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -4254,6 +4453,10 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(3, outPutCdTime_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, updateState_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -4377,6 +4580,8 @@ public final class BuildBean {
         bitField0_ = (bitField0_ & ~0x00000002);
         outPutCdTime_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000004);
+        updateState_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -4417,6 +4622,10 @@ public final class BuildBean {
           to_bitField0_ |= 0x00000004;
         }
         result.outPutCdTime_ = outPutCdTime_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.updateState_ = updateState_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -4441,6 +4650,9 @@ public final class BuildBean {
         }
         if (other.hasOutPutCdTime()) {
           setOutPutCdTime(other.getOutPutCdTime());
+        }
+        if (other.hasUpdateState()) {
+          setUpdateState(other.getUpdateState());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -4604,6 +4816,39 @@ public final class BuildBean {
         return this;
       }
 
+      // optional int32 updateState = 4;
+      private int updateState_ ;
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public boolean hasUpdateState() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public int getUpdateState() {
+        return updateState_;
+      }
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public Builder setUpdateState(int value) {
+        bitField0_ |= 0x00000008;
+        updateState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public Builder clearUpdateState() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        updateState_ = 0;
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:bean.BuildClientData)
     }
 
@@ -4663,6 +4908,16 @@ public final class BuildBean {
      * </pre>
      */
     long getBuildFinishCdTime();
+
+    // optional int32 updateState = 4;
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    boolean hasUpdateState();
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    int getUpdateState();
   }
   /**
    * Protobuf type {@code bean.BuildClientIngData}
@@ -4728,6 +4983,11 @@ public final class BuildBean {
             case 24: {
               bitField0_ |= 0x00000004;
               buildFinishCdTime_ = input.readInt64();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              updateState_ = input.readInt32();
               break;
             }
           }
@@ -4834,10 +5094,27 @@ public final class BuildBean {
       return buildFinishCdTime_;
     }
 
+    // optional int32 updateState = 4;
+    public static final int UPDATESTATE_FIELD_NUMBER = 4;
+    private int updateState_;
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    public boolean hasUpdateState() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 updateState = 4;</code>
+     */
+    public int getUpdateState() {
+      return updateState_;
+    }
+
     private void initFields() {
       buildId_ = 0L;
       templateId_ = 0;
       buildFinishCdTime_ = 0L;
+      updateState_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -4864,6 +5141,9 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeInt64(3, buildFinishCdTime_);
       }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, updateState_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -4884,6 +5164,10 @@ public final class BuildBean {
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(3, buildFinishCdTime_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, updateState_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -5007,6 +5291,8 @@ public final class BuildBean {
         bitField0_ = (bitField0_ & ~0x00000002);
         buildFinishCdTime_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000004);
+        updateState_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -5047,6 +5333,10 @@ public final class BuildBean {
           to_bitField0_ |= 0x00000004;
         }
         result.buildFinishCdTime_ = buildFinishCdTime_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.updateState_ = updateState_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -5071,6 +5361,9 @@ public final class BuildBean {
         }
         if (other.hasBuildFinishCdTime()) {
           setBuildFinishCdTime(other.getBuildFinishCdTime());
+        }
+        if (other.hasUpdateState()) {
+          setUpdateState(other.getUpdateState());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -5234,6 +5527,39 @@ public final class BuildBean {
         return this;
       }
 
+      // optional int32 updateState = 4;
+      private int updateState_ ;
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public boolean hasUpdateState() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public int getUpdateState() {
+        return updateState_;
+      }
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public Builder setUpdateState(int value) {
+        bitField0_ |= 0x00000008;
+        updateState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 updateState = 4;</code>
+       */
+      public Builder clearUpdateState() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        updateState_ = 0;
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:bean.BuildClientIngData)
     }
 
@@ -5302,15 +5628,15 @@ public final class BuildBean {
       "IngData\"2\n\014CGCreatBuild\022\016\n\006roleId\030\001 \002(\003\022" +
       "\022\n\ntemplateId\030\002 \001(\005\"\037\n\014CGQuickBuild\022\017\n\007b" +
       "uildId\030\001 \002(\003\"\037\n\014CGBreakBuild\022\017\n\007buildId\030" +
-      "\001 \002(\003\"R\n\021GCUpdateBuildData\022(\n\tbuildData\030" +
-      "\001 \002(\0132\025.bean.BuildClientData\022\023\n\013updateSt",
-      "ate\030\002 \001(\005\"[\n\024GCUpdateBuildIngData\022.\n\014Bui" +
-      "ldIngData\030\001 \002(\0132\030.bean.BuildClientIngDat" +
-      "a\022\023\n\013updateState\030\002 \001(\005\"L\n\017BuildClientDat" +
-      "a\022\017\n\007buildId\030\001 \002(\003\022\022\n\ntemplateId\030\002 \001(\005\022\024" +
-      "\n\014outPutCdTime\030\003 \001(\003\"T\n\022BuildClientIngDa" +
-      "ta\022\017\n\007buildId\030\001 \002(\003\022\022\n\ntemplateId\030\002 \001(\005\022" +
-      "\031\n\021buildFinishCdTime\030\003 \001(\003B\033\n\016com.common" +
+      "\001 \002(\003\"=\n\021GCUpdateBuildData\022(\n\tbuildData\030" +
+      "\001 \003(\0132\025.bean.BuildClientData\"F\n\024GCUpdate",
+      "BuildIngData\022.\n\014BuildIngData\030\001 \003(\0132\030.bea" +
+      "n.BuildClientIngData\"a\n\017BuildClientData\022" +
+      "\017\n\007buildId\030\001 \002(\003\022\022\n\ntemplateId\030\002 \001(\005\022\024\n\014" +
+      "outPutCdTime\030\003 \001(\003\022\023\n\013updateState\030\004 \001(\005\"" +
+      "i\n\022BuildClientIngData\022\017\n\007buildId\030\001 \002(\003\022\022" +
+      "\n\ntemplateId\030\002 \001(\005\022\031\n\021buildFinishCdTime\030" +
+      "\003 \001(\003\022\023\n\013updateState\030\004 \001(\005B\033\n\016com.common" +
       ".msgB\tBuildBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
@@ -5347,25 +5673,25 @@ public final class BuildBean {
           internal_static_bean_GCUpdateBuildData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCUpdateBuildData_descriptor,
-              new java.lang.String[] { "BuildData", "UpdateState", });
+              new java.lang.String[] { "BuildData", });
           internal_static_bean_GCUpdateBuildIngData_descriptor =
             getDescriptor().getMessageTypes().get(5);
           internal_static_bean_GCUpdateBuildIngData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_GCUpdateBuildIngData_descriptor,
-              new java.lang.String[] { "BuildIngData", "UpdateState", });
+              new java.lang.String[] { "BuildIngData", });
           internal_static_bean_BuildClientData_descriptor =
             getDescriptor().getMessageTypes().get(6);
           internal_static_bean_BuildClientData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_BuildClientData_descriptor,
-              new java.lang.String[] { "BuildId", "TemplateId", "OutPutCdTime", });
+              new java.lang.String[] { "BuildId", "TemplateId", "OutPutCdTime", "UpdateState", });
           internal_static_bean_BuildClientIngData_descriptor =
             getDescriptor().getMessageTypes().get(7);
           internal_static_bean_BuildClientIngData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_BuildClientIngData_descriptor,
-              new java.lang.String[] { "BuildId", "TemplateId", "BuildFinishCdTime", });
+              new java.lang.String[] { "BuildId", "TemplateId", "BuildFinishCdTime", "UpdateState", });
           return null;
         }
       };
