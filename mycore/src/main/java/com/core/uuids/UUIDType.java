@@ -18,6 +18,8 @@ public enum UUIDType implements IndexedEnum
 	HUMAN(0,"t_human_info"),
 	/** 玩家角色建筑的UUID */
 	BUILD(1,"t_build_info"),
+	/** 玩家角色英雄的UUID */
+	HERO(2,"t_hero_info"),
 ;
 
 	private final int index;
