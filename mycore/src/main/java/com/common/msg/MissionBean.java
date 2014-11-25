@@ -11,15 +11,15 @@ public final class MissionBean {
   public interface MissionInfoOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 missionId = 1;
+    // required int64 missionId = 1;
     /**
-     * <code>required int32 missionId = 1;</code>
+     * <code>required int64 missionId = 1;</code>
      */
     boolean hasMissionId();
     /**
-     * <code>required int32 missionId = 1;</code>
+     * <code>required int64 missionId = 1;</code>
      */
-    int getMissionId();
+    long getMissionId();
 
     // optional int32 star = 2 [default = 0];
     /**
@@ -31,15 +31,175 @@ public final class MissionBean {
      */
     int getStar();
 
-    // optional int32 selfRecord = 3 [default = 0];
+    // optional double selfRecord = 3 [default = 0];
     /**
-     * <code>optional int32 selfRecord = 3 [default = 0];</code>
+     * <code>optional double selfRecord = 3 [default = 0];</code>
      */
     boolean hasSelfRecord();
     /**
-     * <code>optional int32 selfRecord = 3 [default = 0];</code>
+     * <code>optional double selfRecord = 3 [default = 0];</code>
      */
-    int getSelfRecord();
+    double getSelfRecord();
+
+    // optional float selfHit = 4 [default = 0];
+    /**
+     * <code>optional float selfHit = 4 [default = 0];</code>
+     */
+    boolean hasSelfHit();
+    /**
+     * <code>optional float selfHit = 4 [default = 0];</code>
+     */
+    float getSelfHit();
+
+    // optional string name = 5 [default = ""];
+    /**
+     * <code>optional string name = 5 [default = ""];</code>
+     */
+    boolean hasName();
+    /**
+     * <code>optional string name = 5 [default = ""];</code>
+     */
+    java.lang.String getName();
+    /**
+     * <code>optional string name = 5 [default = ""];</code>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    // optional string describe = 6 [default = ""];
+    /**
+     * <code>optional string describe = 6 [default = ""];</code>
+     */
+    boolean hasDescribe();
+    /**
+     * <code>optional string describe = 6 [default = ""];</code>
+     */
+    java.lang.String getDescribe();
+    /**
+     * <code>optional string describe = 6 [default = ""];</code>
+     */
+    com.google.protobuf.ByteString
+        getDescribeBytes();
+
+    // optional int32 test1 = 7 [default = 0];
+    /**
+     * <code>optional int32 test1 = 7 [default = 0];</code>
+     */
+    boolean hasTest1();
+    /**
+     * <code>optional int32 test1 = 7 [default = 0];</code>
+     */
+    int getTest1();
+
+    // optional double test2 = 8 [default = 0];
+    /**
+     * <code>optional double test2 = 8 [default = 0];</code>
+     */
+    boolean hasTest2();
+    /**
+     * <code>optional double test2 = 8 [default = 0];</code>
+     */
+    double getTest2();
+
+    // optional float test3 = 9 [default = 0];
+    /**
+     * <code>optional float test3 = 9 [default = 0];</code>
+     */
+    boolean hasTest3();
+    /**
+     * <code>optional float test3 = 9 [default = 0];</code>
+     */
+    float getTest3();
+
+    // optional string test4 = 10 [default = ""];
+    /**
+     * <code>optional string test4 = 10 [default = ""];</code>
+     */
+    boolean hasTest4();
+    /**
+     * <code>optional string test4 = 10 [default = ""];</code>
+     */
+    java.lang.String getTest4();
+    /**
+     * <code>optional string test4 = 10 [default = ""];</code>
+     */
+    com.google.protobuf.ByteString
+        getTest4Bytes();
+
+    // optional string test5 = 11 [default = ""];
+    /**
+     * <code>optional string test5 = 11 [default = ""];</code>
+     */
+    boolean hasTest5();
+    /**
+     * <code>optional string test5 = 11 [default = ""];</code>
+     */
+    java.lang.String getTest5();
+    /**
+     * <code>optional string test5 = 11 [default = ""];</code>
+     */
+    com.google.protobuf.ByteString
+        getTest5Bytes();
+
+    // optional int32 test6 = 12 [default = 0];
+    /**
+     * <code>optional int32 test6 = 12 [default = 0];</code>
+     */
+    boolean hasTest6();
+    /**
+     * <code>optional int32 test6 = 12 [default = 0];</code>
+     */
+    int getTest6();
+
+    // optional double test7 = 13 [default = 0];
+    /**
+     * <code>optional double test7 = 13 [default = 0];</code>
+     */
+    boolean hasTest7();
+    /**
+     * <code>optional double test7 = 13 [default = 0];</code>
+     */
+    double getTest7();
+
+    // optional float test8 = 14 [default = 0];
+    /**
+     * <code>optional float test8 = 14 [default = 0];</code>
+     */
+    boolean hasTest8();
+    /**
+     * <code>optional float test8 = 14 [default = 0];</code>
+     */
+    float getTest8();
+
+    // optional string test9 = 15 [default = ""];
+    /**
+     * <code>optional string test9 = 15 [default = ""];</code>
+     */
+    boolean hasTest9();
+    /**
+     * <code>optional string test9 = 15 [default = ""];</code>
+     */
+    java.lang.String getTest9();
+    /**
+     * <code>optional string test9 = 15 [default = ""];</code>
+     */
+    com.google.protobuf.ByteString
+        getTest9Bytes();
+
+    // optional string test10 = 16 [default = ""];
+    /**
+     * <code>optional string test10 = 16 [default = ""];</code>
+     */
+    boolean hasTest10();
+    /**
+     * <code>optional string test10 = 16 [default = ""];</code>
+     */
+    java.lang.String getTest10();
+    /**
+     * <code>optional string test10 = 16 [default = ""];</code>
+     */
+    com.google.protobuf.ByteString
+        getTest10Bytes();
   }
   /**
    * Protobuf type {@code bean.MissionInfo}
@@ -94,7 +254,7 @@ public final class MissionBean {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              missionId_ = input.readInt32();
+              missionId_ = input.readInt64();
               break;
             }
             case 16: {
@@ -102,9 +262,74 @@ public final class MissionBean {
               star_ = input.readInt32();
               break;
             }
-            case 24: {
+            case 25: {
               bitField0_ |= 0x00000004;
-              selfRecord_ = input.readInt32();
+              selfRecord_ = input.readDouble();
+              break;
+            }
+            case 37: {
+              bitField0_ |= 0x00000008;
+              selfHit_ = input.readFloat();
+              break;
+            }
+            case 42: {
+              bitField0_ |= 0x00000010;
+              name_ = input.readBytes();
+              break;
+            }
+            case 50: {
+              bitField0_ |= 0x00000020;
+              describe_ = input.readBytes();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              test1_ = input.readInt32();
+              break;
+            }
+            case 65: {
+              bitField0_ |= 0x00000080;
+              test2_ = input.readDouble();
+              break;
+            }
+            case 77: {
+              bitField0_ |= 0x00000100;
+              test3_ = input.readFloat();
+              break;
+            }
+            case 82: {
+              bitField0_ |= 0x00000200;
+              test4_ = input.readBytes();
+              break;
+            }
+            case 90: {
+              bitField0_ |= 0x00000400;
+              test5_ = input.readBytes();
+              break;
+            }
+            case 96: {
+              bitField0_ |= 0x00000800;
+              test6_ = input.readInt32();
+              break;
+            }
+            case 105: {
+              bitField0_ |= 0x00001000;
+              test7_ = input.readDouble();
+              break;
+            }
+            case 117: {
+              bitField0_ |= 0x00002000;
+              test8_ = input.readFloat();
+              break;
+            }
+            case 122: {
+              bitField0_ |= 0x00004000;
+              test9_ = input.readBytes();
+              break;
+            }
+            case 130: {
+              bitField0_ |= 0x00008000;
+              test10_ = input.readBytes();
               break;
             }
           }
@@ -147,19 +372,19 @@ public final class MissionBean {
     }
 
     private int bitField0_;
-    // required int32 missionId = 1;
+    // required int64 missionId = 1;
     public static final int MISSIONID_FIELD_NUMBER = 1;
-    private int missionId_;
+    private long missionId_;
     /**
-     * <code>required int32 missionId = 1;</code>
+     * <code>required int64 missionId = 1;</code>
      */
     public boolean hasMissionId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 missionId = 1;</code>
+     * <code>required int64 missionId = 1;</code>
      */
-    public int getMissionId() {
+    public long getMissionId() {
       return missionId_;
     }
 
@@ -179,26 +404,409 @@ public final class MissionBean {
       return star_;
     }
 
-    // optional int32 selfRecord = 3 [default = 0];
+    // optional double selfRecord = 3 [default = 0];
     public static final int SELFRECORD_FIELD_NUMBER = 3;
-    private int selfRecord_;
+    private double selfRecord_;
     /**
-     * <code>optional int32 selfRecord = 3 [default = 0];</code>
+     * <code>optional double selfRecord = 3 [default = 0];</code>
      */
     public boolean hasSelfRecord() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional int32 selfRecord = 3 [default = 0];</code>
+     * <code>optional double selfRecord = 3 [default = 0];</code>
      */
-    public int getSelfRecord() {
+    public double getSelfRecord() {
       return selfRecord_;
     }
 
+    // optional float selfHit = 4 [default = 0];
+    public static final int SELFHIT_FIELD_NUMBER = 4;
+    private float selfHit_;
+    /**
+     * <code>optional float selfHit = 4 [default = 0];</code>
+     */
+    public boolean hasSelfHit() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional float selfHit = 4 [default = 0];</code>
+     */
+    public float getSelfHit() {
+      return selfHit_;
+    }
+
+    // optional string name = 5 [default = ""];
+    public static final int NAME_FIELD_NUMBER = 5;
+    private java.lang.Object name_;
+    /**
+     * <code>optional string name = 5 [default = ""];</code>
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional string name = 5 [default = ""];</code>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 5 [default = ""];</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string describe = 6 [default = ""];
+    public static final int DESCRIBE_FIELD_NUMBER = 6;
+    private java.lang.Object describe_;
+    /**
+     * <code>optional string describe = 6 [default = ""];</code>
+     */
+    public boolean hasDescribe() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>optional string describe = 6 [default = ""];</code>
+     */
+    public java.lang.String getDescribe() {
+      java.lang.Object ref = describe_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          describe_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string describe = 6 [default = ""];</code>
+     */
+    public com.google.protobuf.ByteString
+        getDescribeBytes() {
+      java.lang.Object ref = describe_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        describe_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int32 test1 = 7 [default = 0];
+    public static final int TEST1_FIELD_NUMBER = 7;
+    private int test1_;
+    /**
+     * <code>optional int32 test1 = 7 [default = 0];</code>
+     */
+    public boolean hasTest1() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>optional int32 test1 = 7 [default = 0];</code>
+     */
+    public int getTest1() {
+      return test1_;
+    }
+
+    // optional double test2 = 8 [default = 0];
+    public static final int TEST2_FIELD_NUMBER = 8;
+    private double test2_;
+    /**
+     * <code>optional double test2 = 8 [default = 0];</code>
+     */
+    public boolean hasTest2() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>optional double test2 = 8 [default = 0];</code>
+     */
+    public double getTest2() {
+      return test2_;
+    }
+
+    // optional float test3 = 9 [default = 0];
+    public static final int TEST3_FIELD_NUMBER = 9;
+    private float test3_;
+    /**
+     * <code>optional float test3 = 9 [default = 0];</code>
+     */
+    public boolean hasTest3() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional float test3 = 9 [default = 0];</code>
+     */
+    public float getTest3() {
+      return test3_;
+    }
+
+    // optional string test4 = 10 [default = ""];
+    public static final int TEST4_FIELD_NUMBER = 10;
+    private java.lang.Object test4_;
+    /**
+     * <code>optional string test4 = 10 [default = ""];</code>
+     */
+    public boolean hasTest4() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    /**
+     * <code>optional string test4 = 10 [default = ""];</code>
+     */
+    public java.lang.String getTest4() {
+      java.lang.Object ref = test4_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          test4_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string test4 = 10 [default = ""];</code>
+     */
+    public com.google.protobuf.ByteString
+        getTest4Bytes() {
+      java.lang.Object ref = test4_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        test4_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string test5 = 11 [default = ""];
+    public static final int TEST5_FIELD_NUMBER = 11;
+    private java.lang.Object test5_;
+    /**
+     * <code>optional string test5 = 11 [default = ""];</code>
+     */
+    public boolean hasTest5() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    /**
+     * <code>optional string test5 = 11 [default = ""];</code>
+     */
+    public java.lang.String getTest5() {
+      java.lang.Object ref = test5_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          test5_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string test5 = 11 [default = ""];</code>
+     */
+    public com.google.protobuf.ByteString
+        getTest5Bytes() {
+      java.lang.Object ref = test5_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        test5_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional int32 test6 = 12 [default = 0];
+    public static final int TEST6_FIELD_NUMBER = 12;
+    private int test6_;
+    /**
+     * <code>optional int32 test6 = 12 [default = 0];</code>
+     */
+    public boolean hasTest6() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    /**
+     * <code>optional int32 test6 = 12 [default = 0];</code>
+     */
+    public int getTest6() {
+      return test6_;
+    }
+
+    // optional double test7 = 13 [default = 0];
+    public static final int TEST7_FIELD_NUMBER = 13;
+    private double test7_;
+    /**
+     * <code>optional double test7 = 13 [default = 0];</code>
+     */
+    public boolean hasTest7() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    /**
+     * <code>optional double test7 = 13 [default = 0];</code>
+     */
+    public double getTest7() {
+      return test7_;
+    }
+
+    // optional float test8 = 14 [default = 0];
+    public static final int TEST8_FIELD_NUMBER = 14;
+    private float test8_;
+    /**
+     * <code>optional float test8 = 14 [default = 0];</code>
+     */
+    public boolean hasTest8() {
+      return ((bitField0_ & 0x00002000) == 0x00002000);
+    }
+    /**
+     * <code>optional float test8 = 14 [default = 0];</code>
+     */
+    public float getTest8() {
+      return test8_;
+    }
+
+    // optional string test9 = 15 [default = ""];
+    public static final int TEST9_FIELD_NUMBER = 15;
+    private java.lang.Object test9_;
+    /**
+     * <code>optional string test9 = 15 [default = ""];</code>
+     */
+    public boolean hasTest9() {
+      return ((bitField0_ & 0x00004000) == 0x00004000);
+    }
+    /**
+     * <code>optional string test9 = 15 [default = ""];</code>
+     */
+    public java.lang.String getTest9() {
+      java.lang.Object ref = test9_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          test9_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string test9 = 15 [default = ""];</code>
+     */
+    public com.google.protobuf.ByteString
+        getTest9Bytes() {
+      java.lang.Object ref = test9_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        test9_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string test10 = 16 [default = ""];
+    public static final int TEST10_FIELD_NUMBER = 16;
+    private java.lang.Object test10_;
+    /**
+     * <code>optional string test10 = 16 [default = ""];</code>
+     */
+    public boolean hasTest10() {
+      return ((bitField0_ & 0x00008000) == 0x00008000);
+    }
+    /**
+     * <code>optional string test10 = 16 [default = ""];</code>
+     */
+    public java.lang.String getTest10() {
+      java.lang.Object ref = test10_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          test10_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string test10 = 16 [default = ""];</code>
+     */
+    public com.google.protobuf.ByteString
+        getTest10Bytes() {
+      java.lang.Object ref = test10_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        test10_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private void initFields() {
-      missionId_ = 0;
+      missionId_ = 0L;
       star_ = 0;
-      selfRecord_ = 0;
+      selfRecord_ = 0D;
+      selfHit_ = 0F;
+      name_ = "";
+      describe_ = "";
+      test1_ = 0;
+      test2_ = 0D;
+      test3_ = 0F;
+      test4_ = "";
+      test5_ = "";
+      test6_ = 0;
+      test7_ = 0D;
+      test8_ = 0F;
+      test9_ = "";
+      test10_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -217,13 +825,52 @@ public final class MissionBean {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, missionId_);
+        output.writeInt64(1, missionId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeInt32(2, star_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, selfRecord_);
+        output.writeDouble(3, selfRecord_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeFloat(4, selfHit_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBytes(5, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(6, getDescribeBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(7, test1_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeDouble(8, test2_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeFloat(9, test3_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeBytes(10, getTest4Bytes());
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeBytes(11, getTest5Bytes());
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeInt32(12, test6_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeDouble(13, test7_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeFloat(14, test8_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeBytes(15, getTest9Bytes());
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        output.writeBytes(16, getTest10Bytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -236,7 +883,7 @@ public final class MissionBean {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, missionId_);
+          .computeInt64Size(1, missionId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -244,7 +891,59 @@ public final class MissionBean {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, selfRecord_);
+          .computeDoubleSize(3, selfRecord_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(4, selfHit_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(5, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(6, getDescribeBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, test1_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeDoubleSize(8, test2_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(9, test3_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(10, getTest4Bytes());
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(11, getTest5Bytes());
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, test6_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeDoubleSize(13, test7_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(14, test8_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(15, getTest9Bytes());
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(16, getTest10Bytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -362,12 +1061,38 @@ public final class MissionBean {
 
       public Builder clear() {
         super.clear();
-        missionId_ = 0;
+        missionId_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         star_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
-        selfRecord_ = 0;
+        selfRecord_ = 0D;
         bitField0_ = (bitField0_ & ~0x00000004);
+        selfHit_ = 0F;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000010);
+        describe_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        test1_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
+        test2_ = 0D;
+        bitField0_ = (bitField0_ & ~0x00000080);
+        test3_ = 0F;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        test4_ = "";
+        bitField0_ = (bitField0_ & ~0x00000200);
+        test5_ = "";
+        bitField0_ = (bitField0_ & ~0x00000400);
+        test6_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000800);
+        test7_ = 0D;
+        bitField0_ = (bitField0_ & ~0x00001000);
+        test8_ = 0F;
+        bitField0_ = (bitField0_ & ~0x00002000);
+        test9_ = "";
+        bitField0_ = (bitField0_ & ~0x00004000);
+        test10_ = "";
+        bitField0_ = (bitField0_ & ~0x00008000);
         return this;
       }
 
@@ -408,6 +1133,58 @@ public final class MissionBean {
           to_bitField0_ |= 0x00000004;
         }
         result.selfRecord_ = selfRecord_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.selfHit_ = selfHit_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.describe_ = describe_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.test1_ = test1_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.test2_ = test2_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.test3_ = test3_;
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        result.test4_ = test4_;
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        result.test5_ = test5_;
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        result.test6_ = test6_;
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        result.test7_ = test7_;
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00002000;
+        }
+        result.test8_ = test8_;
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00004000;
+        }
+        result.test9_ = test9_;
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00008000;
+        }
+        result.test10_ = test10_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -432,6 +1209,57 @@ public final class MissionBean {
         }
         if (other.hasSelfRecord()) {
           setSelfRecord(other.getSelfRecord());
+        }
+        if (other.hasSelfHit()) {
+          setSelfHit(other.getSelfHit());
+        }
+        if (other.hasName()) {
+          bitField0_ |= 0x00000010;
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasDescribe()) {
+          bitField0_ |= 0x00000020;
+          describe_ = other.describe_;
+          onChanged();
+        }
+        if (other.hasTest1()) {
+          setTest1(other.getTest1());
+        }
+        if (other.hasTest2()) {
+          setTest2(other.getTest2());
+        }
+        if (other.hasTest3()) {
+          setTest3(other.getTest3());
+        }
+        if (other.hasTest4()) {
+          bitField0_ |= 0x00000200;
+          test4_ = other.test4_;
+          onChanged();
+        }
+        if (other.hasTest5()) {
+          bitField0_ |= 0x00000400;
+          test5_ = other.test5_;
+          onChanged();
+        }
+        if (other.hasTest6()) {
+          setTest6(other.getTest6());
+        }
+        if (other.hasTest7()) {
+          setTest7(other.getTest7());
+        }
+        if (other.hasTest8()) {
+          setTest8(other.getTest8());
+        }
+        if (other.hasTest9()) {
+          bitField0_ |= 0x00004000;
+          test9_ = other.test9_;
+          onChanged();
+        }
+        if (other.hasTest10()) {
+          bitField0_ |= 0x00008000;
+          test10_ = other.test10_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -464,35 +1292,35 @@ public final class MissionBean {
       }
       private int bitField0_;
 
-      // required int32 missionId = 1;
-      private int missionId_ ;
+      // required int64 missionId = 1;
+      private long missionId_ ;
       /**
-       * <code>required int32 missionId = 1;</code>
+       * <code>required int64 missionId = 1;</code>
        */
       public boolean hasMissionId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 missionId = 1;</code>
+       * <code>required int64 missionId = 1;</code>
        */
-      public int getMissionId() {
+      public long getMissionId() {
         return missionId_;
       }
       /**
-       * <code>required int32 missionId = 1;</code>
+       * <code>required int64 missionId = 1;</code>
        */
-      public Builder setMissionId(int value) {
+      public Builder setMissionId(long value) {
         bitField0_ |= 0x00000001;
         missionId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 missionId = 1;</code>
+       * <code>required int64 missionId = 1;</code>
        */
       public Builder clearMissionId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        missionId_ = 0;
+        missionId_ = 0L;
         onChanged();
         return this;
       }
@@ -530,35 +1358,710 @@ public final class MissionBean {
         return this;
       }
 
-      // optional int32 selfRecord = 3 [default = 0];
-      private int selfRecord_ ;
+      // optional double selfRecord = 3 [default = 0];
+      private double selfRecord_ ;
       /**
-       * <code>optional int32 selfRecord = 3 [default = 0];</code>
+       * <code>optional double selfRecord = 3 [default = 0];</code>
        */
       public boolean hasSelfRecord() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional int32 selfRecord = 3 [default = 0];</code>
+       * <code>optional double selfRecord = 3 [default = 0];</code>
        */
-      public int getSelfRecord() {
+      public double getSelfRecord() {
         return selfRecord_;
       }
       /**
-       * <code>optional int32 selfRecord = 3 [default = 0];</code>
+       * <code>optional double selfRecord = 3 [default = 0];</code>
        */
-      public Builder setSelfRecord(int value) {
+      public Builder setSelfRecord(double value) {
         bitField0_ |= 0x00000004;
         selfRecord_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 selfRecord = 3 [default = 0];</code>
+       * <code>optional double selfRecord = 3 [default = 0];</code>
        */
       public Builder clearSelfRecord() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        selfRecord_ = 0;
+        selfRecord_ = 0D;
+        onChanged();
+        return this;
+      }
+
+      // optional float selfHit = 4 [default = 0];
+      private float selfHit_ ;
+      /**
+       * <code>optional float selfHit = 4 [default = 0];</code>
+       */
+      public boolean hasSelfHit() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional float selfHit = 4 [default = 0];</code>
+       */
+      public float getSelfHit() {
+        return selfHit_;
+      }
+      /**
+       * <code>optional float selfHit = 4 [default = 0];</code>
+       */
+      public Builder setSelfHit(float value) {
+        bitField0_ |= 0x00000008;
+        selfHit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional float selfHit = 4 [default = 0];</code>
+       */
+      public Builder clearSelfHit() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        selfHit_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      // optional string name = 5 [default = ""];
+      private java.lang.Object name_ = "";
+      /**
+       * <code>optional string name = 5 [default = ""];</code>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional string name = 5 [default = ""];</code>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 5 [default = ""];</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 5 [default = ""];</code>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 5 [default = ""];</code>
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 5 [default = ""];</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000010;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string describe = 6 [default = ""];
+      private java.lang.Object describe_ = "";
+      /**
+       * <code>optional string describe = 6 [default = ""];</code>
+       */
+      public boolean hasDescribe() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>optional string describe = 6 [default = ""];</code>
+       */
+      public java.lang.String getDescribe() {
+        java.lang.Object ref = describe_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          describe_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string describe = 6 [default = ""];</code>
+       */
+      public com.google.protobuf.ByteString
+          getDescribeBytes() {
+        java.lang.Object ref = describe_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          describe_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string describe = 6 [default = ""];</code>
+       */
+      public Builder setDescribe(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        describe_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string describe = 6 [default = ""];</code>
+       */
+      public Builder clearDescribe() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        describe_ = getDefaultInstance().getDescribe();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string describe = 6 [default = ""];</code>
+       */
+      public Builder setDescribeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        describe_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 test1 = 7 [default = 0];
+      private int test1_ ;
+      /**
+       * <code>optional int32 test1 = 7 [default = 0];</code>
+       */
+      public boolean hasTest1() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>optional int32 test1 = 7 [default = 0];</code>
+       */
+      public int getTest1() {
+        return test1_;
+      }
+      /**
+       * <code>optional int32 test1 = 7 [default = 0];</code>
+       */
+      public Builder setTest1(int value) {
+        bitField0_ |= 0x00000040;
+        test1_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 test1 = 7 [default = 0];</code>
+       */
+      public Builder clearTest1() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        test1_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional double test2 = 8 [default = 0];
+      private double test2_ ;
+      /**
+       * <code>optional double test2 = 8 [default = 0];</code>
+       */
+      public boolean hasTest2() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>optional double test2 = 8 [default = 0];</code>
+       */
+      public double getTest2() {
+        return test2_;
+      }
+      /**
+       * <code>optional double test2 = 8 [default = 0];</code>
+       */
+      public Builder setTest2(double value) {
+        bitField0_ |= 0x00000080;
+        test2_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional double test2 = 8 [default = 0];</code>
+       */
+      public Builder clearTest2() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        test2_ = 0D;
+        onChanged();
+        return this;
+      }
+
+      // optional float test3 = 9 [default = 0];
+      private float test3_ ;
+      /**
+       * <code>optional float test3 = 9 [default = 0];</code>
+       */
+      public boolean hasTest3() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional float test3 = 9 [default = 0];</code>
+       */
+      public float getTest3() {
+        return test3_;
+      }
+      /**
+       * <code>optional float test3 = 9 [default = 0];</code>
+       */
+      public Builder setTest3(float value) {
+        bitField0_ |= 0x00000100;
+        test3_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional float test3 = 9 [default = 0];</code>
+       */
+      public Builder clearTest3() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        test3_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      // optional string test4 = 10 [default = ""];
+      private java.lang.Object test4_ = "";
+      /**
+       * <code>optional string test4 = 10 [default = ""];</code>
+       */
+      public boolean hasTest4() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      /**
+       * <code>optional string test4 = 10 [default = ""];</code>
+       */
+      public java.lang.String getTest4() {
+        java.lang.Object ref = test4_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          test4_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string test4 = 10 [default = ""];</code>
+       */
+      public com.google.protobuf.ByteString
+          getTest4Bytes() {
+        java.lang.Object ref = test4_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          test4_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string test4 = 10 [default = ""];</code>
+       */
+      public Builder setTest4(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000200;
+        test4_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test4 = 10 [default = ""];</code>
+       */
+      public Builder clearTest4() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        test4_ = getDefaultInstance().getTest4();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test4 = 10 [default = ""];</code>
+       */
+      public Builder setTest4Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000200;
+        test4_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string test5 = 11 [default = ""];
+      private java.lang.Object test5_ = "";
+      /**
+       * <code>optional string test5 = 11 [default = ""];</code>
+       */
+      public boolean hasTest5() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <code>optional string test5 = 11 [default = ""];</code>
+       */
+      public java.lang.String getTest5() {
+        java.lang.Object ref = test5_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          test5_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string test5 = 11 [default = ""];</code>
+       */
+      public com.google.protobuf.ByteString
+          getTest5Bytes() {
+        java.lang.Object ref = test5_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          test5_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string test5 = 11 [default = ""];</code>
+       */
+      public Builder setTest5(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000400;
+        test5_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test5 = 11 [default = ""];</code>
+       */
+      public Builder clearTest5() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        test5_ = getDefaultInstance().getTest5();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test5 = 11 [default = ""];</code>
+       */
+      public Builder setTest5Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000400;
+        test5_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional int32 test6 = 12 [default = 0];
+      private int test6_ ;
+      /**
+       * <code>optional int32 test6 = 12 [default = 0];</code>
+       */
+      public boolean hasTest6() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      /**
+       * <code>optional int32 test6 = 12 [default = 0];</code>
+       */
+      public int getTest6() {
+        return test6_;
+      }
+      /**
+       * <code>optional int32 test6 = 12 [default = 0];</code>
+       */
+      public Builder setTest6(int value) {
+        bitField0_ |= 0x00000800;
+        test6_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 test6 = 12 [default = 0];</code>
+       */
+      public Builder clearTest6() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        test6_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // optional double test7 = 13 [default = 0];
+      private double test7_ ;
+      /**
+       * <code>optional double test7 = 13 [default = 0];</code>
+       */
+      public boolean hasTest7() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      /**
+       * <code>optional double test7 = 13 [default = 0];</code>
+       */
+      public double getTest7() {
+        return test7_;
+      }
+      /**
+       * <code>optional double test7 = 13 [default = 0];</code>
+       */
+      public Builder setTest7(double value) {
+        bitField0_ |= 0x00001000;
+        test7_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional double test7 = 13 [default = 0];</code>
+       */
+      public Builder clearTest7() {
+        bitField0_ = (bitField0_ & ~0x00001000);
+        test7_ = 0D;
+        onChanged();
+        return this;
+      }
+
+      // optional float test8 = 14 [default = 0];
+      private float test8_ ;
+      /**
+       * <code>optional float test8 = 14 [default = 0];</code>
+       */
+      public boolean hasTest8() {
+        return ((bitField0_ & 0x00002000) == 0x00002000);
+      }
+      /**
+       * <code>optional float test8 = 14 [default = 0];</code>
+       */
+      public float getTest8() {
+        return test8_;
+      }
+      /**
+       * <code>optional float test8 = 14 [default = 0];</code>
+       */
+      public Builder setTest8(float value) {
+        bitField0_ |= 0x00002000;
+        test8_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional float test8 = 14 [default = 0];</code>
+       */
+      public Builder clearTest8() {
+        bitField0_ = (bitField0_ & ~0x00002000);
+        test8_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      // optional string test9 = 15 [default = ""];
+      private java.lang.Object test9_ = "";
+      /**
+       * <code>optional string test9 = 15 [default = ""];</code>
+       */
+      public boolean hasTest9() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      /**
+       * <code>optional string test9 = 15 [default = ""];</code>
+       */
+      public java.lang.String getTest9() {
+        java.lang.Object ref = test9_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          test9_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string test9 = 15 [default = ""];</code>
+       */
+      public com.google.protobuf.ByteString
+          getTest9Bytes() {
+        java.lang.Object ref = test9_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          test9_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string test9 = 15 [default = ""];</code>
+       */
+      public Builder setTest9(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00004000;
+        test9_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test9 = 15 [default = ""];</code>
+       */
+      public Builder clearTest9() {
+        bitField0_ = (bitField0_ & ~0x00004000);
+        test9_ = getDefaultInstance().getTest9();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test9 = 15 [default = ""];</code>
+       */
+      public Builder setTest9Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00004000;
+        test9_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string test10 = 16 [default = ""];
+      private java.lang.Object test10_ = "";
+      /**
+       * <code>optional string test10 = 16 [default = ""];</code>
+       */
+      public boolean hasTest10() {
+        return ((bitField0_ & 0x00008000) == 0x00008000);
+      }
+      /**
+       * <code>optional string test10 = 16 [default = ""];</code>
+       */
+      public java.lang.String getTest10() {
+        java.lang.Object ref = test10_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          test10_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string test10 = 16 [default = ""];</code>
+       */
+      public com.google.protobuf.ByteString
+          getTest10Bytes() {
+        java.lang.Object ref = test10_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          test10_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string test10 = 16 [default = ""];</code>
+       */
+      public Builder setTest10(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00008000;
+        test10_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test10 = 16 [default = ""];</code>
+       */
+      public Builder clearTest10() {
+        bitField0_ = (bitField0_ & ~0x00008000);
+        test10_ = getDefaultInstance().getTest10();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string test10 = 16 [default = ""];</code>
+       */
+      public Builder setTest10Bytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00008000;
+        test10_ = value;
         onChanged();
         return this;
       }
@@ -1078,11 +2581,17 @@ public final class MissionBean {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rmission.proto\022\004bean\"H\n\013MissionInfo\022\021\n\t" +
-      "missionId\030\001 \002(\005\022\017\n\004star\030\002 \001(\005:\0010\022\025\n\nself" +
-      "Record\030\003 \001(\005:\0010\"<\n\rMissionReward\022\027\n\017miss" +
-      "ionRewardId\030\001 \002(\005\022\022\n\007ifFetch\030\002 \001(\005:\0010B\035\n" +
-      "\016com.common.msgB\013MissionBean"
+      "\n\rmission.proto\022\004bean\"\261\002\n\013MissionInfo\022\021\n" +
+      "\tmissionId\030\001 \002(\003\022\017\n\004star\030\002 \001(\005:\0010\022\025\n\nsel" +
+      "fRecord\030\003 \001(\001:\0010\022\022\n\007selfHit\030\004 \001(\002:\0010\022\016\n\004" +
+      "name\030\005 \001(\t:\000\022\022\n\010describe\030\006 \001(\t:\000\022\020\n\005test" +
+      "1\030\007 \001(\005:\0010\022\020\n\005test2\030\010 \001(\001:\0010\022\020\n\005test3\030\t " +
+      "\001(\002:\0010\022\017\n\005test4\030\n \001(\t:\000\022\017\n\005test5\030\013 \001(\t:\000" +
+      "\022\020\n\005test6\030\014 \001(\005:\0010\022\020\n\005test7\030\r \001(\001:\0010\022\020\n\005" +
+      "test8\030\016 \001(\002:\0010\022\017\n\005test9\030\017 \001(\t:\000\022\020\n\006test1" +
+      "0\030\020 \001(\t:\000\"<\n\rMissionReward\022\027\n\017missionRew" +
+      "ardId\030\001 \002(\005\022\022\n\007ifFetch\030\002 \001(\005:\0010B\035\n\016com.c",
+      "ommon.msgB\013MissionBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1094,7 +2603,7 @@ public final class MissionBean {
           internal_static_bean_MissionInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_bean_MissionInfo_descriptor,
-              new java.lang.String[] { "MissionId", "Star", "SelfRecord", });
+              new java.lang.String[] { "MissionId", "Star", "SelfRecord", "SelfHit", "Name", "Describe", "Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10", });
           internal_static_bean_MissionReward_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_bean_MissionReward_fieldAccessorTable = new
